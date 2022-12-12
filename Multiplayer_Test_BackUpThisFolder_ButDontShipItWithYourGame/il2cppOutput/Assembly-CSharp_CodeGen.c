@@ -18,34 +18,34 @@ extern void FixNonUniformScale_OnDrawGizmosSelected_mD29B982DC4CF3E56B4C1425D6F9
 extern void FixNonUniformScale_MakeUniform_mBDE38273898560DAA90A8DC2CFB58048AA54D9F5 (void);
 // 0x00000003 System.Void FixNonUniformScale::.ctor()
 extern void FixNonUniformScale__ctor_mA1ECA5647190B013D52C2E4AFDDCE9173D8DFA73 (void);
-// 0x00000004 System.Void PlayerController::Awake()
-extern void PlayerController_Awake_m82639826DE098DC447C79B43900C5F2A630B3DC3 (void);
-// 0x00000005 System.Void PlayerController::Start()
-extern void PlayerController_Start_m1D83076E8B136A71051F2F02545EE04947D3A8CF (void);
-// 0x00000006 System.Void PlayerController::.ctor()
-extern void PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33 (void);
-// 0x00000007 System.Void RoomManager::Awake()
-extern void RoomManager_Awake_mCE923FE4CFA5D77B70CD248C1A0A2D4376C4D846 (void);
-// 0x00000008 System.Void RoomManager::OnEnable()
-extern void RoomManager_OnEnable_mF873305E50C341897617BC8DB698448BBA9C1853 (void);
-// 0x00000009 System.Void RoomManager::OnDisable()
-extern void RoomManager_OnDisable_m22CB05664664BFF2536EC8D9EE0D945D7F4DB867 (void);
-// 0x0000000A System.Void RoomManager::OnSceneLoaded(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
-extern void RoomManager_OnSceneLoaded_mE112E777255F61025B302115C7122E1837E66F48 (void);
-// 0x0000000B System.Void RoomManager::UpdatePlayerList()
-extern void RoomManager_UpdatePlayerList_m73B011E3E6A2277C31821E60C853262CD14733FF (void);
-// 0x0000000C System.Void RoomManager::.ctor()
-extern void RoomManager__ctor_m1BA0462B8D59D0BD0F8970383015B4B1CF48D6C9 (void);
-// 0x0000000D System.Void Skin::.ctor()
-extern void Skin__ctor_mA66D959150BFAA52BE44B2CE339305D59CB922D6 (void);
-// 0x0000000E System.Void InsideLobbyCheck::OnJoinedLobby()
-extern void InsideLobbyCheck_OnJoinedLobby_m174D0FFB643767C8F051E51AEA59CED3E3EA7BE5 (void);
-// 0x0000000F System.Void InsideLobbyCheck::.ctor()
-extern void InsideLobbyCheck__ctor_m9CB064CC1DA4D5795BD14F3BEC62810757F39E68 (void);
-// 0x00000010 System.Void LoadLevel::LoadMPLobby()
+// 0x00000004 System.Void LoadLevel::LoadMPLobby()
 extern void LoadLevel_LoadMPLobby_mD2746601BF4F23551E1215F37700D008F705F8F9 (void);
-// 0x00000011 System.Void LoadLevel::.ctor()
+// 0x00000005 System.Void LoadLevel::SetAvatar(System.Int32)
+extern void LoadLevel_SetAvatar_m3F4791DB261BD1F5DB2C89403CDA979127E97FD8 (void);
+// 0x00000006 System.Void LoadLevel::.ctor()
 extern void LoadLevel__ctor_m4DE286B3AFE6F18D5040E4800ECD0F2A427F8640 (void);
+// 0x00000007 System.Void PlayerController::Awake()
+extern void PlayerController_Awake_m82639826DE098DC447C79B43900C5F2A630B3DC3 (void);
+// 0x00000008 System.Void PlayerController::Start()
+extern void PlayerController_Start_m1D83076E8B136A71051F2F02545EE04947D3A8CF (void);
+// 0x00000009 System.Void PlayerController::.ctor()
+extern void PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33 (void);
+// 0x0000000A System.Void RoomManager::Awake()
+extern void RoomManager_Awake_mCE923FE4CFA5D77B70CD248C1A0A2D4376C4D846 (void);
+// 0x0000000B System.Void RoomManager::OnEnable()
+extern void RoomManager_OnEnable_mF873305E50C341897617BC8DB698448BBA9C1853 (void);
+// 0x0000000C System.Void RoomManager::OnDisable()
+extern void RoomManager_OnDisable_m22CB05664664BFF2536EC8D9EE0D945D7F4DB867 (void);
+// 0x0000000D System.Void RoomManager::OnSceneLoaded(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+extern void RoomManager_OnSceneLoaded_mE112E777255F61025B302115C7122E1837E66F48 (void);
+// 0x0000000E System.Void RoomManager::UpdatePlayerList()
+extern void RoomManager_UpdatePlayerList_m73B011E3E6A2277C31821E60C853262CD14733FF (void);
+// 0x0000000F System.Void RoomManager::.ctor()
+extern void RoomManager__ctor_m1BA0462B8D59D0BD0F8970383015B4B1CF48D6C9 (void);
+// 0x00000010 System.Void InsideLobbyCheck::OnJoinedLobby()
+extern void InsideLobbyCheck_OnJoinedLobby_m174D0FFB643767C8F051E51AEA59CED3E3EA7BE5 (void);
+// 0x00000011 System.Void InsideLobbyCheck::.ctor()
+extern void InsideLobbyCheck__ctor_m9CB064CC1DA4D5795BD14F3BEC62810757F39E68 (void);
 // 0x00000012 System.Void PhotonLoadLevel::LoadMPLobby()
 extern void PhotonLoadLevel_LoadMPLobby_mF334CADF9358D0EDA87F0B86747C37E09A452BBE (void);
 // 0x00000013 System.Void PhotonLoadLevel::.ctor()
@@ -3363,6 +3363,9 @@ static Il2CppMethodPointer s_methodPointers[1673] =
 	FixNonUniformScale_OnDrawGizmosSelected_mD29B982DC4CF3E56B4C1425D6F9962CE124AEE1C,
 	FixNonUniformScale_MakeUniform_mBDE38273898560DAA90A8DC2CFB58048AA54D9F5,
 	FixNonUniformScale__ctor_mA1ECA5647190B013D52C2E4AFDDCE9173D8DFA73,
+	LoadLevel_LoadMPLobby_mD2746601BF4F23551E1215F37700D008F705F8F9,
+	LoadLevel_SetAvatar_m3F4791DB261BD1F5DB2C89403CDA979127E97FD8,
+	LoadLevel__ctor_m4DE286B3AFE6F18D5040E4800ECD0F2A427F8640,
 	PlayerController_Awake_m82639826DE098DC447C79B43900C5F2A630B3DC3,
 	PlayerController_Start_m1D83076E8B136A71051F2F02545EE04947D3A8CF,
 	PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33,
@@ -3372,11 +3375,8 @@ static Il2CppMethodPointer s_methodPointers[1673] =
 	RoomManager_OnSceneLoaded_mE112E777255F61025B302115C7122E1837E66F48,
 	RoomManager_UpdatePlayerList_m73B011E3E6A2277C31821E60C853262CD14733FF,
 	RoomManager__ctor_m1BA0462B8D59D0BD0F8970383015B4B1CF48D6C9,
-	Skin__ctor_mA66D959150BFAA52BE44B2CE339305D59CB922D6,
 	InsideLobbyCheck_OnJoinedLobby_m174D0FFB643767C8F051E51AEA59CED3E3EA7BE5,
 	InsideLobbyCheck__ctor_m9CB064CC1DA4D5795BD14F3BEC62810757F39E68,
-	LoadLevel_LoadMPLobby_mD2746601BF4F23551E1215F37700D008F705F8F9,
-	LoadLevel__ctor_m4DE286B3AFE6F18D5040E4800ECD0F2A427F8640,
 	PhotonLoadLevel_LoadMPLobby_mF334CADF9358D0EDA87F0B86747C37E09A452BBE,
 	PhotonLoadLevel__ctor_mF73DA59D1BEE97E1CE7ED7FED8437464F0B49A83,
 	ConnectAndJoinRandomLb_Start_m654498A211F20CBE3A2648EF7A5D1ABC5F406BA2,
@@ -5040,15 +5040,15 @@ static const int32_t s_InvokerIndices[1673] =
 	5026,
 	5026,
 	5026,
+	3982,
+	5026,
+	5026,
 	5026,
 	5026,
 	5026,
 	5026,
 	5026,
 	2301,
-	5026,
-	5026,
-	5026,
 	5026,
 	5026,
 	5026,

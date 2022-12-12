@@ -9,6 +9,6 @@ public class InsideLobbyCheck : MonoBehaviourPunCallbacks
 
     public override void OnJoinedLobby()
     {
-        
+        Debug.Log("Welcome");
     }
 }

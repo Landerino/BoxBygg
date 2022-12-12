@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 132
+  controlID: 157
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 133
+  controlID: 158
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 134
+  controlID: 159
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,8 +216,8 @@ MonoBehaviour:
     y: 0
     width: 914
     height: 774
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 74
+  controlID: 99
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -347,8 +347,8 @@ MonoBehaviour:
     y: 0
     width: 606
     height: 1307
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -483,7 +483,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 26fbffff
+      m_ExpandedIDs: f657efff7059effffc81efffe0caefff42ccefff5accefffa84ff0fff680f0ffe2bdf0ff04ddf0ffc0ddf0ffbaf7f0ff2e41f1ff4e76f1ff04d8f1ffc0d8f1ff2e3cf2ff026ff2ff2833f3ff8466f3ffec98f3fff098f3ff0a99f3ff0ca8f3ff14a8f3ff2ca8f3ff7a2bf4fffa3af4ff466bf4ff8ed5f4ff4ad6f4ffb839f5ff2a56f5ff6857f5ff7057f5ff8857f5ff8a57f5ff1480f5ff9cc5f5ffdac6f5ffe2c6f5fffac6f5fffcc6f5ff484af6ffa68bf6ff688ef6ff5e54f7ffb254f7ff4082f7ff30b2f7ff3412f8ffdeacf8ff98d5f8ffaad5f8ffacd5f8ff6a32f9ffd895f9ff2298f9fffac0f9ff7cecf9ffa2c1faffb6c1faff68c2faffbcc2faff42f0fafff618fbffc85efbff1a15fcff6e15fcff0a43fcffb86bfcfffceafcff7a13fdff8c13fdff8e13fdffbc3efdffa291fdfff491fdff92bffdff42e8fdff5412feffea3cfeffb266feff6491feff08bbfeffc4e6feffc6edfeffdaedfeff1ceffeff1418ffff0ccdfffff4ffffff4285020082e102008ae102002a59040076af0400c6af0400b8be04005426050074260500a0260500ae260500b6260500429c06007c9d0600cca10600b6a20600eaa5060024aa060022b30600a0b50600a0bd060018c0060074c90600a4bc07009c0c0900bc0c09000c0d0900220d0900440d090012d90a0044280c0064280c00b4280c00ca280c00ec280c00cc7a0f00ec7a0f003c7b0f00527b0f00747b0f00c87f100026d9100046d9100096d91000acd91000ced910000cdf11007607120096071200e6071200fc0712001e081200f66f12001670120066701200747012007c701200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -766,9 +766,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 16.33713, y: 0.67978126, z: 7.0333395}
+    m_Target: {x: 6.442298, y: -2.2078047, z: 17.323595}
     speed: 2
-    m_Value: {x: 16.33713, y: 0.67978126, z: 7.0333395}
+    m_Value: {x: 6.442298, y: -2.2078047, z: 17.323595}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -815,9 +815,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.015323438, y: -0.63387966, z: 0.01255094, w: -0.77317864}
+    m_Target: {x: 0.0987595, y: 0.19138743, z: -0.019356756, w: 0.9763379}
     speed: 2
-    m_Value: {x: -0.01648318, y: -0.6338598, z: 0.01350174, w: -0.77315444}
+    m_Value: {x: 0.098730706, y: 0.19285241, z: -0.019504942, w: 0.9760532}
   m_Size:
     m_Target: 10
     speed: 2
@@ -876,8 +876,8 @@ MonoBehaviour:
     m_SaveData: []
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5414aa0e
-    m_LastClickedID: 246027348
+    m_SelectedIDs: 8d2f2c42
+    m_LastClickedID: 1110192013
     m_ExpandedIDs: ffffffff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -938,22 +938,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/BoxBygg/External/BNG Framework/Integrations/PUN/Resources
+    - Assets/BoxBygg/Project/Main/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/BoxBygg/External/BNG Framework/Integrations/PUN/Resources
+  - Assets/BoxBygg/Project/Main/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Lander\Documents\GitHub\BoxBygg
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: 329f0000
-    m_LastClickedID: 40754
-    m_ExpandedIDs: 00000000d69d0000d89d0000da9d0000dc9d0000de9d0000e09d0000e29d0000e69d0000fc9d000000ca9a3b
+    scrollPos: {x: 0, y: 440}
+    m_SelectedIDs: 3c610100
+    m_LastClickedID: 90428
+    m_ExpandedIDs: 000000001c6001001e60010020600100226001002460010026600100286001002a6001002c6001004061010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -981,7 +981,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d69d0000d89d0000da9d0000dc9d0000de9d0000e09d0000e29d0000e49d0000e69d0000e89d0000
+    m_ExpandedIDs: 000000001c6001001e60010020600100226001002460010026600100286001002a6001002c600100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1025,7 +1025,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 12}
+      m_ClientGUIView: {fileID: 9}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
