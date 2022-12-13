@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class billboard : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    Camera cam;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (cam == null)
+            cam = FindObjectOfType<Camera>();
+        if (cam == null)
+            return;
+
+        transform.LookAt(cam.transform);
+        transform.Rotate(Vector3.up * 180);
     }
 }
