@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &604273981547475967
 Transform:
   m_ObjectHideFlags: 0
@@ -24,8 +24,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604273981547183089}
-  m_LocalRotation: {x: -0.15329242, y: 0.005918162, z: -0.69029087, w: 0.70708203}
-  m_LocalPosition: {x: 0, y: 0.051, z: 0.001}
+  m_LocalRotation: {x: -0.019327365, y: -0.029362753, z: -0.70839703, w: 0.70493835}
+  m_LocalPosition: {x: -0.0065, y: 0.0013, z: -0.0325}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 3064781785228078135}
   m_Father: {fileID: 1978627092407722672}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -12.041, y: 13.000001, z: -90.00001}
+  m_LocalEulerAnglesHint: {x: -3.948, y: -0.805, z: -90.253}
 --- !u!54 &604273981552456099
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1163,7 +1163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1768409835187163972
 Transform:
   m_ObjectHideFlags: 0
@@ -1171,8 +1171,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768409835187418800}
-  m_LocalRotation: {x: -0.15329288, y: -0.0059176628, z: 0.69029075, w: 0.70708203}
-  m_LocalPosition: {x: 0.023999989, y: 0.051, z: 0.001}
+  m_LocalRotation: {x: -0.03100526, y: 0.03541491, z: 0.6994396, w: 0.71314013}
+  m_LocalPosition: {x: 0.0115, y: 0.0001, z: -0.0351}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1181,7 +1181,7 @@ Transform:
   - {fileID: 4301400633823505591}
   m_Father: {fileID: 1978627091260127173}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -12.041, y: -13, z: 90}
+  m_LocalEulerAnglesHint: {x: -5.38, y: 0.411, z: 88.869}
 --- !u!54 &1768409835192604500
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37015,8 +37015,8 @@ MonoBehaviour:
   RemoteRightHandTransform: {fileID: 1978627090942471983}
   LeftHandController: {fileID: 0}
   RightHandController: {fileID: 0}
-  RemoteLeftHandAnimator: {fileID: 873996628533369680}
-  RemoteRightHandAnimator: {fileID: 7143250529184277147}
+  RemoteLeftHandAnimator: {fileID: 4247363316012430613}
+  RemoteRightHandAnimator: {fileID: 3155180319189993545}
   LeftGrabber: {fileID: 0}
   RightGrabber: {fileID: 0}
   HandAnimationSpeed: 30
@@ -37058,6 +37058,9 @@ MonoBehaviour:
   PV: {fileID: 1978627091856323708}
   PlayerName: {fileID: 8380608061997838616}
   InstancePoint: {fileID: 1978627091452515863}
+  Hands:
+  - {fileID: 4298158426921343319}
+  - {fileID: 3070588666501447438}
   AvatarList:
   - {fileID: 8320847902759830884, guid: aa64e2a0766a1fc4da9bb7bd0c0dd382, type: 3}
   - {fileID: 9206623484698353524, guid: 02ab9fda3373cf64e97c2af5c956cc98, type: 3}
@@ -37065,6 +37068,13 @@ MonoBehaviour:
   - {fileID: 25230679712868818, guid: 634132a31197c144285e8cc454a141a4, type: 3}
   - {fileID: 3849889201552263, guid: b05d2a61879c81a4a8708ed76421c453, type: 3}
   - {fileID: 979102273190520035, guid: 192c7a1f2a7ce9a4ca3b7d5ab30dde94, type: 3}
+  CorrespondingAvatarColor:
+  - {fileID: 2100000, guid: 7a30b187c376da54cbda9b75ab50e49e, type: 2}
+  - {fileID: 2100000, guid: 33de48c270df18c4586045de3b652f3a, type: 2}
+  - {fileID: 2100000, guid: f873b5b1c2fd56e45b111b18c866237e, type: 2}
+  - {fileID: 2100000, guid: a1bef1c8e29511747a53b4c39d1362eb, type: 2}
+  - {fileID: 2100000, guid: 2ecb9dc8620e2ab478de57fbef19a5f2, type: 2}
+  - {fileID: 2100000, guid: 70efaac79b89f564e96aa7af704330f5, type: 2}
 --- !u!1 &1978627091857433343
 GameObject:
   m_ObjectHideFlags: 0
@@ -57298,7 +57308,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8772863821258662057
 Transform:
   m_ObjectHideFlags: 0
@@ -57348,7 +57358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4003692102978584494
 Transform:
   m_ObjectHideFlags: 0

@@ -34389,8 +34389,14 @@ struct PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95  : public Mono
 	int32_t ___AvatarNo_8;
 	// UnityEngine.Transform PlayerController::InstancePoint
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___InstancePoint_9;
+	// UnityEngine.GameObject[] PlayerController::Hands
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___Hands_10;
 	// UnityEngine.GameObject[] PlayerController::AvatarList
-	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___AvatarList_10;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___AvatarList_11;
+	// UnityEngine.Material[] PlayerController::CorrespondingAvatarColor
+	MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* ___CorrespondingAvatarColor_12;
+	// UnityEngine.Renderer PlayerController::rend
+	Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* ___rend_13;
 };
 
 // Photon.Pun.Demo.Cockpit.PlayerDetailsController
@@ -36678,9 +36684,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3753[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3754[2] = 
 {
 	static_cast<int32_t>(offsetof(LoadLevel_t6D820819C00F95E71A1AF7D03B8B7F76D4897CD6, ___Name_4)),static_cast<int32_t>(offsetof(LoadLevel_t6D820819C00F95E71A1AF7D03B8B7F76D4897CD6, ___playerAvatar_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3755[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3755[9] = 
 {
-	static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___PV_5)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___PlayerName_6)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___Numba_7)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___AvatarNo_8)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___InstancePoint_9)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___AvatarList_10)),};
+	static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___PV_5)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___PlayerName_6)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___Numba_7)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___AvatarNo_8)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___InstancePoint_9)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___Hands_10)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___AvatarList_11)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___CorrespondingAvatarColor_12)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___rend_13)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3756[4] = 
 {
 	static_cast<int32_t>(offsetof(RoomManager_tB80BDBB553DCBF07D23E2B80770EDD2A43945715_StaticFields, ___Instance_5)),static_cast<int32_t>(offsetof(RoomManager_tB80BDBB553DCBF07D23E2B80770EDD2A43945715, ___playerItemsList_6)),static_cast<int32_t>(offsetof(RoomManager_tB80BDBB553DCBF07D23E2B80770EDD2A43945715, ___playerItemPrefab_7)),static_cast<int32_t>(offsetof(RoomManager_tB80BDBB553DCBF07D23E2B80770EDD2A43945715, ___playerItemParent_8)),};

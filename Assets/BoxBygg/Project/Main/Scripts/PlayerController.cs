@@ -11,15 +11,30 @@ public class PlayerController : MonoBehaviourPunCallbacks
     private string Numba;
     private int AvatarNo;
 
+    //where to instantiate the avatar
     public Transform InstancePoint;
 
+    /*
+    //Grab hands to set color
+    public GameObject HandLeft;
+    public GameObject HandRight;
+    */
+
+    //list of both hands to set color
+    public GameObject[] Hands;
+
+    //arrays with the avatars and colors
     public GameObject[] AvatarList;
+    public Material[] CorrespondingAvatarColor;
+
+    Renderer rend;
 
     private void Awake()
     {
         PV = GetComponent<PhotonView>();
     }
 
+    //as soon as a player connects this runs and displays the player as intended
     private void Start()
     {
         if(PV.Owner.CustomProperties["avatar"] == null)
@@ -30,6 +45,18 @@ public class PlayerController : MonoBehaviourPunCallbacks
         AvatarNo = int.Parse(Numba);
         Instantiate(AvatarList[AvatarNo], InstancePoint);
         PlayerName.text = PV.Owner.NickName;
+        for(int i = 0; i < 2; i++)
+        {
+            rend = Hands[i].GetComponent<Renderer>();
+            rend.sharedMaterial = CorrespondingAvatarColor[AvatarNo];
+
+        }
+        /*
+        rend = HandLeft.GetComponent<Renderer>();
+        rend.sharedMaterial = CorrespondingAvatarColor[AvatarNo];
+        rend = HandRight.GetComponent<Renderer>();
+        rend.sharedMaterial = CorrespondingAvatarColor[AvatarNo];
+        */
         if (PV.IsMine)
         {
             Debug.Log(PhotonNetwork.NickName);
