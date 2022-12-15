@@ -629,6 +629,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1605617742}
+        m_TargetAssemblyTypeName: HandSkin, Assembly-CSharp
+        m_MethodName: setSkinColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1201898133}
+        m_TargetAssemblyTypeName: HandSkin, Assembly-CSharp
+        m_MethodName: setSkinColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &320856101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -893,6 +917,30 @@ MonoBehaviour:
       - m_Target: {fileID: 597013503}
         m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
         m_MethodName: SetAvatar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1605617742}
+        m_TargetAssemblyTypeName: HandSkin, Assembly-CSharp
+        m_MethodName: setSkinColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1201898133}
+        m_TargetAssemblyTypeName: HandSkin, Assembly-CSharp
+        m_MethodName: setSkinColor
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1429,6 +1477,30 @@ MonoBehaviour:
       - m_Target: {fileID: 597013503}
         m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
         m_MethodName: SetAvatar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1605617742}
+        m_TargetAssemblyTypeName: HandSkin, Assembly-CSharp
+        m_MethodName: setSkinColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1201898133}
+        m_TargetAssemblyTypeName: HandSkin, Assembly-CSharp
+        m_MethodName: setSkinColor
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1996,6 +2068,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1605617742}
+        m_TargetAssemblyTypeName: HandSkin, Assembly-CSharp
+        m_MethodName: setSkinColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1201898133}
+        m_TargetAssemblyTypeName: HandSkin, Assembly-CSharp
+        m_MethodName: setSkinColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1008095785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2085,6 +2181,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2095442596}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1201898133 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8055196981554198558, guid: 4ac7df741a9c0a2418ec19477729ee3d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1681876500}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05ef266f4bd95b4ab7556d5aeb9b614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1231211172
 GameObject:
   m_ObjectHideFlags: 0
@@ -2615,6 +2723,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564970807}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1605617742 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3927616920535083671, guid: 4ac7df741a9c0a2418ec19477729ee3d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1681876500}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05ef266f4bd95b4ab7556d5aeb9b614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1625170631
 GameObject:
   m_ObjectHideFlags: 0
@@ -2627,7 +2747,7 @@ GameObject:
   - component: {fileID: 1625170634}
   - component: {fileID: 1625170633}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3110,6 +3230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1787098604}
+  - component: {fileID: 1787098605}
   m_Layer: 5
   m_Name: Avatar Select
   m_TagString: Untagged
@@ -3140,6 +3261,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -6.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1787098605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787098603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e31b4a3cef35a44a164a41e8aab123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneInfo: {fileID: 11400000, guid: c3947af38fec8d34ab5a0cde0ef121d0, type: 2}
 --- !u!1 &1819282128
 GameObject:
   m_ObjectHideFlags: 0
@@ -3372,6 +3506,30 @@ MonoBehaviour:
       - m_Target: {fileID: 597013503}
         m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
         m_MethodName: SetAvatar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1605617742}
+        m_TargetAssemblyTypeName: HandSkin, Assembly-CSharp
+        m_MethodName: setSkinColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1201898133}
+        m_TargetAssemblyTypeName: HandSkin, Assembly-CSharp
+        m_MethodName: setSkinColor
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3680,6 +3838,30 @@ MonoBehaviour:
       - m_Target: {fileID: 597013503}
         m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
         m_MethodName: SetAvatar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1605617742}
+        m_TargetAssemblyTypeName: HandSkin, Assembly-CSharp
+        m_MethodName: setSkinColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1201898133}
+        m_TargetAssemblyTypeName: HandSkin, Assembly-CSharp
+        m_MethodName: setSkinColor
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4443,6 +4625,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3627185991078133870, guid: 8a70b6ef2260a1848b78f80fbf4e786d,
+        type: 3}
+      propertyPath: KeycodeShift
+      value: I
       objectReference: {fileID: 0}
     - target: {fileID: 3627185991102297391, guid: 8a70b6ef2260a1848b78f80fbf4e786d,
         type: 3}
