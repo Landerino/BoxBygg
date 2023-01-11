@@ -37062,10 +37062,10 @@ MonoBehaviour:
   - {fileID: 4298158426921343319}
   - {fileID: 3070588666501447438}
   AvatarList:
-  - {fileID: 8320847902759830884, guid: aa64e2a0766a1fc4da9bb7bd0c0dd382, type: 3}
+  - {fileID: 1082226245654785271, guid: 7c699137ff3f9634d822eda3c70e4645, type: 3}
   - {fileID: 9206623484698353524, guid: 02ab9fda3373cf64e97c2af5c956cc98, type: 3}
   - {fileID: 92872475418779784, guid: a26e51c7533bde54281fdf2ad8e893f4, type: 3}
-  - {fileID: 25230679712868818, guid: 634132a31197c144285e8cc454a141a4, type: 3}
+  - {fileID: 1984203581503642709, guid: fa2498ef0252e264c94961c4ad90b3cc, type: 3}
   - {fileID: 3849889201552263, guid: b05d2a61879c81a4a8708ed76421c453, type: 3}
   - {fileID: 979102273190520035, guid: 192c7a1f2a7ce9a4ca3b7d5ab30dde94, type: 3}
   CorrespondingAvatarColor:
