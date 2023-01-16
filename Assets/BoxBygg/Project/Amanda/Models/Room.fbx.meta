@@ -8,17 +8,17 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Decoration_Texture
-    second: {fileID: 2800000, guid: 374b40de35517304da6d947af8d08af8, type: 3}
+    second: {fileID: 2800000, guid: 7c29e8e21add4104dae7aa228d4731ce, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Kitchen_Texture
-    second: {fileID: 2800000, guid: 5edd720f8f5a794458c94b9743894953, type: 3}
+    second: {fileID: 2800000, guid: 24bdd63acb2d4cb4395fc68909b90f57, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Office_Texture
-    second: {fileID: 2800000, guid: 350ba53c79b3bd144ae390503cda064c, type: 3}
+    second: {fileID: 2800000, guid: 7c9fe439d1a5778459783f8a71891f7b, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
