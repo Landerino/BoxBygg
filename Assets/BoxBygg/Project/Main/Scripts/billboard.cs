@@ -9,7 +9,7 @@ public class billboard : MonoBehaviour
     private void Update()
     {
         if (cam == null)
-            cam = FindObjectOfType<Camera>();
+            cam = GameObject.Find("CenterEyeAnchor").GetComponent<Camera>();
         if (cam == null)
             return;
 

@@ -4,4 +4,5 @@ using UnityEngine;
 public class SceneInfo : ScriptableObject
 {
     public int playerSkinNo;
+    public bool HoldingRemote;
 }
