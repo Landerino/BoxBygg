@@ -7,23 +7,26 @@ using TMPro;
 public class UITimeScript : MonoBehaviour
 {
 
-    public TextMeshProUGUI text;
+    public TextMeshProUGUI Ytext;
+    public TextMeshProUGUI Qtext;
     public Image TimeBar;
     public GameObject butnJoin;
 
     private int Date;
-    private float desiredDuration = 25f;
+    private float desiredDuration = 11f;
     private float elapsedTime;
     private float FillWant;
     private bool TimerOn;
+    private int Quarter;
 
     void Start()
     {
-        Date = 2021;
+        Quarter = 1;
+        Date = 2024;
         TimerOn = false;
         FillWant = 1;
         TimeBar.fillAmount = 0;
-        text.text = Date.ToString();
+        Ytext.text = Date.ToString();
     }
 
 
@@ -34,7 +37,7 @@ public class UITimeScript : MonoBehaviour
             elapsedTime += Time.deltaTime;
             float percentageComplete = elapsedTime / desiredDuration;
             TimeBar.fillAmount = Mathf.Lerp(0, FillWant, percentageComplete);
-            text.text = Date.ToString();
+            /*
             if (TimeBar.fillAmount < 0.29)
             {
                 Date = 2021;
@@ -49,11 +52,35 @@ public class UITimeScript : MonoBehaviour
             }
             else 
             { Date = 2024; }
+            */
         }
-        if (TimeBar.fillAmount > 0.99f) butnJoin.SetActive(true);
-            else butnJoin.SetActive(false);
+        if (TimeBar.fillAmount == 1)
+        {
+            TimeBar.fillAmount = 0;
+            elapsedTime = 0;
+            Quarter++;
+            NextQuarter();
+            //butnJoin.SetActive(true);
+        }
+            //else butnJoin.SetActive(false);
     }
 
+    public void NextQuarter()
+    {
+        if (Quarter == 5)
+        {
+            Date++;
+            Quarter = 1;
+            UpdateText();
+        }
+        else UpdateText();
+        
+    }
+    private void UpdateText()
+    {
+        Qtext.text = ("Q" + Quarter.ToString());
+        Ytext.text = Date.ToString();
+    }
     public void StartTime()
     {
         if (!TimerOn)
@@ -67,11 +94,37 @@ public class UITimeScript : MonoBehaviour
         //FillWant = TimeBar.fillAmount;
         //elapsedTime 
     }
-
-    public void NextProject()
+    //                                                                          ---------Fix skip pre-2024 and after 2032------------------
+    public void SkipNext()
     {
-        FillWant = 1;
-        TimeBar.fillAmount = 0;
-        elapsedTime = 0;
+        if (Quarter == 4)
+        {
+            Date++;
+            Quarter = 1;
+            UpdateText();
+        }
+        else
+        {
+            Quarter++;
+            TimeBar.fillAmount = 0;
+            elapsedTime = 0;
+            UpdateText();
+        }
+    }
+    public void SkipPrevious()
+    {
+        if (Quarter == 1)
+        {
+            Date--;
+            Quarter = 4;
+            UpdateText();
+        }
+        else
+        {
+            Quarter--;
+            TimeBar.fillAmount = 0;
+            elapsedTime = 0;
+            UpdateText();
+        }
     }
 }
