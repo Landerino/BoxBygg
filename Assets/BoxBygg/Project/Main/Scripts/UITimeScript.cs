@@ -23,6 +23,7 @@ public class UITimeScript : MonoBehaviour
 
     void Start()
     {
+        butnJoin.SetActive(false);
         Quarter = 1;
         Date = 2024;
         TimerOn = false;
@@ -69,7 +70,7 @@ public class UITimeScript : MonoBehaviour
             TimerOn = false;
             butnStart.SetActive(true);
             butnStop.SetActive(false);
-
+            butnJoin.SetActive(true);
         }
             //else butnJoin.SetActive(false);
     }
@@ -131,6 +132,7 @@ public class UITimeScript : MonoBehaviour
     }
     public void SkipPrevious()
     {
+        butnJoin.SetActive(false);
         if (Date == 2024 && Quarter > 1|| Date > 2024)
         {
             if (Quarter == 1)
