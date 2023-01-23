@@ -11,9 +11,11 @@ public class UITimeScript : MonoBehaviour
     public TextMeshProUGUI Qtext;
     public Image TimeBar;
     public GameObject butnJoin;
+    public GameObject butnStart;
+    public GameObject butnStop;
 
     private int Date;
-    private float desiredDuration = 11f;
+    private float desiredDuration = 10f;
     private float elapsedTime;
     private float FillWant;
     private bool TimerOn;
@@ -62,6 +64,13 @@ public class UITimeScript : MonoBehaviour
             NextQuarter();
             //butnJoin.SetActive(true);
         }
+        else if(Date == 2032 && Quarter == 4)
+        {
+            TimerOn = false;
+            butnStart.SetActive(true);
+            butnStop.SetActive(false);
+
+        }
             //else butnJoin.SetActive(false);
     }
 
@@ -83,48 +92,62 @@ public class UITimeScript : MonoBehaviour
     }
     public void StartTime()
     {
+        if (Date == 2032 && Quarter < 4 || Date < 2032)
+        {
+            TimerOn = true;
+        }
+        /*
         if (!TimerOn)
             TimerOn = true;
         else TimerOn = false;
+        */
     }
-
     public void StopTime()
     {
         TimerOn = false;
         //FillWant = TimeBar.fillAmount;
         //elapsedTime 
     }
-    //                                                                          ---------Fix skip pre-2024 and after 2032------------------
     public void SkipNext()
     {
-        if (Quarter == 4)
+        if (Date == 2032 && Quarter < 4 || Date < 2032)
         {
-            Date++;
-            Quarter = 1;
-            UpdateText();
-        }
-        else
-        {
-            Quarter++;
-            TimeBar.fillAmount = 0;
-            elapsedTime = 0;
-            UpdateText();
+            if (Quarter == 4)
+            {
+                Date++;
+                Quarter = 1; 
+                TimeBar.fillAmount = 0;
+                elapsedTime = 0;
+                UpdateText();
+            }
+            else
+            {
+                Quarter++;
+                TimeBar.fillAmount = 0;
+                elapsedTime = 0;
+                UpdateText();
+            }
         }
     }
     public void SkipPrevious()
     {
-        if (Quarter == 1)
+        if (Date == 2024 && Quarter > 1|| Date > 2024)
         {
-            Date--;
-            Quarter = 4;
-            UpdateText();
-        }
-        else
-        {
-            Quarter--;
-            TimeBar.fillAmount = 0;
-            elapsedTime = 0;
-            UpdateText();
+            if (Quarter == 1)
+            {
+                Date--;
+                Quarter = 4; 
+                TimeBar.fillAmount = 0;
+                elapsedTime = 0;
+                UpdateText();
+            }
+            else
+            {
+                Quarter--;
+                TimeBar.fillAmount = 0;
+                elapsedTime = 0;
+                UpdateText();
+            }
         }
     }
 }
