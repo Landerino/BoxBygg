@@ -3282,32 +3282,32 @@ PrefabInstance:
     - target: {fileID: 3927616920535083671, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       propertyPath: skinColorArray.Array.data[0].rgba
-      value: 4293783039
+      value: 4287212535
       objectReference: {fileID: 0}
     - target: {fileID: 3927616920535083671, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       propertyPath: skinColorArray.Array.data[1].rgba
-      value: 4289901234
+      value: 4282540457
       objectReference: {fileID: 0}
     - target: {fileID: 3927616920535083671, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       propertyPath: skinColorArray.Array.data[2].rgba
-      value: 4293656063
+      value: 4287478015
       objectReference: {fileID: 0}
     - target: {fileID: 3927616920535083671, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       propertyPath: skinColorArray.Array.data[3].rgba
-      value: 4293783039
+      value: 4287212535
       objectReference: {fileID: 0}
     - target: {fileID: 3927616920535083671, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       propertyPath: skinColorArray.Array.data[4].rgba
-      value: 4289967027
+      value: 4282540457
       objectReference: {fileID: 0}
     - target: {fileID: 3927616920535083671, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       propertyPath: skinColorArray.Array.data[5].rgba
-      value: 4293656319
+      value: 4287478015
       objectReference: {fileID: 0}
     - target: {fileID: 5629437628696637001, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
@@ -3317,32 +3317,32 @@ PrefabInstance:
     - target: {fileID: 8055196981554198558, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       propertyPath: skinColorArray.Array.data[0].rgba
-      value: 4293783039
+      value: 4287212535
       objectReference: {fileID: 0}
     - target: {fileID: 8055196981554198558, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       propertyPath: skinColorArray.Array.data[1].rgba
-      value: 4289901234
+      value: 4282540457
       objectReference: {fileID: 0}
     - target: {fileID: 8055196981554198558, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       propertyPath: skinColorArray.Array.data[2].rgba
-      value: 4293656063
+      value: 4287478015
       objectReference: {fileID: 0}
     - target: {fileID: 8055196981554198558, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       propertyPath: skinColorArray.Array.data[3].rgba
-      value: 4293783039
+      value: 4287212535
       objectReference: {fileID: 0}
     - target: {fileID: 8055196981554198558, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       propertyPath: skinColorArray.Array.data[4].rgba
-      value: 4289967027
+      value: 4282540457
       objectReference: {fileID: 0}
     - target: {fileID: 8055196981554198558, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       propertyPath: skinColorArray.Array.data[5].rgba
-      value: 4293656319
+      value: 4287478015
       objectReference: {fileID: 0}
     - target: {fileID: 8516297022622988646, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
