@@ -37062,19 +37062,19 @@ MonoBehaviour:
   - {fileID: 4298158426921343319}
   - {fileID: 3070588666501447438}
   AvatarList:
-  - {fileID: 1082226245654785271, guid: 7c699137ff3f9634d822eda3c70e4645, type: 3}
-  - {fileID: 9206623484698353524, guid: 02ab9fda3373cf64e97c2af5c956cc98, type: 3}
-  - {fileID: 92872475418779784, guid: a26e51c7533bde54281fdf2ad8e893f4, type: 3}
-  - {fileID: 1984203581503642709, guid: fa2498ef0252e264c94961c4ad90b3cc, type: 3}
-  - {fileID: 3849889201552263, guid: b05d2a61879c81a4a8708ed76421c453, type: 3}
-  - {fileID: 979102273190520035, guid: 192c7a1f2a7ce9a4ca3b7d5ab30dde94, type: 3}
+  - {fileID: 3821936334677076589, guid: 727368520fa2cab47975ea1ee2850dfd, type: 3}
+  - {fileID: 3100948764074927558, guid: 378c9c00bcffcf046ad63c262db6bc66, type: 3}
+  - {fileID: 803970204424632166, guid: c4d1ea6570471a044bc56bde1ced3f59, type: 3}
+  - {fileID: 6743382323258581543, guid: 79939aade3a49fa4eb93ebf2e1109c52, type: 3}
+  - {fileID: 4864615200593612663, guid: d4afb1acd29d9cc489827d9cd1913c08, type: 3}
+  - {fileID: 3575215972895548529, guid: d2c0604aa0be9c14f9009f5ea07e838c, type: 3}
   CorrespondingAvatarColor:
-  - {fileID: 2100000, guid: 7a30b187c376da54cbda9b75ab50e49e, type: 2}
-  - {fileID: 2100000, guid: 33de48c270df18c4586045de3b652f3a, type: 2}
-  - {fileID: 2100000, guid: f873b5b1c2fd56e45b111b18c866237e, type: 2}
-  - {fileID: 2100000, guid: a1bef1c8e29511747a53b4c39d1362eb, type: 2}
-  - {fileID: 2100000, guid: 2ecb9dc8620e2ab478de57fbef19a5f2, type: 2}
-  - {fileID: 2100000, guid: 70efaac79b89f564e96aa7af704330f5, type: 2}
+  - {fileID: 2100000, guid: 479a767a4cd468f4e9c508c93f98389e, type: 2}
+  - {fileID: 2100000, guid: 2e7cff25452334a43a91beedd66ead34, type: 2}
+  - {fileID: 2100000, guid: b65319562a8c5014486e59e2e014dcd3, type: 2}
+  - {fileID: 2100000, guid: 479a767a4cd468f4e9c508c93f98389e, type: 2}
+  - {fileID: 2100000, guid: 2e7cff25452334a43a91beedd66ead34, type: 2}
+  - {fileID: 2100000, guid: b65319562a8c5014486e59e2e014dcd3, type: 2}
 --- !u!1 &1978627091857433343
 GameObject:
   m_ObjectHideFlags: 0
