@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
         for(int i = 0; i < 2; i++)
         {
             rend = Hands[i].GetComponent<Renderer>();
-            rend.sharedMaterial = CorrespondingAvatarColor[AvatarNo];
+            rend.material = CorrespondingAvatarColor[AvatarNo];
 
         }
         /*
