@@ -5,7 +5,7 @@ using UnityEngine;
 public class HoldingRemoteChecker : MonoBehaviour
 {
     public SceneInfo sceneInfo;
-
+    /*
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Remote"))
@@ -23,5 +23,5 @@ public class HoldingRemoteChecker : MonoBehaviour
         }
         
     }
-
+    */
 }

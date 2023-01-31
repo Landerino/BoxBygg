@@ -58,26 +58,26 @@ extern void UITimeScript_NextQuarter_m6F0E85599106B56DE5B46C8B5281BBF142C2EB3D (
 extern void UITimeScript_UpdateText_mCB2DD0D3C5B7B43028A4A82E593D8E8B6A615B0A (void);
 // 0x00000017 System.Void UITimeScript::StartTime()
 extern void UITimeScript_StartTime_mE8B4D4C58A6D00D0ECB96CC1D127CC832F101CC0 (void);
-// 0x00000018 System.Void UITimeScript::StopTime()
+// 0x00000018 System.Void UITimeScript::StartTimeRPC()
+extern void UITimeScript_StartTimeRPC_m850D044D6D4B642D7981501D6008F078AC2D59FD (void);
+// 0x00000019 System.Void UITimeScript::StopTime()
 extern void UITimeScript_StopTime_mF91DE8D08317D88C6A6DF38D1A156AF379D28870 (void);
-// 0x00000019 System.Void UITimeScript::SkipNext()
+// 0x0000001A System.Void UITimeScript::StopTimeRPC()
+extern void UITimeScript_StopTimeRPC_m45F13E810A18E37D41EB9CC6B2570EDA68F070F4 (void);
+// 0x0000001B System.Void UITimeScript::SkipNext()
 extern void UITimeScript_SkipNext_m2841AFA4D0599416EFB5C8A5C16C515B978A7B2E (void);
-// 0x0000001A System.Void UITimeScript::SkipPrevious()
+// 0x0000001C System.Void UITimeScript::SkipPrevious()
 extern void UITimeScript_SkipPrevious_m93584E7CDE1CB0CE0B1B302A1ACFF3B3A9A1CF33 (void);
-// 0x0000001B System.Void UITimeScript::.ctor()
+// 0x0000001D System.Void UITimeScript::.ctor()
 extern void UITimeScript__ctor_mBB85E060C65FA1365BDF3889429BDAE3DDE30648 (void);
-// 0x0000001C System.Void HandSkin::Start()
+// 0x0000001E System.Void HandSkin::Start()
 extern void HandSkin_Start_m54937DDF779B51227A4BBD30C4F9A68F75924199 (void);
-// 0x0000001D System.Void HandSkin::setSkinColor(System.Int32)
+// 0x0000001F System.Void HandSkin::setSkinColor(System.Int32)
 extern void HandSkin_setSkinColor_mCD1E66C22388AC7521539A3C745BBF345978339A (void);
-// 0x0000001E System.Void HandSkin::UpdateHandSkin()
+// 0x00000020 System.Void HandSkin::UpdateHandSkin()
 extern void HandSkin_UpdateHandSkin_m36E9E51617F75DA6436A00FA5F1E039598BEA765 (void);
-// 0x0000001F System.Void HandSkin::.ctor()
+// 0x00000021 System.Void HandSkin::.ctor()
 extern void HandSkin__ctor_m0FB4FDF9D76101EB2DC570E614604008E0DBCBD5 (void);
-// 0x00000020 System.Void HoldingRemoteChecker::OnTriggerStay(UnityEngine.Collider)
-extern void HoldingRemoteChecker_OnTriggerStay_m0E57833D16A817A6DB132653BBAF0AEC48F24A21 (void);
-// 0x00000021 System.Void HoldingRemoteChecker::OnTriggerExit(UnityEngine.Collider)
-extern void HoldingRemoteChecker_OnTriggerExit_mC0DF0D8A20EF48381BCA386E994356A10054BBE6 (void);
 // 0x00000022 System.Void HoldingRemoteChecker::.ctor()
 extern void HoldingRemoteChecker__ctor_m67AB33238AD3EADF212A69D42D71566508F505C3 (void);
 // 0x00000023 System.Void InputData::InitializeInputDevices()
@@ -3441,7 +3441,9 @@ static Il2CppMethodPointer s_methodPointers[1702] =
 	UITimeScript_NextQuarter_m6F0E85599106B56DE5B46C8B5281BBF142C2EB3D,
 	UITimeScript_UpdateText_mCB2DD0D3C5B7B43028A4A82E593D8E8B6A615B0A,
 	UITimeScript_StartTime_mE8B4D4C58A6D00D0ECB96CC1D127CC832F101CC0,
+	UITimeScript_StartTimeRPC_m850D044D6D4B642D7981501D6008F078AC2D59FD,
 	UITimeScript_StopTime_mF91DE8D08317D88C6A6DF38D1A156AF379D28870,
+	UITimeScript_StopTimeRPC_m45F13E810A18E37D41EB9CC6B2570EDA68F070F4,
 	UITimeScript_SkipNext_m2841AFA4D0599416EFB5C8A5C16C515B978A7B2E,
 	UITimeScript_SkipPrevious_m93584E7CDE1CB0CE0B1B302A1ACFF3B3A9A1CF33,
 	UITimeScript__ctor_mBB85E060C65FA1365BDF3889429BDAE3DDE30648,
@@ -3449,8 +3451,6 @@ static Il2CppMethodPointer s_methodPointers[1702] =
 	HandSkin_setSkinColor_mCD1E66C22388AC7521539A3C745BBF345978339A,
 	HandSkin_UpdateHandSkin_m36E9E51617F75DA6436A00FA5F1E039598BEA765,
 	HandSkin__ctor_m0FB4FDF9D76101EB2DC570E614604008E0DBCBD5,
-	HoldingRemoteChecker_OnTriggerStay_m0E57833D16A817A6DB132653BBAF0AEC48F24A21,
-	HoldingRemoteChecker_OnTriggerExit_mC0DF0D8A20EF48381BCA386E994356A10054BBE6,
 	HoldingRemoteChecker__ctor_m67AB33238AD3EADF212A69D42D71566508F505C3,
 	InputData_InitializeInputDevices_mA8CCB2C7B1CC3F4C3CA0E0257FB950C938A9320E,
 	InputData_InitializeInputDevice_m902D47046B4D7FEBB46FE25FCBADD438443E2401,
@@ -5151,11 +5151,11 @@ static const int32_t s_InvokerIndices[1702] =
 	5265,
 	5265,
 	5265,
+	5265,
+	5265,
 	4163,
 	5265,
 	5265,
-	4186,
-	4186,
 	5265,
 	5265,
 	2396,

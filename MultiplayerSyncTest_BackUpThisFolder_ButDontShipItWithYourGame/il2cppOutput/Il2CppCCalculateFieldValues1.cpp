@@ -33878,30 +33878,32 @@ struct UIPointer_t1653AB5BECA8E32DC27B1A3B4107E62950F21118  : public MonoBehavio
 // UITimeScript
 struct UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// Photon.Pun.PhotonView UITimeScript::view
+	PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* ___view_4;
 	// TMPro.TextMeshProUGUI UITimeScript::Ytext
-	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___Ytext_4;
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___Ytext_5;
 	// TMPro.TextMeshProUGUI UITimeScript::Qtext
-	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___Qtext_5;
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___Qtext_6;
 	// UnityEngine.UI.Image UITimeScript::TimeBar
-	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___TimeBar_6;
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___TimeBar_7;
 	// UnityEngine.GameObject UITimeScript::butnJoin
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___butnJoin_7;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___butnJoin_8;
 	// UnityEngine.GameObject UITimeScript::butnStart
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___butnStart_8;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___butnStart_9;
 	// UnityEngine.GameObject UITimeScript::butnStop
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___butnStop_9;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___butnStop_10;
 	// System.Int32 UITimeScript::Date
-	int32_t ___Date_10;
+	int32_t ___Date_11;
 	// System.Single UITimeScript::desiredDuration
-	float ___desiredDuration_11;
+	float ___desiredDuration_12;
 	// System.Single UITimeScript::elapsedTime
-	float ___elapsedTime_12;
+	float ___elapsedTime_13;
 	// System.Single UITimeScript::FillWant
-	float ___FillWant_13;
+	float ___FillWant_14;
 	// System.Boolean UITimeScript::TimerOn
-	bool ___TimerOn_14;
+	bool ___TimerOn_15;
 	// System.Int32 UITimeScript::Quarter
-	int32_t ___Quarter_15;
+	int32_t ___Quarter_16;
 };
 
 // Photon.Pun.Demo.Cockpit.UserIdField
@@ -40283,9 +40285,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3930[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3931[2] = 
 {
 	static_cast<int32_t>(offsetof(SceneInfo_tC4A3002977FAC0450F8B2EFAEAB1FF856F85126A, ___playerSkinNo_4)),static_cast<int32_t>(offsetof(SceneInfo_tC4A3002977FAC0450F8B2EFAEAB1FF856F85126A, ___HoldingRemote_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3932[12] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3932[13] = 
 {
-	static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___Ytext_4)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___Qtext_5)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___TimeBar_6)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___butnJoin_7)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___butnStart_8)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___butnStop_9)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___Date_10)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___desiredDuration_11)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___elapsedTime_12)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___FillWant_13)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___TimerOn_14)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___Quarter_15)),};
+	static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___view_4)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___Ytext_5)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___Qtext_6)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___TimeBar_7)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___butnJoin_8)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___butnStart_9)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___butnStop_10)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___Date_11)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___desiredDuration_12)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___elapsedTime_13)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___FillWant_14)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___TimerOn_15)),static_cast<int32_t>(offsetof(UITimeScript_tBF2A1EA2940D19E565C03FBE920519C9C1D2660E, ___Quarter_16)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3933[3] = 
 {
 	static_cast<int32_t>(offsetof(HandSkin_tD846888BEA3095737D1F3B6A172F767659B6AE65, ___sceneInfo_4)),static_cast<int32_t>(offsetof(HandSkin_tD846888BEA3095737D1F3B6A172F767659B6AE65, ___skinColorArray_5)),static_cast<int32_t>(offsetof(HandSkin_tD846888BEA3095737D1F3B6A172F767659B6AE65, ___rend_6)),};

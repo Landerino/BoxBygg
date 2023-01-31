@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Photon.Pun;
 
 public class UITimeScript : MonoBehaviour
 {
-
+    PhotonView view;
     public TextMeshProUGUI Ytext;
     public TextMeshProUGUI Qtext;
     public Image TimeBar;
@@ -23,6 +24,7 @@ public class UITimeScript : MonoBehaviour
 
     void Start()
     {
+        view = GetComponent<PhotonView>();
         butnJoin.SetActive(false);
         Quarter = 1;
         Date = 2024;
@@ -32,7 +34,7 @@ public class UITimeScript : MonoBehaviour
         Ytext.text = Date.ToString();
     }
 
-
+    
     void Update()
     {
         if (TimerOn)
@@ -91,24 +93,35 @@ public class UITimeScript : MonoBehaviour
         Qtext.text = ("Q" + Quarter.ToString());
         Ytext.text = Date.ToString();
     }
+
+    
     public void StartTime()
+    {
+        
+        view.RPC("StartTimeRPC", RpcTarget.All);
+    }
+
+    [PunRPC]
+    private void StartTimeRPC()
     {
         if (Date == 2032 && Quarter < 4 || Date < 2032)
         {
             TimerOn = true;
         }
-        /*
-        if (!TimerOn)
-            TimerOn = true;
-        else TimerOn = false;
-        */
     }
     public void StopTime()
     {
-        TimerOn = false;
+        view.RPC("StopTimeRPC", RpcTarget.All);
         //FillWant = TimeBar.fillAmount;
         //elapsedTime 
     }
+
+    [PunRPC]
+    private void StopTimeRPC() 
+    { 
+        TimerOn = false; 
+    }
+
     public void SkipNext()
     {
         if (Date == 2032 && Quarter < 4 || Date < 2032)
