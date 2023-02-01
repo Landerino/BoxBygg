@@ -14,6 +14,7 @@ public class UITimeScript : MonoBehaviour
     public GameObject butnJoin;
     public GameObject butnStart;
     public GameObject butnStop;
+    public Animator Anim;
 
     private int Date;
     private float desiredDuration = 10f;
@@ -107,6 +108,8 @@ public class UITimeScript : MonoBehaviour
         if (Date == 2032 && Quarter < 4 || Date < 2032)
         {
             TimerOn = true;
+            Anim.Play("TerrainMeshAnim");
+            Time.timeScale = 1;
         }
     }
     public void StopTime()
@@ -119,10 +122,17 @@ public class UITimeScript : MonoBehaviour
     [PunRPC]
     private void StopTimeRPC() 
     { 
-        TimerOn = false; 
+        TimerOn = false;
+        Time.timeScale = 0;
     }
 
     public void SkipNext()
+    {
+        view.RPC("SkipNextRPC", RpcTarget.All);
+    }
+
+    [PunRPC]
+    private void SkipNextRPC()
     {
         if (Date == 2032 && Quarter < 4 || Date < 2032)
         {
@@ -143,7 +153,14 @@ public class UITimeScript : MonoBehaviour
             }
         }
     }
+
     public void SkipPrevious()
+    {
+        view.RPC("SkipPreviousRPC", RpcTarget.All);
+    }
+
+    [PunRPC]
+    private void SkipPreviousRPC()
     {
         butnJoin.SetActive(false);
         if (Date == 2024 && Quarter > 1|| Date > 2024)

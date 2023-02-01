@@ -44,6 +44,8 @@ MonoBehaviour:
   - StartTime2
   - StartTimeRPC
   - StopTimeRPC
+  - SkipNextRPC
+  - SkipPreviousRPC
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
