@@ -46,6 +46,7 @@ MonoBehaviour:
   - StopTimeRPC
   - SkipNextRPC
   - SkipPreviousRPC
+  - SwitchTerrainRPC
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

@@ -9,6 +9,7 @@ public class UITimeScript : MonoBehaviour
 {
     PhotonView view;
     public TextMeshProUGUI Ytext;
+    public TextMeshProUGUI Ytext2;
     public TextMeshProUGUI Qtext;
     public Image TimeBar;
     public GameObject butnJoin;
@@ -33,6 +34,7 @@ public class UITimeScript : MonoBehaviour
         FillWant = 1;
         TimeBar.fillAmount = 0;
         Ytext.text = Date.ToString();
+        Ytext2.text = Date.ToString();
     }
 
     
@@ -93,6 +95,7 @@ public class UITimeScript : MonoBehaviour
     {
         Qtext.text = ("Q" + Quarter.ToString());
         Ytext.text = Date.ToString();
+        Ytext2.text = Date.ToString();
     }
 
     
