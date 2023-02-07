@@ -9,11 +9,15 @@ public class screenManager : MonoBehaviour
 {
     PhotonView Pview;
 
+    public UITimeScript timeScript;
+    
     public TextMeshProUGUI PlaceText;
     public GameObject Storobj;
     public GameObject Riddarobj;
+    public GameObject Nextbtn;
+    public GameObject Previousbtn;
 
-    private int Placeint;
+    public int Placeint;
     
     void Start()
     {
@@ -30,19 +34,27 @@ public class screenManager : MonoBehaviour
     [PunRPC]
     private void SwitchTerrainRPC()
     {
-        if(Placeint == 1)
+        timeScript.StopTime();
+        timeScript.TimeBar.fillAmount = 0;
+        if (Placeint == 1)
         {
+            timeScript.ChangeDate();
             Storobj.SetActive(false);
             Riddarobj.SetActive(true);
             Placeint = 2;
-            PlaceText.text = ("Storängen");
+            PlaceText.text = ("Tempelriddaren");
+            Nextbtn.SetActive(false);
+            Previousbtn.SetActive(false);
         }
         else if(Placeint == 2)
         {
+            timeScript.ChangeDate();
             Riddarobj.SetActive(false);
             Storobj.SetActive(true);
             Placeint = 1; 
-            PlaceText.text = ("Tempelriddaren");
+            PlaceText.text = ("Storängen");
+            Nextbtn.SetActive(true);
+            Previousbtn.SetActive(true);
         }
     }
 

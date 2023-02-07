@@ -7,6 +7,8 @@ using Photon.Pun;
 
 public class UITimeScript : MonoBehaviour
 {
+    public screenManager screen;
+
     PhotonView view;
     public TextMeshProUGUI Ytext;
     public TextMeshProUGUI Ytext2;
@@ -26,6 +28,7 @@ public class UITimeScript : MonoBehaviour
 
     void Start()
     {
+        Anim.updateMode = AnimatorUpdateMode.UnscaledTime;
         view = GetComponent<PhotonView>();
         butnJoin.SetActive(false);
         Quarter = 1;
@@ -36,7 +39,6 @@ public class UITimeScript : MonoBehaviour
         Ytext.text = Date.ToString();
         Ytext2.text = Date.ToString();
     }
-
     
     void Update()
     {
@@ -45,22 +47,6 @@ public class UITimeScript : MonoBehaviour
             elapsedTime += Time.deltaTime;
             float percentageComplete = elapsedTime / desiredDuration;
             TimeBar.fillAmount = Mathf.Lerp(0, FillWant, percentageComplete);
-            /*
-            if (TimeBar.fillAmount < 0.29)
-            {
-                Date = 2021;
-            }
-            else if (TimeBar.fillAmount > 0.29 && TimeBar.fillAmount < 0.493)
-            {
-                Date = 2022;
-            }
-            else if (TimeBar.fillAmount > 0.493 && TimeBar.fillAmount < 0.71)
-            {
-                Date = 2023;
-            }
-            else 
-            { Date = 2024; }
-            */
         }
         if (TimeBar.fillAmount == 1)
         {
@@ -89,7 +75,6 @@ public class UITimeScript : MonoBehaviour
             UpdateText();
         }
         else UpdateText();
-        
     }
     private void UpdateText()
     {
@@ -97,11 +82,9 @@ public class UITimeScript : MonoBehaviour
         Ytext.text = Date.ToString();
         Ytext2.text = Date.ToString();
     }
-
     
     public void StartTime()
     {
-        
         view.RPC("StartTimeRPC", RpcTarget.All);
     }
 
@@ -112,7 +95,9 @@ public class UITimeScript : MonoBehaviour
         {
             TimerOn = true;
             Anim.Play("TerrainMeshAnim");
-            Time.timeScale = 1;
+            Anim.speed = 1;
+            butnStart.SetActive(false);
+            butnStop.SetActive(true);
         }
     }
     public void StopTime()
@@ -124,9 +109,11 @@ public class UITimeScript : MonoBehaviour
 
     [PunRPC]
     private void StopTimeRPC() 
-    { 
+    {
+        butnStart.SetActive(true);
+        butnStop.SetActive(false);
         TimerOn = false;
-        Time.timeScale = 0;
+        Anim.speed = 0;
     }
 
     public void SkipNext()
@@ -154,6 +141,29 @@ public class UITimeScript : MonoBehaviour
                 elapsedTime = 0;
                 UpdateText();
             }
+        }
+    }
+
+    public void ChangeDate()
+    {
+        view.RPC("ChangeDateRPC", RpcTarget.All);
+    }
+
+    [PunRPC]
+    private void ChangeDateRPC()
+    {
+        if(screen.Placeint == 1)
+        {
+            Date = 2019;
+            butnStart.SetActive(false);
+            Quarter = 1;
+            UpdateText();
+        }
+        else if(screen.Placeint == 2)
+        {
+            Date = 2024;
+            Quarter = 1;
+            UpdateText();
         }
     }
 
