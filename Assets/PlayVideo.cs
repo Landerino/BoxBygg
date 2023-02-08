@@ -1,21 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class PlayVideo : MonoBehaviour
 {
+    PhotonView Sview;
+
     private bool isOn;
     public GameObject Screen;
     public GameObject text;
 
     void Start()
     {
+        Sview = GetComponent<PhotonView>();
         isOn = false;
         Screen.SetActive(false);
         text.SetActive(true);
     }
 
     public void TurnOnOff()
+    {
+        Sview.RPC("TurnOnOffRPC", RpcTarget.All);
+    }
+
+    [PunRPC]
+    private void TurnOnOffRPC()
     {
         if (!isOn)
         {
@@ -27,6 +37,7 @@ public class PlayVideo : MonoBehaviour
         {
             Screen.SetActive(false);
             text.SetActive(true);
+            isOn = false;
         }
     }
 
