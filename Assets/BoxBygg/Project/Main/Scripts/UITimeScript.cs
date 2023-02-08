@@ -154,13 +154,14 @@ public class UITimeScript : MonoBehaviour
     {
         if(screen.Placeint == 1)
         {
-            Date = 2019;
+            Date = 2025;
             butnStart.SetActive(false);
             Quarter = 1;
             UpdateText();
         }
         else if(screen.Placeint == 2)
         {
+            elapsedTime = 0;
             Date = 2024;
             Quarter = 1;
             UpdateText();
