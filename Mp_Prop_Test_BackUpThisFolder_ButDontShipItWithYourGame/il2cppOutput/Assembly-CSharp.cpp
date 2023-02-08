@@ -576,6 +576,8 @@ struct InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140;
 struct InsideLobbyCheck_tD5E6A780C370C8E0195A6866CBF9AC9704F7E80E;
 // UnityEngine.Events.InvokableCallList
 struct InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382;
+// JoinButton
+struct JoinButton_t64A37D95A79DED93F03EDEDD7604016125243EF9;
 // UnityEngine.UI.LayoutElement
 struct LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A;
 // Photon.Realtime.LoadBalancingClient
@@ -5680,6 +5682,11 @@ struct InputData_t3AD2299AB1B153FDA065E2CDA0F0DCF34C03C7DE  : public MonoBehavio
 	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ____leftController_5;
 	// UnityEngine.XR.InputDevice InputData::_HMD
 	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ____HMD_6;
+};
+
+// JoinButton
+struct JoinButton_t64A37D95A79DED93F03EDEDD7604016125243EF9  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
 };
 
 // LoadLevel
@@ -11724,6 +11731,39 @@ IL_001e:
 }
 // System.Void RemoteScript::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteScript__ctor_mB73CD227F70EAAF53EFCAF70B1064D177A6256D4 (RemoteScript_t06D6975314DABEBBD543A1A12E00D927FB953464* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void JoinButton::LoadScene()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JoinButton_LoadScene_mCB51E9E547F2BF75B5D5233054E1331CB697AA3A (JoinButton_t64A37D95A79DED93F03EDEDD7604016125243EF9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PhotonNetwork_tBF04D378B56DDA80F9DB8E08DF87D5B532C22B99_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// PhotonNetwork.LoadLevel(2);
+		il2cpp_codegen_runtime_class_init_inline(PhotonNetwork_tBF04D378B56DDA80F9DB8E08DF87D5B532C22B99_il2cpp_TypeInfo_var);
+		PhotonNetwork_LoadLevel_m2DFDDBF54E17F875F9A30EFB459D7AE68AD865B7(2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void JoinButton::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JoinButton__ctor_m943BAF70C956E5C93A1810C208A67E7F0D768698 (JoinButton_t64A37D95A79DED93F03EDEDD7604016125243EF9* __this, const RuntimeMethod* method) 
 {
 	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
