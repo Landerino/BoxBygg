@@ -199,6 +199,7 @@ UnityEngine.Animator::Update
 UnityEngine.Animator::get_deltaPosition_Injected
 UnityEngine.Animator::set_applyRootMotion
 UnityEngine.Animator::set_speed
+UnityEngine.Animator::set_updateMode
 UnityEngine.Animator::get_runtimeAnimatorController
 UnityEngine.Animator::GetBoneTransformInternal
 UnityEngine.Application::get_isBatchMode

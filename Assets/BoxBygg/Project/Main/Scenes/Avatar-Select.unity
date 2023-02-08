@@ -676,7 +676,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 887198781}
         m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
         m_MethodName: SetAvatar
         m_Mode: 3
@@ -985,7 +985,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 887198781}
         m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
         m_MethodName: SetAvatar
         m_Mode: 3
@@ -1436,7 +1436,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 887198781}
         m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
         m_MethodName: SetAvatar
         m_Mode: 3
@@ -2354,7 +2354,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 887198781}
         m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
         m_MethodName: SetAvatar
         m_Mode: 3
@@ -4838,7 +4838,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 887198781}
         m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
         m_MethodName: SetAvatar
         m_Mode: 3
@@ -5182,7 +5182,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 887198781}
         m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
         m_MethodName: SetAvatar
         m_Mode: 3
