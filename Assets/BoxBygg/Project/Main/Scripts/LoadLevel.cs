@@ -9,8 +9,10 @@ public class LoadLevel : MonoBehaviour
 {
     public Text Name;
     
-
     ExitGames.Client.Photon.Hashtable playerAvatar = new ExitGames.Client.Photon.Hashtable();
+
+    public bool nameInputed;
+    public bool AvatarSelected;
 
     public void LoadMPLobby()
     {
@@ -24,4 +26,29 @@ public class LoadLevel : MonoBehaviour
         PhotonNetwork.SetPlayerCustomProperties(playerAvatar);
     }
 
+    private void Start()
+    {
+        nameInputed = false;
+        AvatarSelected = false;
+    }
+
+    public void UpdateName()
+    {
+        nameInputed = true;
+        StartChecker();
+    }
+
+    public void UpdateAvatar()
+    {
+        AvatarSelected = true;
+        StartChecker();
+    }
+
+    void StartChecker()
+    {
+        if(nameInputed && AvatarSelected)
+        {
+            gameObject.SetActive(true);
+        }
+    }
 }
