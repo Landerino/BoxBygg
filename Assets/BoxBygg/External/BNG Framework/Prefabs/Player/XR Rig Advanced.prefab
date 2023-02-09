@@ -2043,6 +2043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3120830488781411411}
   - component: {fileID: 7353728195102222803}
+  - component: {fileID: 3927616920535083671}
   m_Layer: 0
   m_Name: hands:Rhand
   m_TagString: Untagged
@@ -2143,6 +2144,32 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0072079375, y: -0.0359642, z: -0.06280203}
     m_Extent: {x: 0.07287095, y: 0.092022635, z: 0.106135294}
   m_DirtyAABB: 0
+--- !u!114 &3927616920535083671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81900354320953876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05ef266f4bd95b4ab7556d5aeb9b614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneInfo: {fileID: 11400000, guid: c3947af38fec8d34ab5a0cde0ef121d0, type: 2}
+  skinColorArray:
+  - serializedVersion: 2
+    rgba: 4279936000
+  - serializedVersion: 2
+    rgba: 4294959360
+  - serializedVersion: 2
+    rgba: 4294926592
+  - serializedVersion: 2
+    rgba: 4279640539
+  - serializedVersion: 2
+    rgba: 4290266106
+  - serializedVersion: 2
+    rgba: 4291756200
 --- !u!1 &83676474557043252
 GameObject:
   m_ObjectHideFlags: 0
@@ -5724,7 +5751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &474957484260976804
 Transform:
   m_ObjectHideFlags: 0
@@ -5788,7 +5815,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 612891326424754169}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 821cfb7c3eab3764bbb57d764c6e26d6, type: 3}
   m_Name: 
@@ -37874,7 +37901,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &796208662713435890
 Transform:
   m_ObjectHideFlags: 0
@@ -37938,7 +37965,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5230066462873498598}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 821cfb7c3eab3764bbb57d764c6e26d6, type: 3}
   m_Name: 
@@ -44589,6 +44616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255300204730174720}
   - component: {fileID: 5282993775396383917}
+  - component: {fileID: 8055196981554198558}
   m_Layer: 0
   m_Name: hands:Rhand
   m_TagString: Untagged
@@ -44689,6 +44717,32 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0072079375, y: -0.0359642, z: -0.06280203}
     m_Extent: {x: 0.07287095, y: 0.092022635, z: 0.106135294}
   m_DirtyAABB: 0
+--- !u!114 &8055196981554198558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6210609673970021992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05ef266f4bd95b4ab7556d5aeb9b614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneInfo: {fileID: 11400000, guid: c3947af38fec8d34ab5a0cde0ef121d0, type: 2}
+  skinColorArray:
+  - serializedVersion: 2
+    rgba: 4279936000
+  - serializedVersion: 2
+    rgba: 4294959360
+  - serializedVersion: 2
+    rgba: 4294926592
+  - serializedVersion: 2
+    rgba: 4279640539
+  - serializedVersion: 2
+    rgba: 4290266106
+  - serializedVersion: 2
+    rgba: 4291756200
 --- !u!1 &6216281178844722002
 GameObject:
   m_ObjectHideFlags: 0
@@ -64837,6 +64891,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green Gloves Right
       objectReference: {fileID: 0}
+    - target: {fileID: 7561735844013006471, guid: c2ba382097f06114c8ca184c7f00afaf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7601612243377398142, guid: c2ba382097f06114c8ca184c7f00afaf,
         type: 3}
       propertyPath: m_Layer
@@ -65472,6 +65531,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Green Gloves Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 246384007524380218, guid: 79777ae0bfe4829409a6a8db9a83b871,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 585613497604486272, guid: 79777ae0bfe4829409a6a8db9a83b871,
         type: 3}
