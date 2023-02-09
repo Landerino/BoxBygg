@@ -155,8 +155,8 @@ public class UITimeScript : MonoBehaviour
         if(screen.Placeint == 1)
         {
             Date = 2025;
-            butnStart.SetActive(false);
             Quarter = 1;
+            butnStart.SetActive(false);
             UpdateText();
         }
         else if(screen.Placeint == 2)
@@ -164,6 +164,7 @@ public class UITimeScript : MonoBehaviour
             elapsedTime = 0;
             Date = 2024;
             Quarter = 1;
+            butnStart.SetActive(true);
             UpdateText();
         }
     }
