@@ -26,6 +26,7 @@ public class UITimeScript : MonoBehaviour
     private bool TimerOn;
     private int Quarter;
 
+    //All values and components set to default entry value or correct component
     void Start()
     {
         Anim.updateMode = AnimatorUpdateMode.UnscaledTime;
@@ -40,6 +41,9 @@ public class UITimeScript : MonoBehaviour
         Ytext2.text = Date.ToString();
     }
     
+    //TimerOn is a bool when set to true starts the date and quarter time also the time bar to show progression of each quarter. 
+    //fillAmount for TimeBar is used to refresh the progression bar whenever it hits 1 (100% filled) adding 1 to the current quarter and nextquarter function is called to update the text shown, starting it again at 0, gradually making its way back up again until - 
+    //until the date reaches 2032 in the 4th quarter, activating the join button
     void Update()
     {
         if (TimerOn)
@@ -54,7 +58,6 @@ public class UITimeScript : MonoBehaviour
             elapsedTime = 0;
             Quarter++;
             NextQuarter();
-            //butnJoin.SetActive(true);
         }
         else if(Date == 2032 && Quarter == 4)
         {
@@ -63,9 +66,10 @@ public class UITimeScript : MonoBehaviour
             butnStop.SetActive(false);
             butnJoin.SetActive(true);
         }
-            //else butnJoin.SetActive(false);
     }
 
+    //The two following functions are not needed to be synced online because everyone sees the timebar the same with the same values
+    //This functon itself sets the correct dates and calls upon the function update text to refresh the numbers seen
     public void NextQuarter()
     {
         if (Quarter == 5)
@@ -76,6 +80,7 @@ public class UITimeScript : MonoBehaviour
         }
         else UpdateText();
     }
+    //Here the values are made into a string from an int and refreshes the showing UI
     private void UpdateText()
     {
         Qtext.text = ("Q" + Quarter.ToString());
@@ -83,11 +88,13 @@ public class UITimeScript : MonoBehaviour
         Ytext2.text = Date.ToString();
     }
     
+    //Called when startbutton is pressed by any user, Sending a call via rpc to all targets (users) 
     public void StartTime()
     {
         view.RPC("StartTimeRPC", RpcTarget.All);
     }
 
+    //The function to answer the request recieved by all users. Answers with setting the Timer Bool to true (starting the time), if the date is invalid the function doesnt do anything
     [PunRPC]
     private void StartTimeRPC()
     {
@@ -100,6 +107,8 @@ public class UITimeScript : MonoBehaviour
             butnStop.SetActive(true);
         }
     }
+
+    //Called when stopbutton is pressed by any user, Sending a call via rpc to all targets (users) 
     public void StopTime()
     {
         view.RPC("StopTimeRPC", RpcTarget.All);
@@ -107,6 +116,7 @@ public class UITimeScript : MonoBehaviour
         //elapsedTime 
     }
 
+    //The function to answer the request recieved by all users. Answers by stopping the animator speed component on the 
     [PunRPC]
     private void StopTimeRPC() 
     {
@@ -116,11 +126,13 @@ public class UITimeScript : MonoBehaviour
         Anim.speed = 0;
     }
 
+    //Called when skip is pressed by any user, Sending a call via rpc to all targets (users) 
     public void SkipNext()
     {
         view.RPC("SkipNextRPC", RpcTarget.All);
     }
 
+    //Recieved by all users. Ultimately skips to the next quarter adding the correct date and resseting the time bar to match a new quarters beginning. 
     [PunRPC]
     private void SkipNextRPC()
     {
@@ -144,11 +156,13 @@ public class UITimeScript : MonoBehaviour
         }
     }
 
+    //Called when switching project, Sending a call via rpc to all targets (users)
     public void ChangeDate()
     {
         view.RPC("ChangeDateRPC", RpcTarget.All);
     }
 
+    //Recieved by all users, Changing the date and deactivating/activating the start animation button because no animation exists for tempelriddaren. Sends UpdateText function to sync the date with the new project
     [PunRPC]
     private void ChangeDateRPC()
     {
@@ -174,11 +188,12 @@ public class UITimeScript : MonoBehaviour
         view.RPC("SkipPreviousRPC", RpcTarget.All);
     }
 
+    //Function to skip to preious quarter with parameters to check if the time is within the date the project is built, refreshes dates.
     [PunRPC]
     private void SkipPreviousRPC()
     {
         butnJoin.SetActive(false);
-        if (Date == 2024 && Quarter > 1|| Date > 2024)
+        if (Date == 2024 && Quarter > 1 || Date > 2024)
         {
             if (Quarter == 1)
             {
