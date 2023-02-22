@@ -8,14 +8,17 @@ public class TerrainNetworkItems : MonoBehaviour
     public RotatingObjectSync Rts;
 
     [PunRPC]
-    void ConnectRPC()
+    void ConnectRPC(int ppL)
     {
-        Rts.ppL.gameObject.transform.SetParent(this.transform);
+        PhotonView.Find(ppL).transform.SetParent(this.transform);
+        Destroy(PhotonView.Find(ppL).gameObject.GetComponent<PhotonView>());
+        //ppL.transform.SetParent(this.transform);
     }
 
     [PunRPC]
-    void DisconnectRPC()
+    void DisconnectRPC(int ppL)
     {
-        Rts.ppL.gameObject.transform.SetParent(null);
+        PhotonView.Find(ppL).transform.SetParent(null);
+        //ppL.transform.SetParent(null);
     }
 }

@@ -78,10 +78,10 @@ extern void RotatingObjectSync_OnCollisionExit_m8A31570F0BA08102942AAF49BE57440D
 extern void RotatingObjectSync__ctor_m1338080FF202CD7D15246916B7FA9CEDEF358F2E (void);
 // 0x00000021 System.Void SceneInfo::.ctor()
 extern void SceneInfo__ctor_m3CE9159D3B9801C0581BC1A3ED681B8BED7F9908 (void);
-// 0x00000022 System.Void TerrainNetworkItems::ConnectRPC()
-extern void TerrainNetworkItems_ConnectRPC_m05897BBB4063809AB6912C131D3937CE2A94E930 (void);
-// 0x00000023 System.Void TerrainNetworkItems::DisconnectRPC()
-extern void TerrainNetworkItems_DisconnectRPC_m551FA5132A7049B501925636FA4BEFCE6FDFAD5E (void);
+// 0x00000022 System.Void TerrainNetworkItems::ConnectRPC(System.Int32)
+extern void TerrainNetworkItems_ConnectRPC_m61ECA14EC3B4C63F5E54B42D51696525732D93B1 (void);
+// 0x00000023 System.Void TerrainNetworkItems::DisconnectRPC(System.Int32)
+extern void TerrainNetworkItems_DisconnectRPC_m04B768E1765FD5DD8FF0EAE325DA50FF942525AB (void);
 // 0x00000024 System.Void TerrainNetworkItems::.ctor()
 extern void TerrainNetworkItems__ctor_m0FCC56F660AC9DCB6E7D7E72E3ADC43AC2F44B73 (void);
 // 0x00000025 System.Void UITimeScript::Start()
@@ -3515,8 +3515,8 @@ static Il2CppMethodPointer s_methodPointers[1734] =
 	RotatingObjectSync_OnCollisionExit_m8A31570F0BA08102942AAF49BE57440D51EBD88A,
 	RotatingObjectSync__ctor_m1338080FF202CD7D15246916B7FA9CEDEF358F2E,
 	SceneInfo__ctor_m3CE9159D3B9801C0581BC1A3ED681B8BED7F9908,
-	TerrainNetworkItems_ConnectRPC_m05897BBB4063809AB6912C131D3937CE2A94E930,
-	TerrainNetworkItems_DisconnectRPC_m551FA5132A7049B501925636FA4BEFCE6FDFAD5E,
+	TerrainNetworkItems_ConnectRPC_m61ECA14EC3B4C63F5E54B42D51696525732D93B1,
+	TerrainNetworkItems_DisconnectRPC_m04B768E1765FD5DD8FF0EAE325DA50FF942525AB,
 	TerrainNetworkItems__ctor_m0FCC56F660AC9DCB6E7D7E72E3ADC43AC2F44B73,
 	UITimeScript_Start_mBBCA1B666A6F5E7520D5E39650F779A02F756B89,
 	UITimeScript_Update_mFFC9080A7409BC871312964D22DD8ECA9E411174,
@@ -5252,8 +5252,8 @@ static const int32_t s_InvokerIndices[1734] =
 	4188,
 	5267,
 	5267,
-	5267,
-	5267,
+	4165,
+	4165,
 	5267,
 	5267,
 	5267,

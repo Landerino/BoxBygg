@@ -7,7 +7,7 @@ public class RotatingObjectSync : MonoBehaviour
 {
     PhotonView View;
     public GameObject terrain;
-    public Collision ppL;
+    private int ppL;
 
     private void Start()
     {
@@ -18,17 +18,19 @@ public class RotatingObjectSync : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Item"))
         {
-            ppL = other;
-            View.RPC("ConnectRPC", RpcTarget.All);
+            ppL = other.gameObject.GetComponent<PhotonView>().ViewID;
+            Debug.Log(ppL);
+            View.RPC("ConnectRPC", RpcTarget.All, ppL);
         }
     }
 
     private void OnCollisionExit(Collision other)
     {
-        if (ppL.gameObject.CompareTag("Item"))
+        if (other.gameObject.CompareTag("Item"))
         {
-            ppL = other;
-            View.RPC("DisconnectRPC", RpcTarget.All);
+            ppL = other.gameObject.GetComponent<PhotonView>().ViewID;
+            Debug.Log(ppL);
+            View.RPC("DisconnectRPC", RpcTarget.All, ppL);
         }
     }
 }

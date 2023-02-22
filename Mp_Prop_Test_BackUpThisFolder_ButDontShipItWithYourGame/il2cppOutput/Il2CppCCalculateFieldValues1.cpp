@@ -1230,8 +1230,6 @@ struct Climbable_tD3B8A518D1DC9867A259EAD3D2A45C07579AA4DF;
 struct Cluster_t5595EA6C934FFF87C09D64546BCBA4D2286D306B;
 // UnityEngine.Collider
 struct Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76;
-// UnityEngine.Collision
-struct Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0;
 // System.Globalization.CompareInfo
 struct CompareInfo_t1B1A6AC3486B570C76ABA52149C9BD4CD82F9E57;
 // System.Net.Comparer
@@ -32911,8 +32909,8 @@ struct RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7  : public Mo
 	PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* ___View_4;
 	// UnityEngine.GameObject RotatingObjectSync::terrain
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___terrain_5;
-	// UnityEngine.Collision RotatingObjectSync::ppL
-	Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0* ___ppL_6;
+	// System.Int32 RotatingObjectSync::ppL
+	int32_t ___ppL_6;
 };
 
 // BNG.SampleHandController
