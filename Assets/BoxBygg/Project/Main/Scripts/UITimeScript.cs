@@ -25,6 +25,8 @@ public class UITimeScript : MonoBehaviour
     private float FillWant;
     private bool TimerOn;
     private int Quarter;
+    private int TotalQuarters;
+    private int ElapsedQuarters;
 
     //All values and components set to default entry value or correct component
     void Start()
@@ -39,6 +41,8 @@ public class UITimeScript : MonoBehaviour
         TimeBar.fillAmount = 0;
         Ytext.text = Date.ToString();
         Ytext2.text = Date.ToString();
+        TotalQuarters = 35;
+        ElapsedQuarters = 0;
     }
     
     //TimerOn is a bool when set to true starts the date and quarter time also the time bar to show progression of each quarter. 
@@ -56,6 +60,7 @@ public class UITimeScript : MonoBehaviour
         {
             TimeBar.fillAmount = 0;
             elapsedTime = 0;
+            ElapsedQuarters++;
             Quarter++;
             NextQuarter();
         }
@@ -138,6 +143,10 @@ public class UITimeScript : MonoBehaviour
     {
         if (Date == 2032 && Quarter < 4 || Date < 2032)
         {
+            ElapsedQuarters++;
+            float PlayTime = (float)ElapsedQuarters / TotalQuarters;
+            Debug.Log(PlayTime);
+            Anim.Play("TerrainMeshAnim", 0, PlayTime);
             if (Quarter == 4)
             {
                 Date++;
@@ -188,13 +197,17 @@ public class UITimeScript : MonoBehaviour
         view.RPC("SkipPreviousRPC", RpcTarget.All);
     }
 
-    //Function to skip to preious quarter with parameters to check if the time is within the date the project is built, refreshes dates.
+    //Function to skip to previous quarter with parameters to check if the time is within the date the project is built, refreshes dates.
     [PunRPC]
     private void SkipPreviousRPC()
     {
         butnJoin.SetActive(false);
         if (Date == 2024 && Quarter > 1 || Date > 2024)
         {
+            ElapsedQuarters--;
+            float PlayTime = (float)ElapsedQuarters / TotalQuarters;
+            Debug.Log(PlayTime);
+            Anim.Play("TerrainMeshAnim", 0, PlayTime);
             if (Quarter == 1)
             {
                 Date--;
@@ -211,5 +224,6 @@ public class UITimeScript : MonoBehaviour
                 UpdateText();
             }
         }
+        
     }
 }
