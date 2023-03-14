@@ -21,7 +21,7 @@ public class UITimeScript : MonoBehaviour
     public Animator Anim2;
 
     private int Date;
-    private float desiredDuration = 10f;
+    private float desiredDuration = 6f;
     private float elapsedTime;
     private float FillWant;
     private bool TimerOn;
@@ -44,8 +44,8 @@ public class UITimeScript : MonoBehaviour
         TimeBar.fillAmount = 0;
         Ytext.text = Date.ToString();
         Ytext2.text = Date.ToString();
-        TotalQuarters = 35;
-        TotalQuarters2 = 23;
+        TotalQuarters = 31;
+        TotalQuarters2 = 15;
         ElapsedQuarters = 0;
         ElapsedQuarters2 = 0;
     }
@@ -62,6 +62,7 @@ public class UITimeScript : MonoBehaviour
             TimeBar.fillAmount = Mathf.Lerp(0, FillWant, percentageComplete);
             if(Date == 2025 && Quarter == 3)
             {
+                ElapsedQuarters2 = 0;
                 Anim2.Play("Scene");
             }
         }
@@ -70,6 +71,7 @@ public class UITimeScript : MonoBehaviour
             TimeBar.fillAmount = 0;
             elapsedTime = 0;
             ElapsedQuarters++;
+            ElapsedQuarters2++;
             Quarter++;
             NextQuarter();
         }
@@ -155,10 +157,11 @@ public class UITimeScript : MonoBehaviour
     {
         if (Date == 2032 && Quarter < 4 || Date < 2032)
         {
-            if(Date >= 2025 && Date < 2031)
+            if(Date == 2025 && Quarter > 2 || Date > 2025)
             {
                 ElapsedQuarters2++;
                 float PlayTime2 = (float)ElapsedQuarters2 / TotalQuarters2;
+                Debug.Log(PlayTime2);
                 Anim2.Play("Scene", 0, PlayTime2);
             }
             ElapsedQuarters++;
@@ -222,7 +225,7 @@ public class UITimeScript : MonoBehaviour
         butnJoin.SetActive(false);
         if (Date == 2024 && Quarter > 1 || Date > 2024)
         {
-            if(Date >= 2025)
+            if(Date == 2025 && Quarter > 2 || Date > 2025)
             {
                 ElapsedQuarters2--;
                 float PlayTime2 = (float)ElapsedQuarters2 / TotalQuarters2;
