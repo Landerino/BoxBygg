@@ -309,7 +309,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &43382258
 Transform:
@@ -499,6 +499,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &82568375 stripped
@@ -588,6 +593,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -679,6 +689,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &97714860 stripped
@@ -768,6 +783,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -1343,6 +1363,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &127878552 stripped
@@ -1607,6 +1632,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -2338,6 +2368,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &244518940 stripped
@@ -3008,7 +3043,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
@@ -3079,6 +3114,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -3635,6 +3675,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -4357,7 +4402,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
@@ -4428,6 +4473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -4622,7 +4672,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &457619725
 Transform:
@@ -5173,6 +5223,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -5876,6 +5931,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &553180624 stripped
@@ -6058,6 +6118,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -6532,7 +6597,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &583363394
 Transform:
@@ -6738,7 +6803,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &597457128
 Transform:
@@ -7561,6 +7626,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &672582501 stripped
@@ -8043,6 +8113,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &728747657 stripped
@@ -8133,7 +8208,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &741717923
 Transform:
@@ -8622,7 +8697,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795199409}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: -0.00020364532}
-  m_LocalPosition: {x: -4.254, y: 1.091, z: 8.951}
+  m_LocalPosition: {x: -4.254, y: 1.091, z: 8.958}
   m_LocalScale: {x: 0.42, y: 0.297, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9432,6 +9507,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &876946269 stripped
@@ -10150,6 +10230,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &948127605 stripped
@@ -10248,7 +10333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962599758}
   m_LocalRotation: {x: 0.0000007748602, y: -0.0000000052922426, z: -1, w: -0.0000004899564}
-  m_LocalPosition: {x: -4.254, y: 0.79499996, z: 8.951}
+  m_LocalPosition: {x: -4.254, y: 0.79499996, z: 8.958}
   m_LocalScale: {x: 0.42, y: 0.297, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10846,6 +10931,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &1029588353 stripped
@@ -11213,6 +11303,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3019177192561550042, guid: fdce4ff7cd1c27d41b669032552f266b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -2784204069026213519, guid: fdce4ff7cd1c27d41b669032552f266b,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11259,6 +11354,11 @@ PrefabInstance:
       value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fdce4ff7cd1c27d41b669032552f266b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496348497048528570, guid: fdce4ff7cd1c27d41b669032552f266b,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -11433,7 +11533,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1056619989
 Transform:
@@ -11707,6 +11807,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &1073808514 stripped
@@ -11796,6 +11901,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -11909,7 +12019,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
@@ -11980,6 +12090,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -12708,6 +12823,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &1159860943 stripped
@@ -12923,6 +13043,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -13367,6 +13492,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &1238152124 stripped
@@ -13385,7 +13515,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
@@ -13456,6 +13586,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -13608,7 +13743,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1317549532
 Transform:
@@ -13959,7 +14094,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
@@ -14030,6 +14165,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -14266,6 +14406,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &1374605867 stripped
@@ -14355,6 +14500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -14739,7 +14889,7 @@ RectTransform:
   m_GameObject: {fileID: 1421218792}
   m_LocalRotation: {x: 0.000052157666, y: -0.000113484566, z: 1, w: 0.000033240594}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -0.005625369, y: 0.0134731475, z: 0.0018507186}
+  m_LocalScale: {x: -0.0076685026, y: 0.0134731475, z: 0.0018507186}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1867696976}
@@ -15221,6 +15371,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -15988,6 +16143,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &1503073150 stripped
@@ -16570,7 +16730,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
@@ -16641,6 +16801,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -16836,6 +17001,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &1582475791 stripped
@@ -16854,7 +17024,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
@@ -16925,6 +17095,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -17483,6 +17658,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &1654347586 stripped
@@ -17690,7 +17870,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -18070,7 +18250,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
         type: 3}
@@ -18141,6 +18321,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -18753,7 +18938,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765903907}
   m_LocalRotation: {x: 0.7071071, y: -0.00000035019403, z: -0.70710653, w: -0.0000003427099}
-  m_LocalPosition: {x: -4.893, y: 0.492, z: 8.324}
+  m_LocalPosition: {x: -4.929, y: 0.56900007, z: 8.324}
   m_LocalScale: {x: 0.42, y: 0.297, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19986,6 +20171,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &1893260183 stripped
@@ -20204,6 +20394,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blinds (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
@@ -21599,6 +21794,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blinds (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5e29aeb3b1c0b84ca4281858fd1ff17,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e29aeb3b1c0b84ca4281858fd1ff17, type: 3}
 --- !u!4 &1932822990 stripped
@@ -21711,7 +21911,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1966308263
 Transform:
@@ -21946,7 +22146,7 @@ RectTransform:
   m_GameObject: {fileID: 2015941855}
   m_LocalRotation: {x: -0.00011345772, y: -0.000051763138, z: -1, w: 0.00005226987}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 0.0059715267, y: 0.014309042, z: 0.0018507189}
+  m_LocalScale: {x: 0.008140385, y: 0.014309042, z: 0.0018507189}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1867696976}
@@ -22679,7 +22879,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2046262157}
   m_LocalRotation: {x: -0, y: 0.7071071, z: -0, w: 0.7071065}
-  m_LocalPosition: {x: -4.893, y: 0.788, z: 8.324}
+  m_LocalPosition: {x: -4.929, y: 0.865, z: 8.324}
   m_LocalScale: {x: 0.42, y: 0.297, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children: []
