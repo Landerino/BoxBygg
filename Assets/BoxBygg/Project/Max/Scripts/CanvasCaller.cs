@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CanvasCaller : MonoBehaviour
 {
+    public GameObject Sign;
     public GameObject Canvas;
     public bool IsShowing;
 
@@ -11,6 +12,7 @@ public class CanvasCaller : MonoBehaviour
     {
         Canvas.SetActive(false);
         IsShowing = false;
+        Sign.SetActive(false);
     }
 
     public void ShowHideCanvas()

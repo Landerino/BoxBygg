@@ -5,6 +5,7 @@ using Photon.Pun;
 
 public class TerrainNetworkItems : MonoBehaviour
 {
+    public GameObject Sign;
     public RotatingObjectSync Rts;
 
     [PunRPC]
@@ -21,4 +22,10 @@ public class TerrainNetworkItems : MonoBehaviour
         PhotonView.Find(ppL).transform.SetParent(null);
         //ppL.transform.SetParent(null);
     }
+
+    public void EnableSign()
+    {
+        Sign.SetActive(true);
+    }
+
 }

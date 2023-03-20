@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/BoxBygg/External/BNG Framework/Integrations/PUN/MPDemo.unity
     guid: 1ef291d4030a6484f8bc6edeae91dda9
-  - enabled: 1
-    path: "Assets/BoxBygg/External/BNG Framework/Integrations/PUN/Stor\xE4ngenMP.unity"
-    guid: 008d7502bde10814cbe7a8c8053866f7
   - enabled: 0
     path: Assets/BoxBygg/Project/Main/Scenes/Avatar-Select.unity
     guid: e820e67263e119345afed049c655b32d
