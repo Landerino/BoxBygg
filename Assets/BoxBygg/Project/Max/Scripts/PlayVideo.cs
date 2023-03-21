@@ -5,7 +5,7 @@ using Photon.Pun;
 
 public class PlayVideo : MonoBehaviour
 {
-    PhotonView Sview;
+    PhotonView Superview;
 
     private bool isOn;
     public GameObject Screen;
@@ -13,7 +13,7 @@ public class PlayVideo : MonoBehaviour
 
     void Start()
     {
-        Sview = GetComponent<PhotonView>();
+        Superview = GetComponent<PhotonView>();
         isOn = false;
         Screen.SetActive(false);
         text.SetActive(true);
@@ -21,7 +21,7 @@ public class PlayVideo : MonoBehaviour
 
     public void TurnOnOff()
     {
-        Sview.RPC("TurnOnOffRPC", RpcTarget.All);
+        Superview.RPC("TurnOnOffRPC", RpcTarget.All);
     }
 
     [PunRPC]
