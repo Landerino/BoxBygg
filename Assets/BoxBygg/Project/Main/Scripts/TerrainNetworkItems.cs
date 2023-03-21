@@ -27,5 +27,4 @@ public class TerrainNetworkItems : MonoBehaviour
     {
         Sign.SetActive(true);
     }
-
 }
