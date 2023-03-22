@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/BoxBygg/External/BNG Framework/Integrations/PUN/MPDemo.unity
     guid: 1ef291d4030a6484f8bc6edeae91dda9
   - enabled: 0
-    path: Assets/BoxBygg/Project/Main/Scenes/Main/Avatar-Select.unity
+    path: Assets/BoxBygg/Project/Main/Scenes/Main/OldAvatar.unity
     guid: e820e67263e119345afed049c655b32d
   - enabled: 0
     path: Assets/BoxBygg/Project/Main/Scenes/MultiplayerRoomTests/Stor.unity
