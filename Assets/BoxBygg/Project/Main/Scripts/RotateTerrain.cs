@@ -29,7 +29,7 @@ public class RotateTerrain : MonoBehaviour
     void TurnClockWiseRPC()
     {
         Rotationint += 90;
-        Quaternion current = terrain.transform.rotation;
+        //Quaternion current = terrain.transform.rotation;
         spin = true;
         //terrain.transform.rotation = Quaternion.Euler(-90, 0, Rotationint);
     }
@@ -43,7 +43,7 @@ public class RotateTerrain : MonoBehaviour
     void TurnAntiClockWiseRPC()
     {
         Rotationint -= 90;
-        Quaternion current = terrain.transform.rotation;
+        //Quaternion current = terrain.transform.rotation;
         spin = true;
         //terrain.transform.rotation = Quaternion.Euler(-90, 0, Rotationint);
     }
