@@ -8,6 +8,7 @@ TagManager:
   - Remote
   - Ball
   - Floor
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Player
   - Grabbable
   - Hand
-  - 
+  - Table
   - 
   - 
   - 
