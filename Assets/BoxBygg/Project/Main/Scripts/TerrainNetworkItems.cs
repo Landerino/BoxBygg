@@ -6,6 +6,7 @@ using Photon.Pun;
 public class TerrainNetworkItems : MonoBehaviour
 {
     public GameObject Sign;
+    public GameObject[] RoadInfos;
     public RotatingObjectSync Rts;
 
     [PunRPC]
@@ -26,5 +27,15 @@ public class TerrainNetworkItems : MonoBehaviour
     public void EnableSign()
     {
         Sign.SetActive(true);
+    }
+
+    public void showRoadInfo(int num)
+    {
+        RoadInfos[num].gameObject.SetActive(true);
+    }
+
+    public void hideRoadInfo(int num)
+    {
+        RoadInfos[num].gameObject.SetActive(false);
     }
 }
