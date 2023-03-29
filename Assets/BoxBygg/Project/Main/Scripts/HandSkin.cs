@@ -12,7 +12,7 @@ public class HandSkin : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
-        rend.material.SetColor("_BaseColor", skinColorArray[sceneInfo.playerSkinNo]);
+        rend.material.SetColor("_Color", skinColorArray[sceneInfo.playerSkinNo]);
     }
     
     public void setSkinColor(int number)
@@ -23,7 +23,7 @@ public class HandSkin : MonoBehaviour
 
     private void UpdateHandSkin()
     {
-        rend.material.SetColor("_BaseColor", skinColorArray[sceneInfo.playerSkinNo]);
+        rend.material.SetColor("_Color", skinColorArray[sceneInfo.playerSkinNo]);
     }
 
 }
