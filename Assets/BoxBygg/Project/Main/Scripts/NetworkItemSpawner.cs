@@ -5,15 +5,13 @@ using Photon.Pun;
 
 public class NetworkItemSpawner : MonoBehaviour
 {
-    public GameObject ItemToSpawn;
-
     public Vector3 SpawnItemHere;
     public Quaternion rotation;
 
-    public void SpawnItem()
+    public void SpawnItem(string Item)
     {
         Debug.Log("Spawned");
-        PhotonNetwork.InstantiateSceneObject("Shed", SpawnItemHere, rotation);
+        PhotonNetwork.InstantiateSceneObject(Item, SpawnItemHere, rotation);
     }
 
 }
