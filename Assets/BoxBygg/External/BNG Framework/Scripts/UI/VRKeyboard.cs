@@ -86,7 +86,7 @@ namespace BNG {
             // Apply the text change
             AttachedInputField.text = currentText;
 
-            PlayClickSound();
+            //PlayClickSound();
 
             // Keep Input Focused
             if (!AttachedInputField.isFocused) {

@@ -19,6 +19,7 @@ namespace BNG {
         public bool UseShiftKey = false;
 
         void Awake() {
+            //ToggleShift();
             thisButton = GetComponent<UnityEngine.UI.Button>();
             thisButtonText = GetComponentInChildren<UnityEngine.UI.Text>();
 
@@ -26,7 +27,6 @@ namespace BNG {
             if (thisButton != null) {                
                 thisButton.onClick.AddListener(OnKeyHit);
             }
-
             vrKeyboard = GetComponentInParent<VRKeyboard>();
         }
 
