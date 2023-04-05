@@ -16,7 +16,7 @@ public class UseShift : MonoBehaviour
     void Start()
     {
         Once = true;
-        Time.fixedDeltaTime = 0.2f;
+        //Time.fixedDeltaTime = 0.2f;
         Key.ToggleShift();
     }
 

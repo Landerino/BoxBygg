@@ -14,7 +14,6 @@ public class UITimeScript : MonoBehaviour
     public TextMeshProUGUI Ytext2;
     public TextMeshProUGUI Qtext;
     public Image TimeBar;
-    public GameObject butnJoin;
     public GameObject butnStart;
     public GameObject butnStop;
     public Animator Anim;
@@ -36,7 +35,6 @@ public class UITimeScript : MonoBehaviour
     {
         Anim.updateMode = AnimatorUpdateMode.UnscaledTime;
         view = GetComponent<PhotonView>();
-        butnJoin.SetActive(false);
         Quarter = 1;
         Date = 2024;
         TimerOn = false;
@@ -80,7 +78,6 @@ public class UITimeScript : MonoBehaviour
             TimerOn = false;
             butnStart.SetActive(true);
             butnStop.SetActive(false);
-            butnJoin.SetActive(true);
         }
         
     }
@@ -222,7 +219,6 @@ public class UITimeScript : MonoBehaviour
     [PunRPC]
     private void SkipPreviousRPC()
     {
-        butnJoin.SetActive(false);
         if (Date == 2024 && Quarter > 1 || Date > 2024)
         {
             if(Date == 2025 && Quarter > 2 || Date > 2025)
