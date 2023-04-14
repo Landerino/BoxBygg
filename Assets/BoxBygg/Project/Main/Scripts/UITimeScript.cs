@@ -16,6 +16,7 @@ public class UITimeScript : MonoBehaviour
     public Image TimeBar;
     public GameObject butnStart;
     public GameObject butnStop;
+    public GameObject LocationText;
     public Animator Anim;
     public Animator Anim2;
 
@@ -35,15 +36,15 @@ public class UITimeScript : MonoBehaviour
     {
         Anim.updateMode = AnimatorUpdateMode.UnscaledTime;
         view = GetComponent<PhotonView>();
-        Quarter = 1;
-        Date = 2024;
+        Quarter = 1 ;
+        Date = 2025;
         TimerOn = false;
         FillWant = 1;
         TimeBar.fillAmount = 0;
         Ytext.text = Date.ToString();
         Ytext2.text = Date.ToString();
         TotalQuarters = 31;
-        TotalQuarters2 = 15;
+        TotalQuarters2 = 13;
         ElapsedQuarters = 0;
         ElapsedQuarters2 = 0;
     }
@@ -53,6 +54,16 @@ public class UITimeScript : MonoBehaviour
     //until the date reaches 2032 in the 4th quarter, activating the join button
     void Update()
     {
+        if(Date < 2026 && Quarter < 3)
+        {
+            LocationText.SetActive(true);
+            Ytext.text = "";
+            Qtext.text = "";
+        }
+        else
+        {
+            LocationText.SetActive(false);
+        }
         if (TimerOn)
         {
             elapsedTime += Time.deltaTime;
@@ -62,6 +73,10 @@ public class UITimeScript : MonoBehaviour
             {
                 ElapsedQuarters2 = 0;
                 Anim2.Play("Scene");
+            }
+            else if(Date == 2025 && Quarter < 3)
+            {
+                Anim2.Play("Empty");
             }
         }
         if (TimeBar.fillAmount == 1)
@@ -97,9 +112,12 @@ public class UITimeScript : MonoBehaviour
     //Here the values are made into a string from an int and refreshes the showing UI
     private void UpdateText()
     {
-        Qtext.text = ("Q" + Quarter.ToString());
-        Ytext.text = Date.ToString();
-        Ytext2.text = Date.ToString();
+        if (Date > 2025 || Quarter > 2)
+        {
+            Qtext.text = ("Q" + Quarter.ToString());
+            Ytext.text = Date.ToString();
+            Ytext2.text = Date.ToString();
+        }
     }
     
     //Called when startbutton is pressed by any user, Sending a call via rpc to all targets (users) 
@@ -219,7 +237,7 @@ public class UITimeScript : MonoBehaviour
     [PunRPC]
     private void SkipPreviousRPC()
     {
-        if (Date == 2024 && Quarter > 1 || Date > 2024)
+        if (Date == 2025 && Quarter > 1 || Date > 2025)
         {
             if(Date == 2025 && Quarter > 2 || Date > 2025)
             {
@@ -227,7 +245,6 @@ public class UITimeScript : MonoBehaviour
                 float PlayTime2 = (float)ElapsedQuarters2 / TotalQuarters2;
                 Anim2.Play("Scene", 0, PlayTime2);
             }
-
             ElapsedQuarters--;
             float PlayTime = (float)ElapsedQuarters / TotalQuarters;
             Debug.Log(PlayTime);
@@ -248,6 +265,5 @@ public class UITimeScript : MonoBehaviour
                 UpdateText();
             }
         }
-        
     }
 }
