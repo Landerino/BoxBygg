@@ -21,7 +21,7 @@ public class UITimeScript : MonoBehaviour
     public Animator Anim2;
 
     private int Date;
-    private float desiredDuration = 6f;
+    private float desiredDuration = 5f;
     private float elapsedTime;
     private float FillWant;
     private bool TimerOn;
@@ -44,7 +44,7 @@ public class UITimeScript : MonoBehaviour
         Ytext.text = Date.ToString();
         Ytext2.text = Date.ToString();
         TotalQuarters = 31;
-        TotalQuarters2 = 13;
+        TotalQuarters2 = 26;
         ElapsedQuarters = 0;
         ElapsedQuarters2 = 0;
     }
@@ -239,7 +239,7 @@ public class UITimeScript : MonoBehaviour
     {
         if (Date == 2025 && Quarter > 1 || Date > 2025)
         {
-            if(Date == 2025 && Quarter > 2 || Date > 2025)
+            if (Date == 2025 && Quarter > 2 || Date > 2025)
             {
                 ElapsedQuarters2--;
                 float PlayTime2 = (float)ElapsedQuarters2 / TotalQuarters2;
@@ -263,6 +263,10 @@ public class UITimeScript : MonoBehaviour
                 TimeBar.fillAmount = 0;
                 elapsedTime = 0;
                 UpdateText();
+            }
+            if (Date == 2032 && Quarter == 3)
+            {
+                view.RPC("StartTimeRPC", RpcTarget.All);
             }
         }
     }
