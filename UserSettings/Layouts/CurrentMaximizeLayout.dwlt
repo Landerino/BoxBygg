@@ -226,24 +226,24 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 40}
-      m_SelectedIDs: f4330100
-      m_LastClickedID: 0
-      m_ExpandedIDs: 16c2ffff48eeffff96f3ffff0c9d0000609d0000c49d00009a9e0000269f0000b89f00001aa100002ea100005ea1000054a300002eac000034ac00007cac0000
+      scrollPos: {x: 0, y: 360}
+      m_SelectedIDs: d6f3ffff
+      m_LastClickedID: -3114
+      m_ExpandedIDs: 0cdcffff14dcffff1adcffff70e3ffff76e3ffff92f1ffff9af1ffffa0f1ffffe0f1fffff8f4ffffd2faffff5c7800008a790000ca790000d67b0000c07c0000447e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Image
+        m_OriginalName: Image
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 32106
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -550,9 +550,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 23.181017, y: 2.1512856, z: 3.8181531}
+    m_Target: {x: -4.1286325, y: 0.2566598, z: 1.2320528}
     speed: 2
-    m_Value: {x: 23.181017, y: 2.1512856, z: 3.8181531}
+    m_Value: {x: -4.1286325, y: 0.2566598, z: 1.2320528}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -599,13 +599,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.021711787, y: -0.75771344, z: -0.025649507, w: -0.6518629}
+    m_Target: {x: -0.1479522, y: 0.673844, z: -0.12635116, w: -0.715393}
     speed: 2
-    m_Value: {x: 0.021709787, y: -0.75764364, z: -0.025647143, w: -0.65180284}
+    m_Value: {x: -0.14767869, y: 0.6725983, z: -0.12611759, w: -0.7140705}
   m_Size:
-    m_Target: 11.578759
+    m_Target: 0.9013878
     speed: 2
-    m_Value: 11.578759
+    m_Value: 0.9013878
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -795,10 +795,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1152
+    x: 1153
     y: 73
     width: 675
-    height: 893
+    height: 892
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -849,7 +849,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 148
+  controlID: 154
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -920,22 +920,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/BoxBygg/Project/Main/Pictures
+    - Assets/BoxBygg/Project/Main/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/BoxBygg/Project/Main/Pictures
+  - Assets/BoxBygg/Project/Main/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\BB- VR Dator\Documents\GitHub\BoxBygg
+  m_LastProjectPath: C:\Users\Lander\Documents\GitHub\BoxBygg
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 464}
-    m_SelectedIDs: 1c340100
-    m_LastClickedID: 78876
-    m_ExpandedIDs: 00000000823301008433010086330100883301008a3301008c3301008e33010090330100923301000a3401002a3c0100503c010000ca9a3b
+    scrollPos: {x: 0, y: 627}
+    m_SelectedIDs: 1a620100
+    m_LastClickedID: 90650
+    m_ExpandedIDs: 00000000b20f0100b40f0100b60f0100b80f0100ba0f0100bc0f0100be0f0100c00f0100c20f0100c40f0100c60f0100c80f0100ca0f0100cc0f0100ce0f0100d00f0100d20f0100d40f0100d60f0100d80f0100da0f010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -963,7 +963,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000823301008433010086330100883301008a3301008c3301008e3301009033010092330100
+    m_ExpandedIDs: 00000000b20f0100b40f0100b60f0100b80f0100ba0f0100bc0f0100be0f0100c00f0100c20f0100c40f0100c60f0100c80f0100ca0f0100cc0f0100ce0f0100d00f0100d20f0100d40f0100d60f0100d80f0100da0f0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -988,8 +988,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: f4330100
-    m_LastClickedInstanceID: 78836
+    m_SelectedInstanceIDs: d6f3ffff
+    m_LastClickedInstanceID: -3114
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -1007,7 +1007,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 13}
+      m_ClientGUIView: {fileID: 7}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1079,7 +1079,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -15868
+  m_LastSelectedObjectID: -3576
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
