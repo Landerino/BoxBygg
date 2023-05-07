@@ -10,8 +10,8 @@ public class ColorChange : MonoBehaviour
     private int selectedHairIndex = 0;
     private int selectedShirtIndex = 0;
 
-    private const string HairColorKey = "HairColorIndex";
-    private const string ShirtColorKey = "ShirtColorIndex";
+    private string HairColorKey = "HairColorIndex";
+    private string ShirtColorKey = "ShirtColorIndex";
 
     private void Start()
     {
