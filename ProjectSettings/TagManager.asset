@@ -11,6 +11,7 @@ TagManager:
   - Item
   - Hair
   - Shirt
+  - Avatar
   layers:
   - Default
   - TransparentFX

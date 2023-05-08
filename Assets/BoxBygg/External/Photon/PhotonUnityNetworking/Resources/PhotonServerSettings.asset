@@ -55,6 +55,16 @@ MonoBehaviour:
   - DisconnectRPC
   - ShowHideStorangenRPC
   - RecallBall
+  - ChangeHairMaterialRPC
+  - ChangeShirtMaterialRPC
+  - ChangeHairColorRPC
+  - ChangeShirtColorRPC
+  - UpdateHairColor
+  - UpdateShirtColor
+  - UpdateColor
+  - UpdateAvatarColor
+  - SyncHairColor
+  - SyncShirtColor
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
