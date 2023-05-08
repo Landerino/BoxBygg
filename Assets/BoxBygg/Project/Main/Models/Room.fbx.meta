@@ -7,18 +7,58 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Albedo
+    second: {fileID: 2100000, guid: e16ddf9b95fae9e4da359a42dcb9a997, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Decoration_Material
-    second: {fileID: 2100000, guid: 1d323383af1f5a347bda0aa55dc510d6, type: 2}
+    second: {fileID: 2100000, guid: 92de78e11b1f38f4788738f2cf9162ec, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Kitchen
-    second: {fileID: 2100000, guid: c6c52017ce6b81d42b3e5929e379450e, type: 2}
+    second: {fileID: 2100000, guid: 1c7ecadfb94aef649a6266effe4f5818, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Office_Material
-    second: {fileID: 2100000, guid: a6d6a4519e98c0444a5ff21ef3f0dfed, type: 2}
+    second: {fileID: 2100000, guid: a3febdeebfbff2744be95e80ad70f042, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone
+    second: {fileID: 2100000, guid: 43b2d30c41b01a643bf97bb88f6f0bde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emission
+    second: {fileID: 2100000, guid: 64966453e2e00f2479c97e1b1c3f96c5, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Decoration_Normal_Map
+    second: {fileID: 2800000, guid: 63d57f74ad5bc074cb85bfa708e1abe3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Decoration_Texture
+    second: {fileID: 2800000, guid: 41098750a0697b74397f9503846a7f4e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ImphenziaPalette01
+    second: {fileID: 2800000, guid: 08730b114fe8c0e4db39b0d66dfd168a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kitchen_Texture
+    second: {fileID: 2800000, guid: a18bd4828872898459e43b2a044681c9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Office_Texture
+    second: {fileID: 2800000, guid: 941c3f0b0c68ac94aa657e9a0eabe18d, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -78,9 +118,9 @@ ModelImporter:
     secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 88
     secondaryUVMarginMethod: 0
-    secondaryUVMinLightmapResolution: 20
+    secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
-    secondaryUVPackMargin: 12
+    secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
