@@ -2790,6 +2790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: {fileID: 786352386}
+  colorChangeScript: {fileID: 1788437706}
   nameInputed: 0
   AvatarSelected: 0
 --- !u!114 &615953326

@@ -101,6 +101,7 @@ public class ColorChange : MonoBehaviourPun
 
         PlayerPrefs.SetInt(HairColorKey, selectedHairIndex);
 
+
         // Check if we are connected to Photon before sending an RPC message
         if (PhotonNetwork.IsConnected)
         {
