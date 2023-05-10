@@ -100,7 +100,12 @@ public class ColorChange : MonoBehaviourPun
         }
 
         PlayerPrefs.SetInt(HairColorKey, selectedHairIndex);
-        photonView.RPC("SyncHairColor", RpcTarget.Others, selectedHairIndex);
+
+        // Check if we are connected to Photon before sending an RPC message
+        if (PhotonNetwork.IsConnected)
+        {
+            photonView.RPC("SyncHairColor", RpcTarget.Others, selectedHairIndex);
+        }
     }
 
     public void ChangeShirtMaterial(Material newMaterial)
@@ -118,7 +123,12 @@ public class ColorChange : MonoBehaviourPun
         }
 
         PlayerPrefs.SetInt(ShirtColorKey, selectedShirtIndex);
-        photonView.RPC("SyncShirtColor", RpcTarget.Others, selectedShirtIndex);
+
+        // Check if we are connected to Photon before sending an RPC message
+        if (PhotonNetwork.IsConnected)
+        {
+            photonView.RPC("SyncShirtColor", RpcTarget.Others, selectedShirtIndex);
+        }
     }
 
     [PunRPC]
