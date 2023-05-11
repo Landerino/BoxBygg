@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3098554277743562275}
   m_Layer: 0
   m_Name: Female_Avatar_2_New
-  m_TagString: Untagged
+  m_TagString: Avatar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 4774055671606232041}
   - component: {fileID: 7392493353681504885}
   m_Layer: 0
-  m_Name: Shirt
+  m_Name: Shirt.002
   m_TagString: Shirt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 7757682690072827019}
   - component: {fileID: 1139617730491166080}
   m_Layer: 0
-  m_Name: Hair
+  m_Name: Hair.002
   m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

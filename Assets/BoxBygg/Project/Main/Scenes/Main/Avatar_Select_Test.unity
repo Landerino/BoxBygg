@@ -353,7 +353,7 @@ PrefabInstance:
     - target: {fileID: 9134207279327662391, guid: 3bb8d86cae54e984aaca867295394bac,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.175
+      value: -0.201
       objectReference: {fileID: 0}
     - target: {fileID: 9134207279327662391, guid: 3bb8d86cae54e984aaca867295394bac,
         type: 3}
@@ -813,7 +813,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1788437706}
+      - m_Target: {fileID: 312296374}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeShirtMaterial
         m_Mode: 2
@@ -1130,7 +1130,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1788437706}
+      - m_Target: {fileID: 312296374}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeShirtMaterial
         m_Mode: 2
@@ -1573,17 +1573,17 @@ PrefabInstance:
     - target: {fileID: 2667818700156006097, guid: c1f7a363ebd870e4eb993b419b873942,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 2667818700156006097, guid: c1f7a363ebd870e4eb993b419b873942,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 2667818700156006097, guid: c1f7a363ebd870e4eb993b419b873942,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 2667818700156006097, guid: c1f7a363ebd870e4eb993b419b873942,
         type: 3}
@@ -1683,6 +1683,119 @@ Transform:
   m_Father: {fileID: 1788437703}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 29.971, z: 0}
+--- !u!1 &312296372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 312296375}
+  - component: {fileID: 312296374}
+  - component: {fileID: 312296377}
+  - component: {fileID: 312296376}
+  m_Layer: 0
+  m_Name: ColorChangeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &312296374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312296372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07a27f6c238c130418eaa1be49f929db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hairMaterials:
+  - {fileID: 2100000, guid: 72a2cacf40e25ae4fb05140ec3fbb86a, type: 2}
+  - {fileID: 2100000, guid: 08554f0fcfc61134b88484efa48a5e00, type: 2}
+  - {fileID: 2100000, guid: 424107832eb9b5e42bb6e1f567feec7e, type: 2}
+  - {fileID: 2100000, guid: 2f53f15ddfec7e24aa208606c2a163ac, type: 2}
+  - {fileID: 2100000, guid: db847bd0098301440b7bb7e55ce5bfa2, type: 2}
+  shirtMaterials:
+  - {fileID: 2100000, guid: 2daf0cc345f15c4439880590fea33df7, type: 2}
+  - {fileID: 2100000, guid: a69d3507c484e354cbff52a7808657b7, type: 2}
+  - {fileID: 2100000, guid: b081dc90696a5c54b988313e2c816109, type: 2}
+  - {fileID: 2100000, guid: 1f234bff172e5d14ba9cf23a1642cc09, type: 2}
+  - {fileID: 2100000, guid: 8967269c41746d5418f538a18a39dfcb, type: 2}
+  - {fileID: 2100000, guid: dfed044100f1c5946ac4fa416f45cb01, type: 2}
+  - {fileID: 2100000, guid: 56b58be8db0290a4980ed26daed93c1c, type: 2}
+--- !u!4 &312296375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312296372}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.7832072, y: 0.1339587, z: 1.2741007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &312296376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312296372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &312296377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312296372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dee0f96da3aa984481bbabd7c3d297c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pvCache: {fileID: 0}
+  hairMaterials:
+  - {fileID: 2100000, guid: 72a2cacf40e25ae4fb05140ec3fbb86a, type: 2}
+  - {fileID: 2100000, guid: 08554f0fcfc61134b88484efa48a5e00, type: 2}
+  - {fileID: 2100000, guid: 424107832eb9b5e42bb6e1f567feec7e, type: 2}
+  - {fileID: 2100000, guid: 2f53f15ddfec7e24aa208606c2a163ac, type: 2}
+  - {fileID: 2100000, guid: db847bd0098301440b7bb7e55ce5bfa2, type: 2}
+  shirtMaterials:
+  - {fileID: 2100000, guid: 2daf0cc345f15c4439880590fea33df7, type: 2}
+  - {fileID: 2100000, guid: a69d3507c484e354cbff52a7808657b7, type: 2}
+  - {fileID: 2100000, guid: b081dc90696a5c54b988313e2c816109, type: 2}
+  - {fileID: 2100000, guid: 1f234bff172e5d14ba9cf23a1642cc09, type: 2}
+  - {fileID: 2100000, guid: 8967269c41746d5418f538a18a39dfcb, type: 2}
+  - {fileID: 2100000, guid: dfed044100f1c5946ac4fa416f45cb01, type: 2}
+  - {fileID: 2100000, guid: 56b58be8db0290a4980ed26daed93c1c, type: 2}
+  selectedHairIndex: 0
+  selectedShirtIndex: 0
+  HairColorKey: HairColorIndex
+  ShirtColorKey: ShirtColorIndex
 --- !u!114 &335639195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2168,7 +2281,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1788437706}
+      - m_Target: {fileID: 312296374}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeHairMaterial
         m_Mode: 2
@@ -2375,7 +2488,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &516620079
 MonoBehaviour:
@@ -2512,7 +2625,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1788437706}
+      - m_Target: {fileID: 312296374}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeShirtMaterial
         m_Mode: 2
@@ -2727,6 +2840,37 @@ CapsuleCollider:
   m_Height: 0.025
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &580912205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 580912206}
+  m_Layer: 0
+  m_Name: ----- SYSTEM ------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &580912206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580912205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &589893504
 GameObject:
   m_ObjectHideFlags: 0
@@ -2738,7 +2882,6 @@ GameObject:
   - component: {fileID: 589893505}
   - component: {fileID: 589893508}
   - component: {fileID: 589893507}
-  - component: {fileID: 589893506}
   m_Layer: 5
   m_Name: Background Side L
   m_TagString: Untagged
@@ -2767,27 +2910,6 @@ RectTransform:
   m_AnchoredPosition: {x: -73.57, y: 4.052}
   m_SizeDelta: {x: 326.83, y: 567.83}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!223 &589893506
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589893504}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
 --- !u!114 &589893507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2795,13 +2917,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589893504}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5803922}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3021,6 +3143,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615953323}
   m_CullTransparentMesh: 1
+--- !u!1 &620971286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 620971287}
+  m_Layer: 0
+  m_Name: ----- UI ------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &620971287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620971286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &651445554
 GameObject:
   m_ObjectHideFlags: 0
@@ -3736,7 +3889,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1788437706}
+      - m_Target: {fileID: 312296374}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeShirtMaterial
         m_Mode: 2
@@ -4999,7 +5152,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1788437706}
+      - m_Target: {fileID: 312296374}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeHairMaterial
         m_Mode: 2
@@ -5390,17 +5543,17 @@ PrefabInstance:
     - target: {fileID: 4908445309070057129, guid: 920ee080998eb9346bf3bb4a258ffd55,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 4908445309070057129, guid: 920ee080998eb9346bf3bb4a258ffd55,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 4908445309070057129, guid: 920ee080998eb9346bf3bb4a258ffd55,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 4908445309070057129, guid: 920ee080998eb9346bf3bb4a258ffd55,
         type: 3}
@@ -5841,7 +5994,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1788437706}
+      - m_Target: {fileID: 312296374}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeHairMaterial
         m_Mode: 2
@@ -6962,7 +7115,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1788437706}
+      - m_Target: {fileID: 312296374}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeShirtMaterial
         m_Mode: 2
@@ -7394,7 +7547,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1788437706}
+      - m_Target: {fileID: 312296374}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeShirtMaterial
         m_Mode: 2
@@ -8678,7 +8831,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1788437706}
+      - m_Target: {fileID: 312296374}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeHairMaterial
         m_Mode: 2
@@ -9375,7 +9528,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1788437706}
+      - m_Target: {fileID: 312296374}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeHairMaterial
         m_Mode: 2
@@ -9863,7 +10016,7 @@ Transform:
   - {fileID: 1631606638}
   - {fileID: 1318625999}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1742173418
 GameObject:
@@ -9897,7 +10050,7 @@ Transform:
   - {fileID: 538875724}
   - {fileID: 1718798566}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1742173420
 Animator:
@@ -9982,7 +10135,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1788437706}
+      - m_Target: {fileID: 312296374}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeShirtMaterial
         m_Mode: 2
@@ -10086,8 +10239,6 @@ GameObject:
   - component: {fileID: 1788437703}
   - component: {fileID: 1788437705}
   - component: {fileID: 1788437704}
-  - component: {fileID: 1788437706}
-  - component: {fileID: 1788437707}
   m_Layer: 5
   m_Name: Colors
   m_TagString: Untagged
@@ -10158,54 +10309,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788437702}
   m_CullTransparentMesh: 1
---- !u!114 &1788437706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788437702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07a27f6c238c130418eaa1be49f929db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hairMaterials:
-  - {fileID: 2100000, guid: 72a2cacf40e25ae4fb05140ec3fbb86a, type: 2}
-  - {fileID: 2100000, guid: 08554f0fcfc61134b88484efa48a5e00, type: 2}
-  - {fileID: 2100000, guid: 424107832eb9b5e42bb6e1f567feec7e, type: 2}
-  - {fileID: 2100000, guid: 2f53f15ddfec7e24aa208606c2a163ac, type: 2}
-  - {fileID: 2100000, guid: db847bd0098301440b7bb7e55ce5bfa2, type: 2}
-  shirtMaterials:
-  - {fileID: 2100000, guid: 2daf0cc345f15c4439880590fea33df7, type: 2}
-  - {fileID: 2100000, guid: a69d3507c484e354cbff52a7808657b7, type: 2}
-  - {fileID: 2100000, guid: b081dc90696a5c54b988313e2c816109, type: 2}
-  - {fileID: 2100000, guid: 1f234bff172e5d14ba9cf23a1642cc09, type: 2}
-  - {fileID: 2100000, guid: 8967269c41746d5418f538a18a39dfcb, type: 2}
-  - {fileID: 2100000, guid: dfed044100f1c5946ac4fa416f45cb01, type: 2}
-  - {fileID: 2100000, guid: 56b58be8db0290a4980ed26daed93c1c, type: 2}
---- !u!114 &1788437707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788437702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 1
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
-  sceneViewId: 1
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &1792711608
 GameObject:
   m_ObjectHideFlags: 0
@@ -72066,7 +72169,7 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0

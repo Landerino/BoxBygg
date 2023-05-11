@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using ExitGames.Client.Photon;
 
-
-public class ColorChange : MonoBehaviourPun
+public class ColorChange : MonoBehaviourPunCallbacks
 {
-    /*
     public Material[] hairMaterials;
     public Material[] shirtMaterials;
 
@@ -18,131 +17,85 @@ public class ColorChange : MonoBehaviourPun
 
     private void Start()
     {
+        // Load the saved color preferences
         selectedHairIndex = PlayerPrefs.GetInt(HairColorKey, 0);
         selectedShirtIndex = PlayerPrefs.GetInt(ShirtColorKey, 0);
 
+        // Apply the saved color preferences to the avatar
         ChangeHairMaterial(hairMaterials[selectedHairIndex]);
         ChangeShirtMaterial(shirtMaterials[selectedShirtIndex]);
     }
 
     public void ChangeHairMaterial(Material newMaterial)
     {
-        selectedHairIndex = System.Array.IndexOf(hairMaterials, newMaterial);
-
-        GameObject[] hairObjects = GameObject.FindGameObjectsWithTag("Hair");
-        foreach (GameObject hairObject in hairObjects)
+        try
         {
-            Renderer renderer = hairObject.GetComponent<Renderer>();
-            if (renderer != null)
+            if (hairMaterials == null) return; // Check if the array is null
+
+            selectedHairIndex = System.Array.IndexOf(hairMaterials, newMaterial);
+
+            // Set the selected hair color index in the PhotonPlayer.CustomProperties
+            ExitGames.Client.Photon.Hashtable props = new ExitGames.Client.Photon.Hashtable();
+            props[HairColorKey] = selectedHairIndex;
+            PhotonNetwork.LocalPlayer.SetCustomProperties(props);
+
+            GameObject[] hairObjects = GameObject.FindGameObjectsWithTag("Hair");
+            foreach (GameObject hairObject in hairObjects)
             {
-                renderer.material = newMaterial;
+                Renderer renderer = hairObject.GetComponent<Renderer>();
+                if (renderer != null)
+                {
+                    renderer.material = newMaterial;
+                }
             }
-        }
 
-        PlayerPrefs.SetInt(HairColorKey, selectedHairIndex);
-    }
-
-    public void ChangeShirtMaterial(Material newMaterial)
-    {
-        selectedShirtIndex = System.Array.IndexOf(shirtMaterials, newMaterial);
-
-        GameObject[] shirtObjects = GameObject.FindGameObjectsWithTag("Shirt");
-        foreach (GameObject shirtObject in shirtObjects)
-        {
-            Renderer renderer = shirtObject.GetComponent<Renderer>();
-            if (renderer != null)
-            {
-                renderer.material = newMaterial;
-            }
-        }
-
-        PlayerPrefs.SetInt(ShirtColorKey, selectedShirtIndex);
-    }
-    */
-    public Material[] hairMaterials;
-    public Material[] shirtMaterials;
-
-    private int selectedHairIndex = 0;
-    private int selectedShirtIndex = 0;
-
-    private string HairColorKey = "HairColorIndex";
-    private string ShirtColorKey = "ShirtColorIndex";
-
-    private new PhotonView photonView;
-
-    private void Start()
-    {
-        photonView = GetComponent<PhotonView>();
-
-        selectedHairIndex = PlayerPrefs.GetInt(HairColorKey, 0);
-        selectedShirtIndex = PlayerPrefs.GetInt(ShirtColorKey, 0);
-
-        Debug.Log("Hair materials array size: " + hairMaterials.Length);
-
-        ChangeHairMaterial(hairMaterials[selectedHairIndex]);
-        ChangeShirtMaterial(shirtMaterials[selectedShirtIndex]);
-    }
-
-    public void ChangeHairMaterial(Material newMaterial)
-    {
-        if (hairMaterials == null) return; // Check if the array is null
-
-        selectedHairIndex = System.Array.IndexOf(hairMaterials, newMaterial);
-
-        GameObject[] hairObjects = GameObject.FindGameObjectsWithTag("Hair");
-        foreach (GameObject hairObject in hairObjects)
-        {
-            Renderer renderer = hairObject.GetComponent<Renderer>();
-            if (renderer != null)
-            {
-                renderer.material = newMaterial;
-            }
-        }
-
-        PlayerPrefs.SetInt(HairColorKey, selectedHairIndex);
-
-
-        // Check if we are connected to Photon before sending an RPC message
-        if (PhotonNetwork.IsConnected)
-        {
+            // Call an RPC to sync the hair color change with other clients
             photonView.RPC("SyncHairColor", RpcTarget.Others, selectedHairIndex);
         }
+        catch (System.Exception e)
+        {
+            Debug.Log("Error changing hair material: " + e.Message);
+        }
     }
 
     public void ChangeShirtMaterial(Material newMaterial)
     {
-        selectedShirtIndex = System.Array.IndexOf(shirtMaterials, newMaterial);
-
-        GameObject[] shirtObjects = GameObject.FindGameObjectsWithTag("Shirt");
-        foreach (GameObject shirtObject in shirtObjects)
+        try
         {
-            Renderer renderer = shirtObject.GetComponent<Renderer>();
-            if (renderer != null)
+            selectedShirtIndex = System.Array.IndexOf(shirtMaterials, newMaterial);
+
+            ExitGames.Client.Photon.Hashtable props = new ExitGames.Client.Photon.Hashtable();
+            props[HairColorKey] = selectedHairIndex;
+            PhotonNetwork.LocalPlayer.SetCustomProperties(props);
+
+            GameObject[] shirtObjects = GameObject.FindGameObjectsWithTag("Shirt");
+            foreach (GameObject shirtObject in shirtObjects)
             {
-                renderer.material = newMaterial;
+                Renderer renderer = shirtObject.GetComponent<Renderer>();
+                if (renderer != null)
+                {
+                    renderer.material = newMaterial;
+                }
             }
-        }
 
-        PlayerPrefs.SetInt(ShirtColorKey, selectedShirtIndex);
-
-        // Check if we are connected to Photon before sending an RPC message
-        if (PhotonNetwork.IsConnected)
-        {
+            // Call an RPC to sync the shirt color change with other clients
             photonView.RPC("SyncShirtColor", RpcTarget.Others, selectedShirtIndex);
         }
+        catch (System.Exception e)
+        {
+            Debug.Log("Error changing hair material: " + e.Message);
+        }
     }
 
     [PunRPC]
-    void SyncHairColor(int hairColorIndex)
+    private void SyncHairColor(int newColorIndex)
     {
-        selectedHairIndex = hairColorIndex;
-        ChangeHairMaterial(hairMaterials[selectedHairIndex]);
+        ChangeHairMaterial(hairMaterials[newColorIndex]);
     }
 
     [PunRPC]
-    void SyncShirtColor(int shirtColorIndex)
+    private void SyncShirtColor(int newColorIndex)
     {
-        selectedShirtIndex = shirtColorIndex;
-        ChangeShirtMaterial(shirtMaterials[selectedShirtIndex]);
+        ChangeShirtMaterial(shirtMaterials[newColorIndex]);
     }
 }

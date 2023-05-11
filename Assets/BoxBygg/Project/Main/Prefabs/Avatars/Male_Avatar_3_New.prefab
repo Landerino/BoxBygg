@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7272799829439010399}
   - component: {fileID: 8388717076625708058}
   m_Layer: 0
-  m_Name: Shirt
+  m_Name: Shirt.003
   m_TagString: Shirt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4908445309070057129}
   m_Layer: 0
   m_Name: Male_Avatar_3_New
-  m_TagString: Untagged
+  m_TagString: Avatar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 3198617464987653744}
   - component: {fileID: 8630176533965892338}
   m_Layer: 0
-  m_Name: Hair
+  m_Name: Hair.003
   m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

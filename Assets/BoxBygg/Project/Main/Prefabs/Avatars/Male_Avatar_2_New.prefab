@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 5758859711081603315}
   m_Layer: 0
   m_Name: Male_Avatar_2_New
-  m_TagString: Untagged
+  m_TagString: Avatar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
