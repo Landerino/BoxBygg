@@ -17,6 +17,8 @@ public class LoadLevel : MonoBehaviour
     public bool AvatarSelected;
     public bool ShirtSelected;
 
+    public GameObject FakeBtn;
+
     public void LoadMPLobby()
     {
         PhotonNetwork.NickName = Name.text;
@@ -58,9 +60,10 @@ public class LoadLevel : MonoBehaviour
 
     void StartChecker()
     {
-        if(nameInputed && AvatarSelected)
+        if(nameInputed)
         {
             gameObject.SetActive(true);
+            FakeBtn.SetActive(false);
         }
     }
 }
