@@ -10,15 +10,11 @@ public class PlayerController : MonoBehaviourPunCallbacks
     public Text PlayerName;
     private string Numba;
     private int AvatarNo;
+    private string ShirtColor;
+    private int ShirtNo;
 
     //where to instantiate the avatar
     public Transform InstancePoint;
-
-    /*
-    //Grab hands to set color
-    public GameObject HandLeft;
-    public GameObject HandRight;
-    */
 
     //list of both hands to set color
     public GameObject[] Hands;
@@ -43,13 +39,16 @@ public class PlayerController : MonoBehaviourPunCallbacks
         }
         Numba = PV.Owner.CustomProperties["avatar"].ToString();
         AvatarNo = int.Parse(Numba);
-        Instantiate(AvatarList[AvatarNo], InstancePoint);
+        GameObject Avatar = Instantiate(AvatarList[AvatarNo], InstancePoint);
         PlayerName.text = PV.Owner.NickName;
+        ShirtColor = PV.Owner.CustomProperties["color"].ToString();
+        ShirtNo = int.Parse(ShirtColor);
+        Avatar.GetComponent<ShirtChanger>().ShirtColor = ShirtNo;
+        Avatar.GetComponent<ShirtChanger>().Updatecolor();
         for(int i = 0; i < 2; i++)
         {
             rend = Hands[i].GetComponent<Renderer>();
             rend.material = CorrespondingAvatarColor[AvatarNo];
-
         }
         /*
         rend = HandLeft.GetComponent<Renderer>();

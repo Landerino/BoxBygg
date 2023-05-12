@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7272799829439010399}
   - component: {fileID: 8388717076625708058}
   m_Layer: 0
-  m_Name: Shirt.003
+  m_Name: Shirt
   m_TagString: Shirt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,6 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4908445309070057129}
+  - component: {fileID: 1118330681106795962}
   m_Layer: 0
   m_Name: Male_Avatar_3_New
   m_TagString: Avatar
@@ -119,6 +120,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1118330681106795962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716648665087329299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb499123e34ee1c42be0d44fd11f43ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shirt: {fileID: 437204158726647823}
+  ShirtColor: 0
+  Colors:
+  - {fileID: 2100000, guid: 2daf0cc345f15c4439880590fea33df7, type: 2}
+  - {fileID: 2100000, guid: a69d3507c484e354cbff52a7808657b7, type: 2}
+  - {fileID: 2100000, guid: b081dc90696a5c54b988313e2c816109, type: 2}
+  - {fileID: 2100000, guid: 1f234bff172e5d14ba9cf23a1642cc09, type: 2}
+  - {fileID: 2100000, guid: 8967269c41746d5418f538a18a39dfcb, type: 2}
+  - {fileID: 2100000, guid: dfed044100f1c5946ac4fa416f45cb01, type: 2}
+  - {fileID: 2100000, guid: 56b58be8db0290a4980ed26daed93c1c, type: 2}
 --- !u!1 &5872323104415830642
 GameObject:
   m_ObjectHideFlags: 0

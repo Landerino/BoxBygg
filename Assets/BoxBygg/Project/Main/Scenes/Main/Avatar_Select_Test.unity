@@ -813,15 +813,26 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312296374}
-        m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
-        m_MethodName: ChangeShirtMaterial
-        m_Mode: 2
+      - m_Target: {fileID: 615953325}
+        m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
+        m_MethodName: SetShirtColor
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: dfed044100f1c5946ac4fa416f45cb01,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 10
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1029,6 +1040,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 615953325}
+        m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
+        m_MethodName: SetShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &166352611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1130,15 +1165,26 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312296374}
-        m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
-        m_MethodName: ChangeShirtMaterial
-        m_Mode: 2
+      - m_Target: {fileID: 615953325}
+        m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
+        m_MethodName: SetShirtColor
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: b081dc90696a5c54b988313e2c816109,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 7
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1683,119 +1729,6 @@ Transform:
   m_Father: {fileID: 1788437703}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 29.971, z: 0}
---- !u!1 &312296372
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 312296375}
-  - component: {fileID: 312296374}
-  - component: {fileID: 312296377}
-  - component: {fileID: 312296376}
-  m_Layer: 0
-  m_Name: ColorChangeManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &312296374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312296372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07a27f6c238c130418eaa1be49f929db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hairMaterials:
-  - {fileID: 2100000, guid: 72a2cacf40e25ae4fb05140ec3fbb86a, type: 2}
-  - {fileID: 2100000, guid: 08554f0fcfc61134b88484efa48a5e00, type: 2}
-  - {fileID: 2100000, guid: 424107832eb9b5e42bb6e1f567feec7e, type: 2}
-  - {fileID: 2100000, guid: 2f53f15ddfec7e24aa208606c2a163ac, type: 2}
-  - {fileID: 2100000, guid: db847bd0098301440b7bb7e55ce5bfa2, type: 2}
-  shirtMaterials:
-  - {fileID: 2100000, guid: 2daf0cc345f15c4439880590fea33df7, type: 2}
-  - {fileID: 2100000, guid: a69d3507c484e354cbff52a7808657b7, type: 2}
-  - {fileID: 2100000, guid: b081dc90696a5c54b988313e2c816109, type: 2}
-  - {fileID: 2100000, guid: 1f234bff172e5d14ba9cf23a1642cc09, type: 2}
-  - {fileID: 2100000, guid: 8967269c41746d5418f538a18a39dfcb, type: 2}
-  - {fileID: 2100000, guid: dfed044100f1c5946ac4fa416f45cb01, type: 2}
-  - {fileID: 2100000, guid: 56b58be8db0290a4980ed26daed93c1c, type: 2}
---- !u!4 &312296375
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312296372}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.7832072, y: 0.1339587, z: 1.2741007}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &312296376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312296372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
-  sceneViewId: 1
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
---- !u!114 &312296377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312296372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dee0f96da3aa984481bbabd7c3d297c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pvCache: {fileID: 0}
-  hairMaterials:
-  - {fileID: 2100000, guid: 72a2cacf40e25ae4fb05140ec3fbb86a, type: 2}
-  - {fileID: 2100000, guid: 08554f0fcfc61134b88484efa48a5e00, type: 2}
-  - {fileID: 2100000, guid: 424107832eb9b5e42bb6e1f567feec7e, type: 2}
-  - {fileID: 2100000, guid: 2f53f15ddfec7e24aa208606c2a163ac, type: 2}
-  - {fileID: 2100000, guid: db847bd0098301440b7bb7e55ce5bfa2, type: 2}
-  shirtMaterials:
-  - {fileID: 2100000, guid: 2daf0cc345f15c4439880590fea33df7, type: 2}
-  - {fileID: 2100000, guid: a69d3507c484e354cbff52a7808657b7, type: 2}
-  - {fileID: 2100000, guid: b081dc90696a5c54b988313e2c816109, type: 2}
-  - {fileID: 2100000, guid: 1f234bff172e5d14ba9cf23a1642cc09, type: 2}
-  - {fileID: 2100000, guid: 8967269c41746d5418f538a18a39dfcb, type: 2}
-  - {fileID: 2100000, guid: dfed044100f1c5946ac4fa416f45cb01, type: 2}
-  - {fileID: 2100000, guid: 56b58be8db0290a4980ed26daed93c1c, type: 2}
-  selectedHairIndex: 0
-  selectedShirtIndex: 0
-  HairColorKey: HairColorIndex
-  ShirtColorKey: ShirtColorIndex
 --- !u!114 &335639195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2281,7 +2214,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312296374}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeHairMaterial
         m_Mode: 2
@@ -2625,15 +2558,26 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312296374}
-        m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
-        m_MethodName: ChangeShirtMaterial
-        m_Mode: 2
+      - m_Target: {fileID: 615953325}
+        m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
+        m_MethodName: SetShirtColor
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 1f234bff172e5d14ba9cf23a1642cc09,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 8
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3047,8 +2991,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: {fileID: 786352386}
+  SA: {fileID: 0}
   nameInputed: 0
   AvatarSelected: 0
+  ShirtSelected: 0
 --- !u!114 &615953326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3278,7 +3224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.17544293, y: -0.078948975}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 6, y: 4.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &658922207
@@ -3301,7 +3247,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c1d41cada2f6bcd4bb0dbb13e339c70b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 237253673e155694faa679ce6fdfe175, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3808,7 +3754,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0364724319b91a4498b4cc0ba5d20b84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e396f5a1580de9e42b4d6d4d842ca209, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3889,15 +3835,26 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312296374}
-        m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
-        m_MethodName: ChangeShirtMaterial
-        m_Mode: 2
+      - m_Target: {fileID: 615953325}
+        m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
+        m_MethodName: SetShirtColor
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 2daf0cc345f15c4439880590fea33df7,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 5
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4075,7 +4032,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.11403589, y: -0}
+  m_AnchoredPosition: {x: 0, y: -0}
   m_SizeDelta: {x: 6, y: 4.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &782384226
@@ -4098,7 +4055,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ca7251f345fd79d4cac700c99b3e9ac7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 35c802b826edc384587519538c6ced68, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4406,6 +4363,30 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 615953325}
+        m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
+        m_MethodName: SetShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5152,7 +5133,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312296374}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeHairMaterial
         m_Mode: 2
@@ -5994,7 +5975,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312296374}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeHairMaterial
         m_Mode: 2
@@ -7115,15 +7096,26 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312296374}
-        m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
-        m_MethodName: ChangeShirtMaterial
-        m_Mode: 2
+      - m_Target: {fileID: 615953325}
+        m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
+        m_MethodName: SetShirtColor
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 8967269c41746d5418f538a18a39dfcb,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 9
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7416,7 +7408,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 683827ea2fe0c3b4ba1b167d15b4a1fc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be8fdc622056f2e469bf7ef49c2e8391, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7547,15 +7539,26 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312296374}
-        m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
-        m_MethodName: ChangeShirtMaterial
-        m_Mode: 2
+      - m_Target: {fileID: 615953325}
+        m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
+        m_MethodName: SetShirtColor
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 56b58be8db0290a4980ed26daed93c1c,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 11
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8831,7 +8834,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312296374}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeHairMaterial
         m_Mode: 2
@@ -9038,6 +9041,30 @@ MonoBehaviour:
       - m_Target: {fileID: 8320362180053365420}
         m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
         m_MethodName: changeAvatar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 615953325}
+        m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
+        m_MethodName: SetShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateShirtColor
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9447,7 +9474,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5d00d23ed5987ba42a19ffa87e668cba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 92bc23154da487c44aa32a8510642ced, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9528,7 +9555,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312296374}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
         m_MethodName: ChangeHairMaterial
         m_Mode: 2
@@ -9946,6 +9973,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 615953325}
+        m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
+        m_MethodName: SetShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1733244029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10135,15 +10186,26 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312296374}
-        m_TargetAssemblyTypeName: ColorChange, Assembly-CSharp
-        m_MethodName: ChangeShirtMaterial
-        m_Mode: 2
+      - m_Target: {fileID: 615953325}
+        m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
+        m_MethodName: SetShirtColor
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: a69d3507c484e354cbff52a7808657b7,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 6
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10500,6 +10562,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 615953325}
+        m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
+        m_MethodName: SetShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1810761853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10679,6 +10765,30 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 615953325}
+        m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
+        m_MethodName: SetShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateShirtColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11125,7 +11235,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bc7a9a6b63c8d164aafdfdcec60c2a61, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 532f6ca36b93a4543b71b69350107f60, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -111988,6 +112098,14 @@ MonoBehaviour:
   - {fileID: 125182889}
   - {fileID: 544075956}
   - {fileID: 364540311}
+  Colors:
+  - {fileID: 2100000, guid: 2daf0cc345f15c4439880590fea33df7, type: 2}
+  - {fileID: 2100000, guid: a69d3507c484e354cbff52a7808657b7, type: 2}
+  - {fileID: 2100000, guid: b081dc90696a5c54b988313e2c816109, type: 2}
+  - {fileID: 2100000, guid: 1f234bff172e5d14ba9cf23a1642cc09, type: 2}
+  - {fileID: 2100000, guid: 8967269c41746d5418f538a18a39dfcb, type: 2}
+  - {fileID: 2100000, guid: dfed044100f1c5946ac4fa416f45cb01, type: 2}
+  - {fileID: 2100000, guid: 56b58be8db0290a4980ed26daed93c1c, type: 2}
   Here: {fileID: 2683195716292804712}
 --- !u!4 &8320362180486264924
 Transform:
