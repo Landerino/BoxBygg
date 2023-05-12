@@ -8,11 +8,16 @@ using Photon.Pun;
 public class LoadLevel : MonoBehaviour
 {
     public Text Name;
+    public ShowAvatar SA;
     
     ExitGames.Client.Photon.Hashtable playerAvatar = new ExitGames.Client.Photon.Hashtable();
+    ExitGames.Client.Photon.Hashtable shirtColor = new ExitGames.Client.Photon.Hashtable();
 
     public bool nameInputed;
     public bool AvatarSelected;
+    public bool ShirtSelected;
+
+    public GameObject FakeBtn;
 
     public void LoadMPLobby()
     {
@@ -26,8 +31,17 @@ public class LoadLevel : MonoBehaviour
         PhotonNetwork.SetPlayerCustomProperties(playerAvatar);
     }
 
+    public void SetShirtColor(int ShirtColor)
+    {
+        shirtColor["color"] = ShirtColor;
+        PhotonNetwork.SetPlayerCustomProperties(shirtColor);
+
+    }
+
     private void Start()
     {
+        SetAvatar(0);
+        SetShirtColor(5);
         nameInputed = false;
         AvatarSelected = false;
     }
@@ -46,9 +60,10 @@ public class LoadLevel : MonoBehaviour
 
     void StartChecker()
     {
-        if(nameInputed && AvatarSelected)
+        if(nameInputed)
         {
             gameObject.SetActive(true);
+            FakeBtn.SetActive(false);
         }
     }
 }

@@ -9,6 +9,9 @@ TagManager:
   - Ball
   - Floor
   - Item
+  - Hair
+  - Shirt
+  - Avatar
   layers:
   - Default
   - TransparentFX

@@ -5,9 +5,16 @@ using UnityEngine;
 public class ShowAvatar : MonoBehaviour
 {
     public GameObject[] Avatars;
+    private GameObject Shirt;
+
     private int SelectedAvatar;
     private int OldAvatar;
+
+    public Material[] Colors;
+
     public Transform Here;
+
+    Renderer Rend;
 
     void Start()
     {
@@ -35,5 +42,12 @@ public class ShowAvatar : MonoBehaviour
     private void UpdateMyAvatar(int SA)
     {
         Avatars[SA].gameObject.SetActive(true);
+    }
+
+    public void UpdateShirtColor(int Col)
+    {
+        Shirt = GameObject.Find("Shirt");
+        Rend = Shirt.GetComponent<Renderer>();
+        Rend.material = Colors[Col];
     }
 }

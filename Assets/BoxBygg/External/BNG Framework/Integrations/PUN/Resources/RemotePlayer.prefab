@@ -1209,7 +1209,6 @@ GameObject:
   - component: {fileID: 5600977734015698889}
   - component: {fileID: 1154534651566849018}
   - component: {fileID: 1439928276583048218}
-  - component: {fileID: 5666862931902354762}
   - component: {fileID: 5415362217293005957}
   m_Layer: 0
   m_Name: Canvas
@@ -1283,23 +1282,6 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 1
---- !u!114 &5666862931902354762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805367031605977365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &5415362217293005957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37062,12 +37044,12 @@ MonoBehaviour:
   - {fileID: 4298158426921343319}
   - {fileID: 3070588666501447438}
   AvatarList:
-  - {fileID: 3821936334677076589, guid: 727368520fa2cab47975ea1ee2850dfd, type: 3}
-  - {fileID: 3100948764074927558, guid: 378c9c00bcffcf046ad63c262db6bc66, type: 3}
-  - {fileID: 803970204424632166, guid: c4d1ea6570471a044bc56bde1ced3f59, type: 3}
-  - {fileID: 6743382323258581543, guid: 79939aade3a49fa4eb93ebf2e1109c52, type: 3}
-  - {fileID: 4864615200593612663, guid: d4afb1acd29d9cc489827d9cd1913c08, type: 3}
-  - {fileID: 3575215972895548529, guid: d2c0604aa0be9c14f9009f5ea07e838c, type: 3}
+  - {fileID: 5804340692022987010, guid: a617812b0cbe9274388497fdfeb0b20d, type: 3}
+  - {fileID: 4945028023698307657, guid: 68b53a81beed720429760b9e11774b93, type: 3}
+  - {fileID: 5716648665087329299, guid: 920ee080998eb9346bf3bb4a258ffd55, type: 3}
+  - {fileID: 8469275889051143053, guid: 3bb8d86cae54e984aaca867295394bac, type: 3}
+  - {fileID: 2327118690083689625, guid: 3e59c9af84d5c1546885f6240402eb5b, type: 3}
+  - {fileID: 3336655318703748203, guid: c1f7a363ebd870e4eb993b419b873942, type: 3}
   CorrespondingAvatarColor:
   - {fileID: 2100000, guid: 479a767a4cd468f4e9c508c93f98389e, type: 2}
   - {fileID: 2100000, guid: 2e7cff25452334a43a91beedd66ead34, type: 2}
