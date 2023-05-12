@@ -39,7 +39,7 @@ public class LoadLevel : MonoBehaviour
     private void Start()
     {
         SetAvatar(0);
-        SetShirtColor(1);
+        SetShirtColor(5);
         nameInputed = false;
         AvatarSelected = false;
     }
