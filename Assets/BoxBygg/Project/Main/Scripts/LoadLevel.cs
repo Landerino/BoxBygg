@@ -16,13 +16,19 @@ public class LoadLevel : MonoBehaviour
     public bool nameInputed;
     public bool AvatarSelected;
     public bool ShirtSelected;
+    private bool Ready;
 
-    public GameObject FakeBtn;
+    public Color NewNormalColor;
+    public Color NewHighlightedColor;
+    public Color NewPressedColor;
 
     public void LoadMPLobby()
     {
-        PhotonNetwork.NickName = Name.text;
-        SceneManager.LoadScene(1);
+        if (Ready)
+        {
+            PhotonNetwork.NickName = Name.text;
+            SceneManager.LoadScene(1);
+        }
     }
 
     public void SetAvatar(int Avatar)
@@ -44,6 +50,7 @@ public class LoadLevel : MonoBehaviour
         SetShirtColor(5);
         nameInputed = false;
         AvatarSelected = false;
+        Ready = false;
     }
 
     public void UpdateName()
@@ -62,8 +69,13 @@ public class LoadLevel : MonoBehaviour
     {
         if(nameInputed)
         {
-            gameObject.SetActive(true);
-            FakeBtn.SetActive(false);
+            Ready = true;
+            Button StartBTN = GetComponent<Button>();
+            ColorBlock colors = StartBTN.colors;
+            colors.normalColor = NewNormalColor;
+            colors.highlightedColor = NewHighlightedColor;
+            colors.pressedColor = NewPressedColor;
+            StartBTN.colors = colors;
         }
     }
 }
