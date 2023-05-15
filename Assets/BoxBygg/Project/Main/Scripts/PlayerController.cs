@@ -33,10 +33,12 @@ public class PlayerController : MonoBehaviourPunCallbacks
     //as soon as a player connects this runs and displays the player as intended
     private void Start()
     {
+        /*
         if(PV.Owner.CustomProperties["avatar"] == null)
         {
             AvatarNo = 0;
         }
+        */
         Numba = PV.Owner.CustomProperties["avatar"].ToString();
         AvatarNo = int.Parse(Numba);
         GameObject Avatar = Instantiate(AvatarList[AvatarNo], InstancePoint);
