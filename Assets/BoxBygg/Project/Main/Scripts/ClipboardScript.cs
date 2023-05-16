@@ -7,6 +7,8 @@ public class ClipboardScript : MonoBehaviour
 {
     PhotonView PV;
 
+    private int Page;
+
     private bool IsOn1;
     private bool IsOn2;
     private bool IsOn3;
@@ -17,13 +19,18 @@ public class ClipboardScript : MonoBehaviour
     public GameObject Check1;
     public GameObject Check2;
     public GameObject Check3;
+    public GameObject Page1;
+    public GameObject Page2;
 
     void Start()
     {
         PV = GetComponent<PhotonView>();
+        Page = 0;
         IsOn1 = false;
         IsOn2 = false;
         IsOn3 = false;
+        Page1.SetActive(true);
+        Page2.SetActive(false);
         WaterPipes.SetActive(false);
         ElectricityCables.SetActive(false);
         AirVents.SetActive(false);
@@ -89,4 +96,41 @@ public class ClipboardScript : MonoBehaviour
             Check3.SetActive(false);
         }
     }
+
+    public void FlipPageF()
+    {
+        Page++;
+        if (Page == 2)
+        {
+            Page = 0;
+            ShowPage();
+        }
+        else ShowPage();
+    }
+
+    public void FlipPageB()
+    {
+        Page--;
+        if (Page == -1)
+        {
+            Page = 1;
+            ShowPage();
+        }
+        else ShowPage();
+    }
+
+    void ShowPage()
+    {
+        if(Page == 1)
+        {
+            Page2.SetActive(true);
+            Page1.SetActive(false);
+        }
+        else
+        {
+            Page1.SetActive(true);
+            Page2.SetActive(false);
+        }
+    }
+
 }
