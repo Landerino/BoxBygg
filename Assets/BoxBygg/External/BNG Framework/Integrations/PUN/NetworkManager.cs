@@ -60,17 +60,24 @@ MonoBehaviourPunCallbacks
 
         void Start() {
             // Connect to Random Room if Connected to Photon Server
-            if (PhotonNetwork.IsConnected) {
-                if (JoinRoomOnStart) {
+            /*
+            if (PhotonNetwork.IsConnected)
+            {
+                if (JoinRoomOnStart)
+                {
                     LogText("Joining Room : " + JoinRoomName);
                     PhotonNetwork.JoinRoom(JoinRoomName);
                 }
             }
             // Otherwise establish a new connection. We can then connect via OnConnectedToMaster
-            else {
+            else
+            {
                 PhotonNetwork.ConnectUsingSettings();
                 PhotonNetwork.GameVersion = GameVersion;
             }
+            */
+            PhotonNetwork.ConnectUsingSettings();
+            PhotonNetwork.GameVersion = GameVersion;
         }
 
         void Update() {

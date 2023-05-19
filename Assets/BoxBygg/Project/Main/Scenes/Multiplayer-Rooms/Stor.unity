@@ -11455,7 +11455,7 @@ PrefabInstance:
     - target: {fileID: 3402538391894373897, guid: 9a6b877f35da7aa4db556157d656d0ff,
         type: 3}
       propertyPath: GameVersion
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3402538391894373897, guid: 9a6b877f35da7aa4db556157d656d0ff,
         type: 3}
