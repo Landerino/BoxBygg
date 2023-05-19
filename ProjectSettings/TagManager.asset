@@ -12,6 +12,7 @@ TagManager:
   - Hair
   - Shirt
   - Avatar
+  - RemotePlayer
   layers:
   - Default
   - TransparentFX

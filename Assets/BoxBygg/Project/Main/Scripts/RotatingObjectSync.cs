@@ -16,7 +16,11 @@ public class RotatingObjectSync : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Item"))
+        if (other.gameObject.CompareTag("RemotePlayer"))
+        {
+            return;
+        }
+        else if (other.gameObject.CompareTag("Item"))
         {
             ppL = other.gameObject.GetComponent<PhotonView>().ViewID;
             Debug.Log(ppL);
@@ -24,6 +28,7 @@ public class RotatingObjectSync : MonoBehaviour
         }
     }
 
+    /* Deprecated usage because new erazor object
     private void OnCollisionExit(Collision other)
     {
         if (other.gameObject.CompareTag("Item"))
@@ -33,4 +38,5 @@ public class RotatingObjectSync : MonoBehaviour
             View.RPC("DisconnectRPC", RpcTarget.All, ppL);
         }
     }
+    */
 }

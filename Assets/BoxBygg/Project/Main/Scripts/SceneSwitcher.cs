@@ -7,22 +7,20 @@ using Photon.Pun;
 public class SceneSwitcher : MonoBehaviour
 {
     PhotonView PV;
-    private int scene;
 
     private void Start()
     {
         PV = GetComponent<PhotonView>();
     }
 
-    public void SwitchScene(int numberOfScene)
+    public void SwitchScene()
     {
-        scene = numberOfScene;
         PV.RPC("Initiate", RpcTarget.All);
     }
     [PunRPC]
     private void Initiate()
     {
         Photon.Pun.PhotonNetwork.LeaveRoom();
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadScene(2);
     }
 }
