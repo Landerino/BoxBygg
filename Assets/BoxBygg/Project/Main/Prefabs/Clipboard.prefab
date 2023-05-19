@@ -463,8 +463,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1074338709993515266}
         m_TargetAssemblyTypeName: ClipboardScript, Assembly-CSharp
-        m_MethodName: Switch
-        m_Mode: 3
+        m_MethodName: Switch3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -686,8 +686,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1074338709993515266}
         m_TargetAssemblyTypeName: ClipboardScript, Assembly-CSharp
-        m_MethodName: Switch
-        m_Mode: 3
+        m_MethodName: Switch2
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2155,8 +2155,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1074338709993515266}
         m_TargetAssemblyTypeName: ClipboardScript, Assembly-CSharp
-        m_MethodName: Switch
-        m_Mode: 3
+        m_MethodName: Switch1
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -38294,8 +38294,6 @@ struct SceneSwitcher_t4BE0478E16D178567D51E0CB184D38BDE3E02602  : public MonoBeh
 {
 	// Photon.Pun.PhotonView SceneSwitcher::PV
 	PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* ___PV_4;
-	// System.Int32 SceneSwitcher::scene
-	int32_t ___scene_5;
 };
 
 // BNG.ScreenFader
@@ -46613,9 +46611,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5203[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5204[2] = 
 {
 	static_cast<int32_t>(offsetof(SceneInfo_tC4A3002977FAC0450F8B2EFAEAB1FF856F85126A, ___playerSkinNo_4)),static_cast<int32_t>(offsetof(SceneInfo_tC4A3002977FAC0450F8B2EFAEAB1FF856F85126A, ___HoldingRemote_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5205[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5205[1] = 
 {
-	static_cast<int32_t>(offsetof(SceneSwitcher_t4BE0478E16D178567D51E0CB184D38BDE3E02602, ___PV_4)),static_cast<int32_t>(offsetof(SceneSwitcher_t4BE0478E16D178567D51E0CB184D38BDE3E02602, ___scene_5)),};
+	static_cast<int32_t>(offsetof(SceneSwitcher_t4BE0478E16D178567D51E0CB184D38BDE3E02602, ___PV_4)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5206[8] = 
 {
 	static_cast<int32_t>(offsetof(screenManager_tCC98E8C9CD458E7AD02510EE74D2C330E178D3B0, ___Pview_4)),static_cast<int32_t>(offsetof(screenManager_tCC98E8C9CD458E7AD02510EE74D2C330E178D3B0, ___timeScript_5)),static_cast<int32_t>(offsetof(screenManager_tCC98E8C9CD458E7AD02510EE74D2C330E178D3B0, ___PlaceText_6)),static_cast<int32_t>(offsetof(screenManager_tCC98E8C9CD458E7AD02510EE74D2C330E178D3B0, ___Storobj_7)),static_cast<int32_t>(offsetof(screenManager_tCC98E8C9CD458E7AD02510EE74D2C330E178D3B0, ___Riddarobj_8)),static_cast<int32_t>(offsetof(screenManager_tCC98E8C9CD458E7AD02510EE74D2C330E178D3B0, ___Nextbtn_9)),static_cast<int32_t>(offsetof(screenManager_tCC98E8C9CD458E7AD02510EE74D2C330E178D3B0, ___Previousbtn_10)),static_cast<int32_t>(offsetof(screenManager_tCC98E8C9CD458E7AD02510EE74D2C330E178D3B0, ___Placeint_11)),};

@@ -17,10 +17,23 @@ public class SceneSwitcher : MonoBehaviour
     {
         PV.RPC("Initiate", RpcTarget.All);
     }
+
+    public void SwitchScene2()
+    {
+        PV.RPC("Initiate2", RpcTarget.All);
+    }
+
     [PunRPC]
     private void Initiate()
     {
         Photon.Pun.PhotonNetwork.LeaveRoom();
         SceneManager.LoadScene(2);
+    }
+
+    [PunRPC]
+    private void Initiate2()
+    {
+        Photon.Pun.PhotonNetwork.LeaveRoom();
+        SceneManager.LoadScene(1);
     }
 }

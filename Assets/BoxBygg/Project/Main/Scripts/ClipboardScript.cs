@@ -37,10 +37,17 @@ public class ClipboardScript : MonoBehaviour
         Check1.SetActive(false);
     }
 
-    public void Switch(int Check2)
+    public void Switch1()
     {
-        string Number = Check2.ToString();
-        PV.RPC("ShowHide" + Number, RpcTarget.All);
+        PV.RPC("ShowHide1", RpcTarget.All);
+    }
+    public void Switch2()
+    {
+        PV.RPC("ShowHide2", RpcTarget.All);
+    }
+    public void Switch3()
+    {
+        PV.RPC("ShowHide3", RpcTarget.All);
     }
 
     [PunRPC]
