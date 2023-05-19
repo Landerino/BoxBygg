@@ -5,7 +5,7 @@ using Photon.Pun;
 
 public class ClipboardScript : MonoBehaviour
 {
-    PhotonView PV;
+    PhotonView PhotonV;
 
     private int Page;
 
@@ -24,7 +24,7 @@ public class ClipboardScript : MonoBehaviour
 
     void Start()
     {
-        PV = GetComponent<PhotonView>();
+        PhotonV = GetComponent<PhotonView>();
         Page = 0;
         IsOn1 = false;
         IsOn2 = false;
@@ -39,15 +39,15 @@ public class ClipboardScript : MonoBehaviour
 
     public void Switch1()
     {
-        PV.RPC("ShowHide1", RpcTarget.All);
+        PhotonV.RPC("ShowHide1", RpcTarget.All);
     }
     public void Switch2()
     {
-        PV.RPC("ShowHide2", RpcTarget.All);
+        PhotonV.RPC("ShowHide2", RpcTarget.All);
     }
     public void Switch3()
     {
-        PV.RPC("ShowHide3", RpcTarget.All);
+        PhotonV.RPC("ShowHide3", RpcTarget.All);
     }
 
     [PunRPC]
