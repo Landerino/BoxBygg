@@ -16,11 +16,13 @@ public class SceneSwitcher : MonoBehaviour
     public void SwitchScene()
     {
         PV.RPC("Initiate", RpcTarget.All);
+        SceneManager.LoadScene(2);
     }
 
     public void SwitchScene2()
     {
         PV.RPC("Initiate2", RpcTarget.All);
+        SceneManager.LoadScene(1);
     }
 
     [PunRPC]
