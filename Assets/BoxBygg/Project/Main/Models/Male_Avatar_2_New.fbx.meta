@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Male_Material_2
     second: {fileID: 2100000, guid: 0098a3a9bb6cda846ad243707a9f72d8, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Male_Texture_2
+    second: {fileID: 2800000, guid: 3e6de6bf68b695547a804ce378fde312, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

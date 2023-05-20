@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Female_Face_1
-    second: {fileID: 2100000, guid: aca27a8c957305d438625e307a7732c0, type: 2}
+      name: Female_Material_1
+    second: {fileID: 2100000, guid: 9d58085074955514a86f8c65346b4885, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Female_Texture_1
+    second: {fileID: 2800000, guid: 0b4c77b85f647274aa137baddaa9df22, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
