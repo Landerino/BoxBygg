@@ -12410,21 +12410,67 @@ IL_0082:
 // System.Void RotatingObjectSync::Drop()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatingObjectSync_Drop_mE136C3C9B907FEB094606D47923E783AEE9A7B61 (RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		// rGrabber.HeldGrabbable.DropItem(rGrabber);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		// if(rGrabber.HeldGrabbable != null)
 		Grabber_tCCBBC63D0FECBDD434CE54930135C6A1D5C22B98* L_0 = __this->___rGrabber_9;
 		NullCheck(L_0);
 		Grabbable_tFB74479A02DEB046F7DAE97F0349232AC3456E5B* L_1 = L_0->___HeldGrabbable_17;
-		Grabber_tCCBBC63D0FECBDD434CE54930135C6A1D5C22B98* L_2 = __this->___rGrabber_9;
-		NullCheck(L_1);
-		VirtualActionInvoker1< Grabber_tCCBBC63D0FECBDD434CE54930135C6A1D5C22B98* >::Invoke(28 /* System.Void BNG.Grabbable::DropItem(BNG.Grabber) */, L_1, L_2);
-		// lGrabber.HeldGrabbable.DropItem(lGrabber);
-		Grabber_tCCBBC63D0FECBDD434CE54930135C6A1D5C22B98* L_3 = __this->___lGrabber_10;
-		NullCheck(L_3);
-		Grabbable_tFB74479A02DEB046F7DAE97F0349232AC3456E5B* L_4 = L_3->___HeldGrabbable_17;
-		Grabber_tCCBBC63D0FECBDD434CE54930135C6A1D5C22B98* L_5 = __this->___lGrabber_10;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		V_0 = L_2;
+		bool L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		// rGrabber.HeldGrabbable.DropItem(rGrabber);
+		Grabber_tCCBBC63D0FECBDD434CE54930135C6A1D5C22B98* L_4 = __this->___rGrabber_9;
 		NullCheck(L_4);
-		VirtualActionInvoker1< Grabber_tCCBBC63D0FECBDD434CE54930135C6A1D5C22B98* >::Invoke(28 /* System.Void BNG.Grabbable::DropItem(BNG.Grabber) */, L_4, L_5);
+		Grabbable_tFB74479A02DEB046F7DAE97F0349232AC3456E5B* L_5 = L_4->___HeldGrabbable_17;
+		Grabber_tCCBBC63D0FECBDD434CE54930135C6A1D5C22B98* L_6 = __this->___rGrabber_9;
+		NullCheck(L_5);
+		VirtualActionInvoker1< Grabber_tCCBBC63D0FECBDD434CE54930135C6A1D5C22B98* >::Invoke(28 /* System.Void BNG.Grabbable::DropItem(BNG.Grabber) */, L_5, L_6);
+	}
+
+IL_002f:
+	{
+		// if(lGrabber.HeldGrabbable != null)
+		Grabber_tCCBBC63D0FECBDD434CE54930135C6A1D5C22B98* L_7 = __this->___lGrabber_10;
+		NullCheck(L_7);
+		Grabbable_tFB74479A02DEB046F7DAE97F0349232AC3456E5B* L_8 = L_7->___HeldGrabbable_17;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_9;
+		L_9 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		V_1 = L_9;
+		bool L_10 = V_1;
+		if (!L_10)
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		// lGrabber.HeldGrabbable.DropItem(lGrabber);
+		Grabber_tCCBBC63D0FECBDD434CE54930135C6A1D5C22B98* L_11 = __this->___lGrabber_10;
+		NullCheck(L_11);
+		Grabbable_tFB74479A02DEB046F7DAE97F0349232AC3456E5B* L_12 = L_11->___HeldGrabbable_17;
+		Grabber_tCCBBC63D0FECBDD434CE54930135C6A1D5C22B98* L_13 = __this->___lGrabber_10;
+		NullCheck(L_12);
+		VirtualActionInvoker1< Grabber_tCCBBC63D0FECBDD434CE54930135C6A1D5C22B98* >::Invoke(28 /* System.Void BNG.Grabbable::DropItem(BNG.Grabber) */, L_12, L_13);
+	}
+
+IL_005d:
+	{
 		// }
 		return;
 	}

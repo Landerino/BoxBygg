@@ -8,7 +8,7 @@ public class RotatingObjectSync : MonoBehaviour
 {
     PhotonView View;
     public GameObject terrain;
-    private int ppL;
+    private int PID;
 
     private GameObject rightGrabber;
     private GameObject leftGrabber;
@@ -24,21 +24,18 @@ public class RotatingObjectSync : MonoBehaviour
         View = terrain.GetComponent<PhotonView>();
     }
 
+    //when an item touches the terrain the id saves and later sets the terrain as a parent
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("RemotePlayer"))
-        {
-            return;
-        }
-        else if (other.gameObject.CompareTag("Item"))
+        if (other.gameObject.CompareTag("Item"))
         {
             Drop();
-            ppL = other.gameObject.GetComponent<PhotonView>().ViewID;
-            Debug.Log(ppL);
-            View.RPC("ConnectRPC", RpcTarget.All, ppL);
+            PID = other.gameObject.GetComponent<PhotonView>().ViewID;
+            View.RPC("ConnectRPC", RpcTarget.All, PID);
         }
     }
 
+    //Drops the held item from the users hands
     private void Drop()
     {
         if(rGrabber.HeldGrabbable != null)
@@ -57,9 +54,9 @@ public class RotatingObjectSync : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Item"))
         {
-            ppL = other.gameObject.GetComponent<PhotonView>().ViewID;
-            Debug.Log(ppL);
-            View.RPC("DisconnectRPC", RpcTarget.All, ppL);
+            PID = other.gameObject.GetComponent<PhotonView>().ViewID;
+            Debug.Log(PID);
+            View.RPC("DisconnectRPC", RpcTarget.All, PID);
         }
     }
     */
