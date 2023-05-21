@@ -35380,28 +35380,36 @@ struct ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960  : public MonoB
 	PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* ___PhotonV_4;
 	// System.Int32 ClipboardScript::Page
 	int32_t ___Page_5;
+	// System.Int32 ClipboardScript::OnsOffs
+	int32_t ___OnsOffs_6;
 	// System.Boolean ClipboardScript::IsOn1
-	bool ___IsOn1_6;
+	bool ___IsOn1_7;
 	// System.Boolean ClipboardScript::IsOn2
-	bool ___IsOn2_7;
+	bool ___IsOn2_8;
 	// System.Boolean ClipboardScript::IsOn3
-	bool ___IsOn3_8;
+	bool ___IsOn3_9;
 	// UnityEngine.GameObject ClipboardScript::WaterPipes
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___WaterPipes_9;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___WaterPipes_10;
 	// UnityEngine.GameObject ClipboardScript::ElectricityCables
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ElectricityCables_10;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ElectricityCables_11;
 	// UnityEngine.GameObject ClipboardScript::AirVents
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___AirVents_11;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___AirVents_12;
 	// UnityEngine.GameObject ClipboardScript::Check1
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Check1_12;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Check1_13;
 	// UnityEngine.GameObject ClipboardScript::Check2
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Check2_13;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Check2_14;
 	// UnityEngine.GameObject ClipboardScript::Check3
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Check3_14;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Check3_15;
 	// UnityEngine.GameObject ClipboardScript::Page1
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Page1_15;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Page1_16;
 	// UnityEngine.GameObject ClipboardScript::Page2
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Page2_16;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Page2_17;
+	// UnityEngine.GameObject ClipboardScript::Roof
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Roof_18;
+	// UnityEngine.Material[] ClipboardScript::materials
+	MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* ___materials_19;
+	// UnityEngine.Renderer ClipboardScript::rend
+	Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* ___rend_20;
 };
 
 // BNG.CollisionSound
@@ -46438,9 +46446,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5201[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5202[7] = 
 {
 	static_cast<int32_t>(offsetof(CanvasCaller_t622F87E5B0B407C0729DBBE466F2DD1041520438, ___Sign_4)),static_cast<int32_t>(offsetof(CanvasCaller_t622F87E5B0B407C0729DBBE466F2DD1041520438, ___Canvas_5)),static_cast<int32_t>(offsetof(CanvasCaller_t622F87E5B0B407C0729DBBE466F2DD1041520438, ___BoardC1_6)),static_cast<int32_t>(offsetof(CanvasCaller_t622F87E5B0B407C0729DBBE466F2DD1041520438, ___BoardC2_7)),static_cast<int32_t>(offsetof(CanvasCaller_t622F87E5B0B407C0729DBBE466F2DD1041520438, ___BoardC3_8)),static_cast<int32_t>(offsetof(CanvasCaller_t622F87E5B0B407C0729DBBE466F2DD1041520438, ___BoardC4_9)),static_cast<int32_t>(offsetof(CanvasCaller_t622F87E5B0B407C0729DBBE466F2DD1041520438, ___IsShowing_10)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5203[13] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5203[17] = 
 {
-	static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___PhotonV_4)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___Page_5)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___IsOn1_6)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___IsOn2_7)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___IsOn3_8)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___WaterPipes_9)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___ElectricityCables_10)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___AirVents_11)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___Check1_12)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___Check2_13)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___Check3_14)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___Page1_15)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___Page2_16)),};
+	static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___PhotonV_4)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___Page_5)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___OnsOffs_6)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___IsOn1_7)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___IsOn2_8)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___IsOn3_9)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___WaterPipes_10)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___ElectricityCables_11)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___AirVents_12)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___Check1_13)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___Check2_14)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___Check3_15)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___Page1_16)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___Page2_17)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___Roof_18)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___materials_19)),static_cast<int32_t>(offsetof(ClipboardScript_t434EE71C4788288FD9407EAFF50045DC84679960, ___rend_20)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5204[6] = 
 {
 	static_cast<int32_t>(offsetof(ColorChange_t4FE34D8D450BF12148F5E87E82E8DF2775E79E4B, ___hairMaterials_5)),static_cast<int32_t>(offsetof(ColorChange_t4FE34D8D450BF12148F5E87E82E8DF2775E79E4B, ___shirtMaterials_6)),static_cast<int32_t>(offsetof(ColorChange_t4FE34D8D450BF12148F5E87E82E8DF2775E79E4B, ___selectedHairIndex_7)),static_cast<int32_t>(offsetof(ColorChange_t4FE34D8D450BF12148F5E87E82E8DF2775E79E4B, ___selectedShirtIndex_8)),static_cast<int32_t>(offsetof(ColorChange_t4FE34D8D450BF12148F5E87E82E8DF2775E79E4B, ___HairColorKey_9)),static_cast<int32_t>(offsetof(ColorChange_t4FE34D8D450BF12148F5E87E82E8DF2775E79E4B, ___ShirtColorKey_10)),};
