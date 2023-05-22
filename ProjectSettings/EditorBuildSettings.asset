@@ -11,12 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/BoxBygg/External/BNG Framework/Integrations/PUN/MPDemo.unity
     guid: 1ef291d4030a6484f8bc6edeae91dda9
+  - enabled: 1
+    path: Assets/BoxBygg/Project/Main/Scenes/Multiplayer-Rooms/Stor.unity
+    guid: 60f553b479ba0014f85c8843a5f020a6
   - enabled: 0
     path: Assets/BoxBygg/Project/Main/Scenes/Main/OldAvatar.unity
     guid: e820e67263e119345afed049c655b32d
-  - enabled: 0
-    path: Assets/BoxBygg/Project/Main/Scenes/MultiplayerRoomTests/Stor.unity
-    guid: 60f553b479ba0014f85c8843a5f020a6
   - enabled: 0
     path: Assets/BoxBygg/External/BNG Framework/Scenes/Scene Transitioning.unity
     guid: 9d7c9629abf9c99449e358b0938b47d0

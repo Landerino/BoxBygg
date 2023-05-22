@@ -11,6 +11,10 @@ TagManager:
   - Item
   - Hair
   - Shirt
+  - Avatar
+  - RemotePlayer
+  - LeftGrabber
+  - RightGrabber
   layers:
   - Default
   - TransparentFX
@@ -25,9 +29,9 @@ TagManager:
   - Grabbable
   - Hand
   - Table
-  - 
-  - 
-  - 
+  - Water
+  - Electricity
+  - Air
   - 
   - 
   - 

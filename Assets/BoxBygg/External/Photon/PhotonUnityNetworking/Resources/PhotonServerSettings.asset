@@ -55,6 +55,14 @@ MonoBehaviour:
   - DisconnectRPC
   - ShowHideStorangenRPC
   - RecallBall
+  - Initiate
+  - SyncHairColor
+  - SyncShirtColor
+  - ShowHide
+  - ShowHide1
+  - ShowHide2
+  - ShowHide3
+  - Initiate2
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

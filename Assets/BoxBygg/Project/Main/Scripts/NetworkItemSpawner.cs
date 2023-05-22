@@ -10,7 +10,6 @@ public class NetworkItemSpawner : MonoBehaviour
 
     public void SpawnItem(string Item)
     {
-        Debug.Log("Spawned");
         PhotonNetwork.InstantiateSceneObject(Item, SpawnItemHere, rotation);
     }
 

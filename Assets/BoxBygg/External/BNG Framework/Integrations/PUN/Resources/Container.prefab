@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2160839882004539719}
   - component: {fileID: 2160839882004539718}
   - component: {fileID: 2160839882004539737}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Container
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ MonoBehaviour:
   BreakDistance: 0
   HideHandGraphics: 0
   ParentToHands: 0
-  ParentHandModel: 1
+  ParentHandModel: 0
   SnapHandModel: 1
   CanBeDropped: 1
   CanBeSnappedToSnapZone: 1
