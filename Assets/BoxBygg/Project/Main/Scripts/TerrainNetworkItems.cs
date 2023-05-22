@@ -13,29 +13,28 @@ public class TerrainNetworkItems : MonoBehaviourPunCallbacks
     //private int ObjectNumber; 
     
     [PunRPC]
-    void ConnectRPC(int ppL)
+    void ConnectRPC(int PID)
     {
-        //ObjectNumber = ppL;
-        StartCoroutine(Delay(ppL));
+        //ObjectNumber = PID;
+        StartCoroutine(Delay(PID));
     }
 
-    IEnumerator Delay(int ppL)
+    IEnumerator Delay(int PID)
     {
-        yield return new WaitForSecondsRealtime(0.7f);
-        RemoveGrabbable(ppL);
+        yield return new WaitForSecondsRealtime(0.9f);
+        RemoveGrabbable(PID);
     }
 
-    void RemoveGrabbable(int ppL)
+    void RemoveGrabbable(int PID)
     {
-        PhotonView.Find(ppL).gameObject.transform.SetParent(this.transform);
-        Destroy(PhotonView.Find(ppL).gameObject.GetComponent<NetworkedGrabbable>());
+        Destroy(PhotonView.Find(PID).gameObject.GetComponent<NetworkedGrabbable>());
+        PhotonView.Find(PID).gameObject.transform.SetParent(this.transform);
     }
 
     [PunRPC]
-    void DisconnectRPC(int ppL)
+    void DisconnectRPC(int PID)
     {
-        PhotonView.Find(ppL).transform.SetParent(null);
-        //ppL.transform.SetParent(null);
+        PhotonView.Find(PID).transform.SetParent(null);
     }
 
     public void EnableSign()

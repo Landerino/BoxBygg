@@ -13,6 +13,8 @@ TagManager:
   - Shirt
   - Avatar
   - RemotePlayer
+  - LeftGrabber
+  - RightGrabber
   layers:
   - Default
   - TransparentFX

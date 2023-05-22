@@ -8,6 +8,7 @@ public class ClipboardScript : MonoBehaviour
     PhotonView PhotonV;
 
     private int Page;
+    private int OnsOffs;
 
     private bool IsOn1;
     private bool IsOn2;
@@ -21,6 +22,11 @@ public class ClipboardScript : MonoBehaviour
     public GameObject Check3;
     public GameObject Page1;
     public GameObject Page2;
+    public GameObject Roof;
+
+    public Material[] materials;
+
+    private Renderer rend;
 
     void Start()
     {
@@ -35,6 +41,8 @@ public class ClipboardScript : MonoBehaviour
         ElectricityCables.SetActive(false);
         AirVents.SetActive(false);
         Check1.SetActive(false);
+        OnsOffs = 0;
+        rend = Roof.GetComponent<Renderer>();
     }
 
     public void Switch1()
@@ -59,13 +67,16 @@ public class ClipboardScript : MonoBehaviour
             IsOn1 = true;
             WaterPipes.SetActive(true);
             Check1.SetActive(true);
+            OnsOffs++;
         }
         else
         {
             IsOn1 = false;
             WaterPipes.SetActive(false);
             Check1.SetActive(false);
+            OnsOffs--;
         }
+        UpdateRenderSide();
     }
 
     [PunRPC]
@@ -77,13 +88,16 @@ public class ClipboardScript : MonoBehaviour
             IsOn2 = true;
             ElectricityCables.SetActive(true);
             Check2.SetActive(true);
+            OnsOffs++;
         }
         else
         {
             IsOn2 = false;
             ElectricityCables.SetActive(false);
             Check2.SetActive(false);
+            OnsOffs--;
         }
+        UpdateRenderSide();
     }
 
     [PunRPC]
@@ -95,13 +109,16 @@ public class ClipboardScript : MonoBehaviour
             IsOn3 = true;
             AirVents.SetActive(true);
             Check3.SetActive(true);
+            OnsOffs++;
         }
         else
         {
             IsOn3 = false;
             AirVents.SetActive(false);
             Check3.SetActive(false);
+            OnsOffs--;
         }
+        UpdateRenderSide();
     }
 
     public void FlipPageF()
@@ -124,6 +141,18 @@ public class ClipboardScript : MonoBehaviour
             ShowPage();
         }
         else ShowPage();
+    }
+
+    void UpdateRenderSide()
+    {
+        if(OnsOffs != 0)
+        {
+            rend.material = materials[1];
+        }
+        else
+        {
+            rend.material = materials[0];
+        }
     }
 
     void ShowPage()
