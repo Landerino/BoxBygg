@@ -12502,20 +12502,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneSwitcher_SwitchScene_m274704EEF30C7
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PhotonNetwork_tBF04D378B56DDA80F9DB8E08DF87D5B532C22B99_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7D527ADCD84F00C52F354033D8AAFAB051CFC718);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// SceneManager.LoadScene(2);
-		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1(2, NULL);
-		// PV.RPC("Initiate", RpcTarget.All);
+		// PV.RPC("Initiate", RpcTarget.Others);
 		PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* L_0 = __this->___PV_4;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1;
 		L_1 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
 		NullCheck(L_0);
-		PhotonView_RPC_mD406BD732C9B9AFD46C149F63514AB3A923EB5BB(L_0, _stringLiteral7D527ADCD84F00C52F354033D8AAFAB051CFC718, 0, L_1, NULL);
+		PhotonView_RPC_mD406BD732C9B9AFD46C149F63514AB3A923EB5BB(L_0, _stringLiteral7D527ADCD84F00C52F354033D8AAFAB051CFC718, 1, L_1, NULL);
+		// Photon.Pun.PhotonNetwork.LeaveRoom();
+		il2cpp_codegen_runtime_class_init_inline(PhotonNetwork_tBF04D378B56DDA80F9DB8E08DF87D5B532C22B99_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = PhotonNetwork_LeaveRoom_m3BE228D128665941646C4D4A1D5529B944F49744((bool)1, NULL);
+		// SceneManager.LoadScene(2);
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1(2, NULL);
 		// }
 		return;
 	}
@@ -12527,20 +12532,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneSwitcher_SwitchScene2_mA65E950D73A3
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PhotonNetwork_tBF04D378B56DDA80F9DB8E08DF87D5B532C22B99_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral078AD3529033A62615C6A943DF6A7E8337666589);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// SceneManager.LoadScene(1);
-		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1(1, NULL);
-		// PV.RPC("Initiate2", RpcTarget.All);
+		// PV.RPC("Initiate2", RpcTarget.Others);
 		PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* L_0 = __this->___PV_4;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1;
 		L_1 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
 		NullCheck(L_0);
-		PhotonView_RPC_mD406BD732C9B9AFD46C149F63514AB3A923EB5BB(L_0, _stringLiteral078AD3529033A62615C6A943DF6A7E8337666589, 0, L_1, NULL);
+		PhotonView_RPC_mD406BD732C9B9AFD46C149F63514AB3A923EB5BB(L_0, _stringLiteral078AD3529033A62615C6A943DF6A7E8337666589, 1, L_1, NULL);
+		// Photon.Pun.PhotonNetwork.LeaveRoom();
+		il2cpp_codegen_runtime_class_init_inline(PhotonNetwork_tBF04D378B56DDA80F9DB8E08DF87D5B532C22B99_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = PhotonNetwork_LeaveRoom_m3BE228D128665941646C4D4A1D5529B944F49744((bool)1, NULL);
+		// SceneManager.LoadScene(1);
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1(1, NULL);
 		// }
 		return;
 	}

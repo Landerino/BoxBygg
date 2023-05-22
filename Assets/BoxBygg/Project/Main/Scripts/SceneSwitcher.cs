@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Photon.Pun;
-using BNG;
 
 public class SceneSwitcher : MonoBehaviour
 {
@@ -16,16 +15,16 @@ public class SceneSwitcher : MonoBehaviour
 
     public void SwitchScene()
     {
+        PV.RPC("Initiate", RpcTarget.Others);
+        Photon.Pun.PhotonNetwork.LeaveRoom();
         SceneManager.LoadScene(2);
-        PV.RPC("Initiate", RpcTarget.All);
-        
     }
 
     public void SwitchScene2()
     {
+        PV.RPC("Initiate2", RpcTarget.Others);
+        Photon.Pun.PhotonNetwork.LeaveRoom();
         SceneManager.LoadScene(1);
-        PV.RPC("Initiate2", RpcTarget.All);
-        
     }
 
     [PunRPC]
