@@ -9546,8 +9546,8 @@ struct U3CDelayU3Ed__4_tA20468AEE0199B5012340DFB61F8BF07BF1D4545  : public Runti
 	int32_t ___U3CU3E1__state_0;
 	// System.Object TerrainNetworkItems/<Delay>d__4::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// System.Int32 TerrainNetworkItems/<Delay>d__4::ppL
-	int32_t ___ppL_2;
+	// System.Int32 TerrainNetworkItems/<Delay>d__4::PID
+	int32_t ___PID_2;
 	// TerrainNetworkItems TerrainNetworkItems/<Delay>d__4::<>4__this
 	TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* ___U3CU3E4__this_3;
 };
@@ -38111,8 +38111,8 @@ struct RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7  : public Mo
 	PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* ___View_4;
 	// UnityEngine.GameObject RotatingObjectSync::terrain
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___terrain_5;
-	// System.Int32 RotatingObjectSync::ppL
-	int32_t ___ppL_6;
+	// System.Int32 RotatingObjectSync::PID
+	int32_t ___PID_6;
 	// UnityEngine.GameObject RotatingObjectSync::rightGrabber
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightGrabber_7;
 	// UnityEngine.GameObject RotatingObjectSync::leftGrabber
@@ -46486,7 +46486,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5216[5] =
 	static_cast<int32_t>(offsetof(RotateTerrain_t0136260836F8422D4020E299FBD81D8ED39C42DF, ___View_4)),static_cast<int32_t>(offsetof(RotateTerrain_t0136260836F8422D4020E299FBD81D8ED39C42DF, ___terrain_5)),static_cast<int32_t>(offsetof(RotateTerrain_t0136260836F8422D4020E299FBD81D8ED39C42DF, ___Rotationint_6)),static_cast<int32_t>(offsetof(RotateTerrain_t0136260836F8422D4020E299FBD81D8ED39C42DF, ___spin_7)),static_cast<int32_t>(offsetof(RotateTerrain_t0136260836F8422D4020E299FBD81D8ED39C42DF, ___current_8)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5217[7] = 
 {
-	static_cast<int32_t>(offsetof(RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7, ___View_4)),static_cast<int32_t>(offsetof(RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7, ___terrain_5)),static_cast<int32_t>(offsetof(RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7, ___ppL_6)),static_cast<int32_t>(offsetof(RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7, ___rightGrabber_7)),static_cast<int32_t>(offsetof(RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7, ___leftGrabber_8)),static_cast<int32_t>(offsetof(RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7, ___rGrabber_9)),static_cast<int32_t>(offsetof(RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7, ___lGrabber_10)),};
+	static_cast<int32_t>(offsetof(RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7, ___View_4)),static_cast<int32_t>(offsetof(RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7, ___terrain_5)),static_cast<int32_t>(offsetof(RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7, ___PID_6)),static_cast<int32_t>(offsetof(RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7, ___rightGrabber_7)),static_cast<int32_t>(offsetof(RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7, ___leftGrabber_8)),static_cast<int32_t>(offsetof(RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7, ___rGrabber_9)),static_cast<int32_t>(offsetof(RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7, ___lGrabber_10)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5218[2] = 
 {
 	static_cast<int32_t>(offsetof(SceneInfo_tC4A3002977FAC0450F8B2EFAEAB1FF856F85126A, ___playerSkinNo_4)),static_cast<int32_t>(offsetof(SceneInfo_tC4A3002977FAC0450F8B2EFAEAB1FF856F85126A, ___HoldingRemote_5)),};
@@ -46510,7 +46510,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5224[1] =
 	static_cast<int32_t>(offsetof(StayInTipArea_t8F33AF34CF77916772E22320C6031E1453A78B44, ___Canvas_4)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5226[4] = 
 {
-	static_cast<int32_t>(offsetof(U3CDelayU3Ed__4_tA20468AEE0199B5012340DFB61F8BF07BF1D4545, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CDelayU3Ed__4_tA20468AEE0199B5012340DFB61F8BF07BF1D4545, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CDelayU3Ed__4_tA20468AEE0199B5012340DFB61F8BF07BF1D4545, ___ppL_2)),static_cast<int32_t>(offsetof(U3CDelayU3Ed__4_tA20468AEE0199B5012340DFB61F8BF07BF1D4545, ___U3CU3E4__this_3)),};
+	static_cast<int32_t>(offsetof(U3CDelayU3Ed__4_tA20468AEE0199B5012340DFB61F8BF07BF1D4545, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CDelayU3Ed__4_tA20468AEE0199B5012340DFB61F8BF07BF1D4545, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CDelayU3Ed__4_tA20468AEE0199B5012340DFB61F8BF07BF1D4545, ___PID_2)),static_cast<int32_t>(offsetof(U3CDelayU3Ed__4_tA20468AEE0199B5012340DFB61F8BF07BF1D4545, ___U3CU3E4__this_3)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5227[3] = 
 {
 	static_cast<int32_t>(offsetof(TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31, ___Sign_5)),static_cast<int32_t>(offsetof(TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31, ___RoadInfos_6)),static_cast<int32_t>(offsetof(TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31, ___Rts_7)),};

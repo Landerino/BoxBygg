@@ -1994,8 +1994,8 @@ struct U3CDelayU3Ed__4_tA20468AEE0199B5012340DFB61F8BF07BF1D4545  : public Runti
 	int32_t ___U3CU3E1__state_0;
 	// System.Object TerrainNetworkItems/<Delay>d__4::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// System.Int32 TerrainNetworkItems/<Delay>d__4::ppL
-	int32_t ___ppL_2;
+	// System.Int32 TerrainNetworkItems/<Delay>d__4::PID
+	int32_t ___PID_2;
 	// TerrainNetworkItems TerrainNetworkItems/<Delay>d__4::<>4__this
 	TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* ___U3CU3E4__this_3;
 };
@@ -5656,8 +5656,8 @@ struct RotatingObjectSync_tBF98FCBAF0975A68C98893FF382563D8865218B7  : public Mo
 	PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* ___View_4;
 	// UnityEngine.GameObject RotatingObjectSync::terrain
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___terrain_5;
-	// System.Int32 RotatingObjectSync::ppL
-	int32_t ___ppL_6;
+	// System.Int32 RotatingObjectSync::PID
+	int32_t ___PID_6;
 	// UnityEngine.GameObject RotatingObjectSync::rightGrabber
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___rightGrabber_7;
 	// UnityEngine.GameObject RotatingObjectSync::leftGrabber
@@ -8282,24 +8282,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RenderSettings_set_skybox_m7988CC3217B14
 // System.Int32 Photon.Pun.PhotonNetwork::get_CountOfPlayers()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PhotonNetwork_get_CountOfPlayers_mE91457D4D8BD3F06581A4458BDCB8C5BD1918E7C (const RuntimeMethod* method) ;
 // System.Collections.IEnumerator TerrainNetworkItems::Delay(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TerrainNetworkItems_Delay_m4B8DD6EE179D43C0A49A0E7877A9D1A908D31934 (TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* __this, int32_t ___ppL0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TerrainNetworkItems_Delay_m4B8DD6EE179D43C0A49A0E7877A9D1A908D31934 (TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* __this, int32_t ___PID0, const RuntimeMethod* method) ;
 // UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___routine0, const RuntimeMethod* method) ;
 // System.Void TerrainNetworkItems/<Delay>d__4::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDelayU3Ed__4__ctor_m9B6C9B89F17CAB3BF7F8456BE1372102233BE40A (U3CDelayU3Ed__4_tA20468AEE0199B5012340DFB61F8BF07BF1D4545* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Transform::SetParent(UnityEngine.Transform)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___p0, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::GetComponent<BNG.NetworkedGrabbable>()
 inline NetworkedGrabbable_t667791DFD231936640526317B709926C447DF70C* GameObject_GetComponent_TisNetworkedGrabbable_t667791DFD231936640526317B709926C447DF70C_m8A8DB7ADA76716A7A29A71715F45ACB3A87965D9 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
 {
 	return ((  NetworkedGrabbable_t667791DFD231936640526317B709926C447DF70C* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
 }
+// System.Void UnityEngine.Transform::SetParent(UnityEngine.Transform)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___p0, const RuntimeMethod* method) ;
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.WaitForSecondsRealtime::.ctor(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSecondsRealtime__ctor_mBFC1E4F0E042D5EC6E7EEB211A2FE5193A8F6D6F (WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01* __this, float ___time0, const RuntimeMethod* method) ;
 // System.Void TerrainNetworkItems::RemoveGrabbable(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainNetworkItems_RemoveGrabbable_m98D74B547FE732EBD8748158D85C2D9E0B55DC05 (TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* __this, int32_t ___ppL0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainNetworkItems_RemoveGrabbable_m98D74B547FE732EBD8748158D85C2D9E0B55DC05 (TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* __this, int32_t ___PID0, const RuntimeMethod* method) ;
 // System.Void System.NotSupportedException::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Animator::set_updateMode(UnityEngine.AnimatorUpdateMode)
@@ -12317,91 +12317,60 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatingObjectSync_OnCollisionEnter_mFCF
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisPhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B_m0E6283AF5901A2D881EFE3F8E321B502D2B2F950_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB6F02FE6CD732AB22BD11BE4254D9546F3BEEE58);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCC61B2A6785354F624C0EE3A8BB8557223F1E9F0);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFD71BF8223847A185788F968F80DD6657829BFEC);
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
-	bool V_1 = false;
 	{
-		// if (other.gameObject.CompareTag("RemotePlayer"))
+		// if (other.gameObject.CompareTag("Item"))
 		Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0* L_0 = ___other0;
 		NullCheck(L_0);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
 		L_1 = Collision_get_gameObject_m846FADBCA43E1849D3FE4D5EA44C02D055A70B3E(L_0, NULL);
 		NullCheck(L_1);
 		bool L_2;
-		L_2 = GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5(L_1, _stringLiteralCC61B2A6785354F624C0EE3A8BB8557223F1E9F0, NULL);
+		L_2 = GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5(L_1, _stringLiteralB6F02FE6CD732AB22BD11BE4254D9546F3BEEE58, NULL);
 		V_0 = L_2;
 		bool L_3 = V_0;
 		if (!L_3)
 		{
-			goto IL_0018;
-		}
-	}
-	{
-		// return;
-		goto IL_0082;
-	}
-
-IL_0018:
-	{
-		// else if (other.gameObject.CompareTag("Item"))
-		Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0* L_4 = ___other0;
-		NullCheck(L_4);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
-		L_5 = Collision_get_gameObject_m846FADBCA43E1849D3FE4D5EA44C02D055A70B3E(L_4, NULL);
-		NullCheck(L_5);
-		bool L_6;
-		L_6 = GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5(L_5, _stringLiteralB6F02FE6CD732AB22BD11BE4254D9546F3BEEE58, NULL);
-		V_1 = L_6;
-		bool L_7 = V_1;
-		if (!L_7)
-		{
-			goto IL_0082;
+			goto IL_005a;
 		}
 	}
 	{
 		// Drop();
 		RotatingObjectSync_Drop_mE136C3C9B907FEB094606D47923E783AEE9A7B61(__this, NULL);
-		// ppL = other.gameObject.GetComponent<PhotonView>().ViewID;
-		Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0* L_8 = ___other0;
-		NullCheck(L_8);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
-		L_9 = Collision_get_gameObject_m846FADBCA43E1849D3FE4D5EA44C02D055A70B3E(L_8, NULL);
-		NullCheck(L_9);
-		PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* L_10;
-		L_10 = GameObject_GetComponent_TisPhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B_m0E6283AF5901A2D881EFE3F8E321B502D2B2F950(L_9, GameObject_GetComponent_TisPhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B_m0E6283AF5901A2D881EFE3F8E321B502D2B2F950_RuntimeMethod_var);
+		// PID = other.gameObject.GetComponent<PhotonView>().ViewID;
+		Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0* L_4 = ___other0;
+		NullCheck(L_4);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
+		L_5 = Collision_get_gameObject_m846FADBCA43E1849D3FE4D5EA44C02D055A70B3E(L_4, NULL);
+		NullCheck(L_5);
+		PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* L_6;
+		L_6 = GameObject_GetComponent_TisPhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B_m0E6283AF5901A2D881EFE3F8E321B502D2B2F950(L_5, GameObject_GetComponent_TisPhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B_m0E6283AF5901A2D881EFE3F8E321B502D2B2F950_RuntimeMethod_var);
+		NullCheck(L_6);
+		int32_t L_7;
+		L_7 = PhotonView_get_ViewID_m69795CA0AB8AB13740BEDAD899BED88745F4C8A5(L_6, NULL);
+		__this->___PID_6 = L_7;
+		// View.RPC("ConnectRPC", RpcTarget.All, PID);
+		PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* L_8 = __this->___View_4;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_9 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_10 = L_9;
+		int32_t L_11 = __this->___PID_6;
+		int32_t L_12 = L_11;
+		RuntimeObject* L_13 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_12);
 		NullCheck(L_10);
-		int32_t L_11;
-		L_11 = PhotonView_get_ViewID_m69795CA0AB8AB13740BEDAD899BED88745F4C8A5(L_10, NULL);
-		__this->___ppL_6 = L_11;
-		// Debug.Log(ppL);
-		int32_t L_12 = __this->___ppL_6;
-		int32_t L_13 = L_12;
-		RuntimeObject* L_14 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_13);
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_14, NULL);
-		// View.RPC("ConnectRPC", RpcTarget.All, ppL);
-		PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* L_15 = __this->___View_4;
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_16 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_17 = L_16;
-		int32_t L_18 = __this->___ppL_6;
-		int32_t L_19 = L_18;
-		RuntimeObject* L_20 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_19);
-		NullCheck(L_17);
-		ArrayElementTypeCheck (L_17, L_20);
-		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_20);
-		NullCheck(L_15);
-		PhotonView_RPC_mD406BD732C9B9AFD46C149F63514AB3A923EB5BB(L_15, _stringLiteralFD71BF8223847A185788F968F80DD6657829BFEC, 0, L_17, NULL);
+		ArrayElementTypeCheck (L_10, L_13);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_13);
+		NullCheck(L_8);
+		PhotonView_RPC_mD406BD732C9B9AFD46C149F63514AB3A923EB5BB(L_8, _stringLiteralFD71BF8223847A185788F968F80DD6657829BFEC, 0, L_10, NULL);
 	}
 
-IL_0082:
+IL_005a:
 	{
 		// }
 		return;
@@ -13295,11 +13264,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SyncScenes__ctor_m5B1203AB5DC6BC979F16EA
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void TerrainNetworkItems::ConnectRPC(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainNetworkItems_ConnectRPC_m61ECA14EC3B4C63F5E54B42D51696525732D93B1 (TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* __this, int32_t ___ppL0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainNetworkItems_ConnectRPC_m61ECA14EC3B4C63F5E54B42D51696525732D93B1 (TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* __this, int32_t ___PID0, const RuntimeMethod* method) 
 {
 	{
-		// StartCoroutine(Delay(ppL));
-		int32_t L_0 = ___ppL0;
+		// StartCoroutine(Delay(PID));
+		int32_t L_0 = ___PID0;
 		RuntimeObject* L_1;
 		L_1 = TerrainNetworkItems_Delay_m4B8DD6EE179D43C0A49A0E7877A9D1A908D31934(__this, L_0, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_2;
@@ -13309,7 +13278,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainNetworkItems_ConnectRPC_m61ECA14E
 	}
 }
 // System.Collections.IEnumerator TerrainNetworkItems::Delay(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TerrainNetworkItems_Delay_m4B8DD6EE179D43C0A49A0E7877A9D1A908D31934 (TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* __this, int32_t ___ppL0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TerrainNetworkItems_Delay_m4B8DD6EE179D43C0A49A0E7877A9D1A908D31934 (TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* __this, int32_t ___PID0, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13326,14 +13295,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TerrainNetworkItems_Delay_m4B8
 		L_1->___U3CU3E4__this_3 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_3), (void*)__this);
 		U3CDelayU3Ed__4_tA20468AEE0199B5012340DFB61F8BF07BF1D4545* L_2 = L_1;
-		int32_t L_3 = ___ppL0;
+		int32_t L_3 = ___PID0;
 		NullCheck(L_2);
-		L_2->___ppL_2 = L_3;
+		L_2->___PID_2 = L_3;
 		return L_2;
 	}
 }
 // System.Void TerrainNetworkItems::RemoveGrabbable(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainNetworkItems_RemoveGrabbable_m98D74B547FE732EBD8748158D85C2D9E0B55DC05 (TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* __this, int32_t ___ppL0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainNetworkItems_RemoveGrabbable_m98D74B547FE732EBD8748158D85C2D9E0B55DC05 (TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* __this, int32_t ___PID0, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13343,42 +13312,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainNetworkItems_RemoveGrabbable_m98D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// PhotonView.Find(ppL).gameObject.transform.SetParent(this.transform);
-		int32_t L_0 = ___ppL0;
+		// Destroy(PhotonView.Find(PID).gameObject.GetComponent<NetworkedGrabbable>());
+		int32_t L_0 = ___PID0;
 		PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* L_1;
 		L_1 = PhotonView_Find_m0882E2232D4EAB45F754B4FAFEE5E6EA54DF7707(L_0, NULL);
 		NullCheck(L_1);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_1, NULL);
 		NullCheck(L_2);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
-		L_3 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_2, NULL);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
-		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_3);
-		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_3, L_4, NULL);
-		// Destroy(PhotonView.Find(ppL).gameObject.GetComponent<NetworkedGrabbable>());
-		int32_t L_5 = ___ppL0;
-		PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* L_6;
-		L_6 = PhotonView_Find_m0882E2232D4EAB45F754B4FAFEE5E6EA54DF7707(L_5, NULL);
-		NullCheck(L_6);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
-		L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_6, NULL);
-		NullCheck(L_7);
-		NetworkedGrabbable_t667791DFD231936640526317B709926C447DF70C* L_8;
-		L_8 = GameObject_GetComponent_TisNetworkedGrabbable_t667791DFD231936640526317B709926C447DF70C_m8A8DB7ADA76716A7A29A71715F45ACB3A87965D9(L_7, GameObject_GetComponent_TisNetworkedGrabbable_t667791DFD231936640526317B709926C447DF70C_m8A8DB7ADA76716A7A29A71715F45ACB3A87965D9_RuntimeMethod_var);
+		NetworkedGrabbable_t667791DFD231936640526317B709926C447DF70C* L_3;
+		L_3 = GameObject_GetComponent_TisNetworkedGrabbable_t667791DFD231936640526317B709926C447DF70C_m8A8DB7ADA76716A7A29A71715F45ACB3A87965D9(L_2, GameObject_GetComponent_TisNetworkedGrabbable_t667791DFD231936640526317B709926C447DF70C_m8A8DB7ADA76716A7A29A71715F45ACB3A87965D9_RuntimeMethod_var);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_8, NULL);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_3, NULL);
+		// PhotonView.Find(PID).gameObject.transform.SetParent(this.transform);
+		int32_t L_4 = ___PID0;
+		PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* L_5;
+		L_5 = PhotonView_Find_m0882E2232D4EAB45F754B4FAFEE5E6EA54DF7707(L_4, NULL);
+		NullCheck(L_5);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
+		L_6 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_5, NULL);
+		NullCheck(L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_6, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_7);
+		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_7, L_8, NULL);
 		// }
 		return;
 	}
 }
 // System.Void TerrainNetworkItems::DisconnectRPC(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainNetworkItems_DisconnectRPC_m04B768E1765FD5DD8FF0EAE325DA50FF942525AB (TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* __this, int32_t ___ppL0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainNetworkItems_DisconnectRPC_m04B768E1765FD5DD8FF0EAE325DA50FF942525AB (TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* __this, int32_t ___PID0, const RuntimeMethod* method) 
 {
 	{
-		// PhotonView.Find(ppL).transform.SetParent(null);
-		int32_t L_0 = ___ppL0;
+		// PhotonView.Find(PID).transform.SetParent(null);
+		int32_t L_0 = ___PID0;
 		PhotonView_t43F3D22FF3D00F7824E82D741D70F9CB55642E6B* L_1;
 		L_1 = PhotonView_Find_m0882E2232D4EAB45F754B4FAFEE5E6EA54DF7707(L_0, NULL);
 		NullCheck(L_1);
@@ -13526,10 +13495,10 @@ IL_0016:
 IL_0018:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// yield return new WaitForSecondsRealtime(0.7f);
+		// yield return new WaitForSecondsRealtime(0.9f);
 		WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01* L_3 = (WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01*)il2cpp_codegen_object_new(WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01_il2cpp_TypeInfo_var);
 		NullCheck(L_3);
-		WaitForSecondsRealtime__ctor_mBFC1E4F0E042D5EC6E7EEB211A2FE5193A8F6D6F(L_3, (0.699999988f), NULL);
+		WaitForSecondsRealtime__ctor_mBFC1E4F0E042D5EC6E7EEB211A2FE5193A8F6D6F(L_3, (0.899999976f), NULL);
 		__this->___U3CU3E2__current_1 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_3);
 		__this->___U3CU3E1__state_0 = 1;
@@ -13539,9 +13508,9 @@ IL_0018:
 IL_0039:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// RemoveGrabbable(ppL);
+		// RemoveGrabbable(PID);
 		TerrainNetworkItems_t20E5737EEBCEB6B5F1B87B4A5155AEFDD3EF3E31* L_4 = __this->___U3CU3E4__this_3;
-		int32_t L_5 = __this->___ppL_2;
+		int32_t L_5 = __this->___PID_2;
 		NullCheck(L_4);
 		TerrainNetworkItems_RemoveGrabbable_m98D74B547FE732EBD8748158D85C2D9E0B55DC05(L_4, L_5, NULL);
 		// }

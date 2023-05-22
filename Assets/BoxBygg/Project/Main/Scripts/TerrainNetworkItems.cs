@@ -21,21 +21,20 @@ public class TerrainNetworkItems : MonoBehaviourPunCallbacks
 
     IEnumerator Delay(int PID)
     {
-        yield return new WaitForSecondsRealtime(0.7f);
+        yield return new WaitForSecondsRealtime(0.9f);
         RemoveGrabbable(PID);
     }
 
     void RemoveGrabbable(int PID)
     {
-        PhotonView.Find(PID).gameObject.transform.SetParent(this.transform);
         Destroy(PhotonView.Find(PID).gameObject.GetComponent<NetworkedGrabbable>());
+        PhotonView.Find(PID).gameObject.transform.SetParent(this.transform);
     }
 
     [PunRPC]
     void DisconnectRPC(int PID)
     {
         PhotonView.Find(PID).transform.SetParent(null);
-        //PID.transform.SetParent(null);
     }
 
     public void EnableSign()
