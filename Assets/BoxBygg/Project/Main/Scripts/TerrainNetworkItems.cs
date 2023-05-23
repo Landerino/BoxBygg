@@ -6,8 +6,6 @@ using BNG;
 
 public class TerrainNetworkItems : MonoBehaviourPunCallbacks
 {
-    public GameObject Sign;
-    public GameObject[] RoadInfos;
     public RotatingObjectSync Rts;
 
     //private int ObjectNumber; 
@@ -35,20 +33,5 @@ public class TerrainNetworkItems : MonoBehaviourPunCallbacks
     void DisconnectRPC(int PID)
     {
         PhotonView.Find(PID).transform.SetParent(null);
-    }
-
-    public void EnableSign()
-    {
-        Sign.SetActive(true);
-    }
-
-    public void showRoadInfo(int num)
-    {
-        RoadInfos[num].gameObject.SetActive(true);
-    }
-
-    public void hideRoadInfo(int num)
-    {
-        RoadInfos[num].gameObject.SetActive(false);
     }
 }

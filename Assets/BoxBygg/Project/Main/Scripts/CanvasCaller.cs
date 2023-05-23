@@ -5,7 +5,6 @@ using Photon.Pun;
 
 public class CanvasCaller : MonoBehaviour
 {
-    public GameObject Sign;
     public GameObject Canvas;
     public GameObject BoardC1;
     public GameObject BoardC2;
@@ -21,7 +20,6 @@ public class CanvasCaller : MonoBehaviour
         BoardC3.SetActive(false);
         BoardC4.SetActive(false);
         IsShowing = false;
-        Sign.SetActive(false);
     }
 
     public void ShowHideCanvas()

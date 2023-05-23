@@ -20,7 +20,7 @@ public class UITimeScript : MonoBehaviour
     public Animator Anim;
     public Animator Anim2;
 
-    private int Date;
+    public int Date;
     private float desiredDuration = 5f;
     private float elapsedTime;
     private float FillWant;
