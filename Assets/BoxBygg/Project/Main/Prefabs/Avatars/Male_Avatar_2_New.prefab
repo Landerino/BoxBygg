@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 3670353401551238370}
   - component: {fileID: 915282493775669154}
   m_Layer: 0
-  m_Name: Hair.001
+  m_Name: Hair
   m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

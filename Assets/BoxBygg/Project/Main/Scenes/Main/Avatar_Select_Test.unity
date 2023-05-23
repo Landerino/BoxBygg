@@ -2537,6 +2537,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateHairColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &460476506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5415,6 +5427,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateHairColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &935974879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6247,6 +6271,18 @@ MonoBehaviour:
       - m_Target: {fileID: 615953325}
         m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
         m_MethodName: SetHairColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateHairColor
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9572,6 +9608,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateHairColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1566589971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10248,6 +10296,18 @@ MonoBehaviour:
       - m_Target: {fileID: 615953325}
         m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
         m_MethodName: SetHairColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8320362180053365420}
+        m_TargetAssemblyTypeName: ShowAvatar, Assembly-CSharp
+        m_MethodName: UpdateHairColor
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -112977,6 +113037,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 8967269c41746d5418f538a18a39dfcb, type: 2}
   - {fileID: 2100000, guid: dfed044100f1c5946ac4fa416f45cb01, type: 2}
   - {fileID: 2100000, guid: 56b58be8db0290a4980ed26daed93c1c, type: 2}
+  HairColors:
+  - {fileID: 2100000, guid: 72a2cacf40e25ae4fb05140ec3fbb86a, type: 2}
+  - {fileID: 2100000, guid: 08554f0fcfc61134b88484efa48a5e00, type: 2}
+  - {fileID: 2100000, guid: 424107832eb9b5e42bb6e1f567feec7e, type: 2}
+  - {fileID: 2100000, guid: 2f53f15ddfec7e24aa208606c2a163ac, type: 2}
+  - {fileID: 2100000, guid: db847bd0098301440b7bb7e55ce5bfa2, type: 2}
   Here: {fileID: 2683195716292804712}
 --- !u!4 &8320362180486264924
 Transform:

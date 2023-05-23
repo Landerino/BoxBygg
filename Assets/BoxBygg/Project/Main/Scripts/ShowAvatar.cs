@@ -6,11 +6,13 @@ public class ShowAvatar : MonoBehaviour
 {
     public GameObject[] Avatars;
     private GameObject Shirt;
+    private GameObject Hair;
 
     private int SelectedAvatar;
     private int OldAvatar;
 
     public Material[] Colors;
+    public Material[] HairColors;
 
     public Transform Here;
 
@@ -49,5 +51,12 @@ public class ShowAvatar : MonoBehaviour
         Shirt = GameObject.Find("Shirt");
         Rend = Shirt.GetComponent<Renderer>();
         Rend.material = Colors[Col];
+    }
+
+    public void UpdateHairColor(int Hai)
+    {
+        Hair = GameObject.Find("Hair");
+        Rend = Hair.GetComponent<Renderer>();
+        Rend.material = HairColors[Hai];
     }
 }
