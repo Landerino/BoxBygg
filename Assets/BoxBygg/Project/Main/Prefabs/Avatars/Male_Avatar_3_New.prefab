@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4908445309070057129}
-  - component: {fileID: 1118330681106795962}
+  - component: {fileID: -370226836842902584}
   m_Layer: 0
   m_Name: Male_Avatar_3_New
   m_TagString: Avatar
@@ -120,7 +120,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1118330681106795962
+--- !u!114 &-370226836842902584
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,7 +133,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Shirt: {fileID: 437204158726647823}
+  Hair: {fileID: 7340873580447282346}
   ShirtColor: 0
+  HairColor: 0
   Colors:
   - {fileID: 2100000, guid: 2daf0cc345f15c4439880590fea33df7, type: 2}
   - {fileID: 2100000, guid: a69d3507c484e354cbff52a7808657b7, type: 2}
@@ -142,6 +144,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 8967269c41746d5418f538a18a39dfcb, type: 2}
   - {fileID: 2100000, guid: dfed044100f1c5946ac4fa416f45cb01, type: 2}
   - {fileID: 2100000, guid: 56b58be8db0290a4980ed26daed93c1c, type: 2}
+  HairColors:
+  - {fileID: 2100000, guid: 72a2cacf40e25ae4fb05140ec3fbb86a, type: 2}
+  - {fileID: 2100000, guid: 08554f0fcfc61134b88484efa48a5e00, type: 2}
+  - {fileID: 2100000, guid: 424107832eb9b5e42bb6e1f567feec7e, type: 2}
+  - {fileID: 2100000, guid: 2f53f15ddfec7e24aa208606c2a163ac, type: 2}
+  - {fileID: 2100000, guid: db847bd0098301440b7bb7e55ce5bfa2, type: 2}
 --- !u!1 &5872323104415830642
 GameObject:
   m_ObjectHideFlags: 0

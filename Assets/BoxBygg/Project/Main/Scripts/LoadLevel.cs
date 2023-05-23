@@ -12,6 +12,7 @@ public class LoadLevel : MonoBehaviour
     
     ExitGames.Client.Photon.Hashtable playerAvatar = new ExitGames.Client.Photon.Hashtable();
     ExitGames.Client.Photon.Hashtable shirtColor = new ExitGames.Client.Photon.Hashtable();
+    ExitGames.Client.Photon.Hashtable hairColor = new ExitGames.Client.Photon.Hashtable();
 
     public bool nameInputed;
     public bool AvatarSelected;
@@ -41,13 +42,19 @@ public class LoadLevel : MonoBehaviour
     {
         shirtColor["color"] = ShirtColor;
         PhotonNetwork.SetPlayerCustomProperties(shirtColor);
+    }
 
+    public void SetHairColor(int HairColor)
+    {
+        hairColor["hair"] = HairColor;
+        PhotonNetwork.SetPlayerCustomProperties(hairColor);
     }
 
     private void Start()
     {
         SetAvatar(0);
         SetShirtColor(5);
+        SetHairColor(3);
         nameInputed = false;
         AvatarSelected = false;
         Ready = false;

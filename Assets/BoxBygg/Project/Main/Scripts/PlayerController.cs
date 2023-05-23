@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
     private int AvatarNo;
     private string ShirtColor;
     private int ShirtNo;
+    private string HairColor;
+    private int HairNo;
 
     //where to instantiate the avatar
     public Transform InstancePoint;
@@ -33,35 +35,30 @@ public class PlayerController : MonoBehaviourPunCallbacks
     //as soon as a player connects this runs and displays the player as intended
     private void Start()
     {
-        /*
-        if(PV.Owner.CustomProperties["avatar"] == null)
-        {
-            AvatarNo = 0;
-        }
-        */
         Numba = PV.Owner.CustomProperties["avatar"].ToString();
         AvatarNo = int.Parse(Numba);
         GameObject Avatar = Instantiate(AvatarList[AvatarNo], InstancePoint);
         PlayerName.text = PV.Owner.NickName;
         ShirtColor = PV.Owner.CustomProperties["color"].ToString();
         ShirtNo = int.Parse(ShirtColor);
+        HairColor = PV.Owner.CustomProperties["hair"].ToString();
+        HairNo = int.Parse(HairColor);
         Avatar.GetComponent<ShirtChanger>().ShirtColor = ShirtNo;
         Avatar.GetComponent<ShirtChanger>().Updatecolor();
+        Avatar.GetComponent<ShirtChanger>().HairColor = HairNo;
+        Avatar.GetComponent<ShirtChanger>().UpdateHair();
         for(int i = 0; i < 2; i++)
         {
             rend = Hands[i].GetComponent<Renderer>();
             rend.material = CorrespondingAvatarColor[AvatarNo];
         }
-        /*
-        rend = HandLeft.GetComponent<Renderer>();
-        rend.sharedMaterial = CorrespondingAvatarColor[AvatarNo];
-        rend = HandRight.GetComponent<Renderer>();
-        rend.sharedMaterial = CorrespondingAvatarColor[AvatarNo];
-        */
+        
+        //Just checking if all is correct when loading :)
         if (PV.IsMine)
         {
             Debug.Log(PhotonNetwork.NickName);
             Debug.Log(PhotonNetwork.LocalPlayer.CustomProperties["avatar"]);
+            Debug.Log(PhotonNetwork.LocalPlayer.CustomProperties["hair"]);
         }
     }
 }
